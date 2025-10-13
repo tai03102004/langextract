@@ -1,0 +1,224 @@
+[
+  {
+    "model": {
+      "name": "Llama3.2 3B",
+      "model_id": "llama3.2:3b",
+      "type": "local"
+    },
+    "tests": [
+      {
+        "transaction_id": 1,
+        "success": false,
+        "response_time": 3,
+        "error": "Request failed with status code 422",
+        "extracted_fields": 0
+      },
+      {
+        "transaction_id": 2,
+        "success": false,
+        "response_time": 3,
+        "error": "Request failed with status code 422",
+        "extracted_fields": 0
+      },
+      {
+        "transaction_id": 3,
+        "success": false,
+        "response_time": 2,
+        "error": "Request failed with status code 422",
+        "extracted_fields": 0
+      }
+    ],
+    "summary": {
+      "total_tests": 3,
+      "successful": 0,
+      "success_rate": "0.0",
+      "avg_response_time": 3,
+      "avg_extracted_fields": 0
+    }
+  },
+  {
+    "model": {
+      "name": "Gemini 2.5 Flash",
+      "model_id": "gemini-2.5-flash",
+      "type": "online"
+    },
+    "tests": [
+      {
+        "transaction_id": 1,
+        "success": false,
+        "response_time": 3,
+        "error": "Request failed with status code 422",
+        "extracted_fields": 0
+      },
+      {
+        "transaction_id": 2,
+        "success": false,
+        "response_time": 5,
+        "error": "Request failed with status code 422",
+        "extracted_fields": 0
+      },
+      {
+        "transaction_id": 3,
+        "success": false,
+        "response_time": 6,
+        "error": "Request failed with status code 422",
+        "extracted_fields": 0
+      }
+    ],
+    "summary": {
+      "total_tests": 3,
+      "successful": 0,
+      "success_rate": "0.0",
+      "avg_response_time": 5,
+      "avg_extracted_fields": 0
+    }
+  },
+  {
+    "model": {
+      "name": "Gemma2 2B",
+      "model_id": "gemma2:2b",
+      "type": "local"
+    },
+    "tests": [
+      {
+        "transaction_id": 1,
+        "success": false,
+        "response_time": 2,
+        "error": "Request failed with status code 422",
+        "extracted_fields": 0
+      },
+      {
+        "transaction_id": 2,
+        "success": false,
+        "response_time": 7,
+        "error": "Request failed with status code 422",
+        "extracted_fields": 0
+      },
+      {
+        "transaction_id": 3,
+        "success": false,
+        "response_time": 7,
+        "error": "Request failed with status code 422",
+        "extracted_fields": 0
+      }
+    ],
+    "summary": {
+      "total_tests": 3,
+      "successful": 0,
+      "success_rate": "0.0",
+      "avg_response_time": 5,
+      "avg_extracted_fields": 0
+    }
+  },
+  {
+    "model": {
+      "name": "Llama3.2 1B",
+      "model_id": "llama3.2:1b",
+      "type": "local"
+    },
+    "tests": [
+      {
+        "transaction_id": 1,
+        "success": false,
+        "response_time": 7,
+        "error": "Request failed with status code 422",
+        "extracted_fields": 0
+      },
+      {
+        "transaction_id": 2,
+        "success": false,
+        "response_time": 7,
+        "error": "Request failed with status code 422",
+        "extracted_fields": 0
+      },
+      {
+        "transaction_id": 3,
+        "success": false,
+        "response_time": 2,
+        "error": "Request failed with status code 422",
+        "extracted_fields": 0
+      }
+    ],
+    "summary": {
+      "total_tests": 3,
+      "successful": 0,
+      "success_rate": "0.0",
+      "avg_response_time": 5,
+      "avg_extracted_fields": 0
+    }
+  },
+  {
+    "model": {
+      "name": "Phi3 3.8B",
+      "model_id": "phi3:3.8b",
+      "type": "local"
+    },
+    "tests": [
+      {
+        "transaction_id": 1,
+        "success": false,
+        "response_time": 5,
+        "error": "Request failed with status code 422",
+        "extracted_fields": 0
+      },
+      {
+        "transaction_id": 2,
+        "success": false,
+        "response_time": 3,
+        "error": "Request failed with status code 422",
+        "extracted_fields": 0
+      },
+      {
+        "transaction_id": 3,
+        "success": false,
+        "response_time": 7,
+        "error": "Request failed with status code 422",
+        "extracted_fields": 0
+      }
+    ],
+    "summary": {
+      "total_tests": 3,
+      "successful": 0,
+      "success_rate": "0.0",
+      "avg_response_time": 5,
+      "avg_extracted_fields": 0
+    }
+  },
+  {
+    "model": {
+      "name": "Qwen2.5 3B",
+      "model_id": "qwen2.5:3b",
+      "type": "local"
+    },
+    "tests": [
+      {
+        "transaction_id": 1,
+        "success": false,
+        "response_time": 227,
+        "error": "Request failed with status code 422",
+        "extracted_fields": 0
+      },
+      {
+        "transaction_id": 2,
+        "success": false,
+        "response_time": 4,
+        "error": "Request failed with status code 422",
+        "extracted_fields": 0
+      },
+      {
+        "transaction_id": 3,
+        "success": false,
+        "response_time": 4,
+        "error": "Request failed with status code 422",
+        "extracted_fields": 0
+      }
+    ],
+    "summary": {
+      "total_tests": 3,
+      "successful": 0,
+      "success_rate": "0.0",
+      "avg_response_time": 78,
+      "avg_extracted_fields": 0
+    }
+  }
+]

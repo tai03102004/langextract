@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AppBank - Phân tích giao dịch ngân hàng</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #555;
+        }
+        
+        textarea {
+            width: 100%;
+            min-height: 150px;
+            padding: 12px;
+            border: 2px solid #ddd;
+            border-radius: 6px;
+            font-size: 14px;
+            resize: vertical;
+            box-sizing: border-box;
+        }
+        
+        textarea:focus {
+            outline: none;
+            border-color: #3498db;
+        }
+        
+        button {
+            background: #3498db;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+        }
+        
+        button:hover {
+            background: #2980b9;
+        }
+        
+        button:disabled {
+            background: #bdc3c7;
+            cursor: not-allowed;
+        }
+        
+        .results {
+            margin-top: 30px;
+            padding: 20px;
+            background: #ecf0f1;
+            border-radius: 6px;
+            display: none;
+        }
+        
+        .success {
+            border-left: 4px solid #27ae60;
+            background: #d5f4e6;
+        }
+        
+        .error {
+            border-left: 4px solid #e74c3c;
+            background: #ffeaea;
+        }
+        
+        .transaction-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .info-item {
+            background: white;
+            padding: 15px;
+            border-radius: 6px;
+            border-left: 4px solid #3498db;
+        }
+        
+        .info-label {
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        
+        .info-value {
+            color: #555;
+            font-size: 14px;
+        }
+        
+        .transactions-list {
+            margin-top: 30px;
+        }
+        
+        .transaction-card {
+            background: white;
+            border-radius: 6px;
+            padding: 20px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            border-left: 4px solid #3498db;
+        }
+        
+        .transaction-card.send {
+            border-left-color: #e74c3c;
+        }
+        
+        .transaction-card.receive {
+            border-left-color: #27ae60;
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .stat-card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .stat-number {
+            font-size: 32px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        
+        .stat-label {
+            color: #666;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🏦 AppBank - Phân tích giao dịch ngân hàng</h1>
+        
+        <div class="form-group">
+            <label for="transactionText">Dán nội dung giao dịch từ app ngân hàng:</label>
+            <textarea 
+                id="transactionText" 
+                placeholder="Ví dụ:&#10;Tài khoản: 123456789&#10;Giao dịch thành công&#10;Từ: 123456789 - NGUYEN VAN A&#10;Đến: 987654321 - TRAN THI B  &#10;Số tiền: 500,000 VND&#10;Nội dung: Chuyen tien tra no&#10;Thời gian: 15/12/2023 14:30:25"
+            ></textarea>
+        </div>
+        
+        <button onclick="processTransaction()" id="processBtn">
+            🔍 Phân tích giao dịch
+        </button>
+        
+        <div id="results" class="results"></div>
+        
+        <div class="transactions-list">
+            <h2>📊 Thống kê giao dịch</h2>
+            <div id="stats" class="stats"></div>
+            
+            <h2>📋 Lịch sử giao dịch</h2>
+            <button onclick="loadTransactions()" style="margin-bottom: 20px;">
+                🔄 Tải lại danh sách
+            </button>
+            <div id="transactionsList"></div>
+        </div>
+    </div>
+
+    <script>
+        // Load initial data
+        window.onload = function() {
+            loadStats();
+            loadTransactions();
+        };
+
+        async function processTransaction() {
+            const transactionText = document.getElementById('transactionText').value.trim();
+            const resultsDiv = document.getElementById('results');
+            const processBtn = document.getElementById('processBtn');
+            
+            if (!transactionText) {
+                alert('Vui lòng nhập nội dung giao dịch!');
+                return;
+            }
+            
+            processBtn.disabled = true;
+            processBtn.textContent = '⏳ Đang xử lý...';
+            
+            try {
+                const response = await fetch('/api/transactions/process', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ transactionText })
+                });
+                
+                const data = await response.json();
+                
+                if (data.success) {
+                    displayResults(data.data, true);
+                    loadStats(); // Refresh stats
+                    loadTransactions(); // Refresh transaction list
+                    document.getElementById('transactionText').value = '';
+                } else {
+                    displayResults(data, false);
+                }
+                
+            } catch (error) {
+                displayResults({ error: 'Lỗi kết nối: ' + error.message }, false);
+            } finally {
+                processBtn.disabled = false;
+                processBtn.textContent = '🔍 Phân tích giao dịch';
+            }
+        }
+        
+        function displayResults(data, success) {
+            const resultsDiv = document.getElementById('results');
+            resultsDiv.style.display = 'block';
+            resultsDiv.className = 'results ' + (success ? 'success' : 'error');
+            
+            if (success) {
+                const info = data.extracted_info;
+                resultsDiv.innerHTML = `
+                    <h3>✅ Phân tích thành công!</h3>
+                    <div class="transaction-info">
+                        <div class="info-item">
+                            <div class="info-label">Số tài khoản</div>
+                            <div class="info-value">${info.account_number || 'N/A'}</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Loại giao dịch</div>
+                            <div class="info-value">${info.transaction_type === 'SEND' ? '📤 Gửi tiền' : '📥 Nhận tiền'}</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Từ tài khoản</div>
+                            <div class="info-value">${info.from_account || 'N/A'}</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Đến tài khoản</div>
+                            <div class="info-value">${info.to_account || 'N/A'}</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Số tiền</div>
+                            <div class="info-value">${formatCurrency(info.amount)}</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Nội dung</div>
+                            <div class="info-value">${info.content || 'N/A'}</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Ngày giao dịch</div>
+                            <div class="info-value">${info.transaction_date || 'N/A'}</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Độ tin cậy</div>
+                            <div class="info-value">${Math.round((info.confidence || 0) * 100)}%</div>
+                        </div>
+                    </div>
+                `;
+            } else {
+                resultsDiv.innerHTML = `
+                    <h3>❌ Lỗi xử lý</h3>
+                    <p>${data.error || 'Có lỗi xảy ra khi xử lý giao dịch'}</p>
+                `;
+            }
+        }
+        
+        async function loadStats() {
+            try {
+                const response = await fetch('/api/transactions/stats');
+                const data = await response.json();
+                
+                if (data.success) {
+                    const stats = data.data;
+                    document.getElementById('stats').innerHTML = `
+                        <div class="stat-card">
+                            <div class="stat-number">${stats.total_transactions}</div>
+                            <div class="stat-label">Tổng giao dịch</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">${stats.total_sent}</div>
+                            <div class="stat-label">Giao dịch gửi</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">${stats.total_received}</div>
+                            <div class="stat-label">Giao dịch nhận</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">${formatCurrency(stats.total_amount_sent)}</div>
+                            <div class="stat-label">Tổng tiền gửi</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">${formatCurrency(stats.total_amount_received)}</div>
+                            <div class="stat-label">Tổng tiền nhận</div>
+                        </div>
+                    `;
+                }
+            } catch (error) {
+                console.error('Error loading stats:', error);
+            }
+        }
+        
+        async function loadTransactions() {
+            const listDiv = document.getElementById('transactionsList');
+            listDiv.innerHTML = '<div class="loading">⏳ Đang tải...</div>';
+            
+            try {
+                const response = await fetch('/api/transactions?limit=20');
+                const data = await response.json();
+                
+                if (data.success && data.data.length > 0) {
+                    listDiv.innerHTML = data.data.map(transaction => `
+                        <div class="transaction-card ${transaction.transaction_type.toLowerCase()}">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                                <strong>${transaction.transaction_type === 'SEND' ? '📤 Gửi tiền' : '📥 Nhận tiền'}</strong>
+                                <span style="color: ${transaction.transaction_type === 'SEND' ? '#e74c3c' : '#27ae60'}; font-weight: bold;">
+                                    ${formatCurrency(transaction.amount)}
+                                </span>
+                            </div>
+                            <div style="font-size: 14px; color: #666; margin-bottom: 8px;">
+                                <strong>Từ:</strong> ${transaction.from_account || 'N/A'} 
+                                <strong>→ Đến:</strong> ${transaction.to_account || 'N/A'}
+                            </div>
+                            <div style="font-size: 14px; color: #666; margin-bottom: 8px;">
+                                <strong>Nội dung:</strong> ${transaction.content || 'N/A'}
+                            </div>
+                            <div style="font-size: 12px; color: #999;">
+                                ${new Date(transaction.created_at).toLocaleString('vi-VN')}
+                            </div>
+                        </div>
+                    `).join('');
+                } else {
+                    listDiv.innerHTML = '<p style="text-align: center; color: #666;">Chưa có giao dịch nào</p>';
+                }
+            } catch (error) {
+                listDiv.innerHTML = '<p style="text-align: center; color: #e74c3c;">Lỗi tải dữ liệu</p>';
+            }
+        }
+        
+        function formatCurrency(amount) {
+            if (!amount) return '0 VND';
+            return new Intl.NumberFormat('vi-VN').format(amount) + ' VND';
+        }
+    </script>
+</body>
+</html>

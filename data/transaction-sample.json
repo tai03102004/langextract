@@ -1,0 +1,61 @@
+[
+  "BIDV xin thông báo tới Quý khách\nThời gian giao dịch: 08:15 15/09/2025\nTài khoản thanh toán: 2150012345\nSố tiền GD: +5,000,000 VND\nSố dư cuối: 20,457,777 VND\nNội dung giao dịch: TKThe :1500205053589, tai VBAAVNVX. BIDV;2150012345;NGUYEN VAN A chuyen tien\nMã giao dịch: 0123ABCD-XY12Z",
+
+  "BIDV xin thông báo tới Quý khách\nThời gian giao dịch: 09:42 15/09/2025\nTài khoản thanh toán: 2150012345\nSố tiền GD: -2,350,000 VND\nSố dư cuối: 18,107,777 VND\nNội dung giao dịch: Thanh toan dien luc EVN\nMã giao dịch: 0456EFGH-KL34M",
+
+  "VCB xin thông báo: Số dư TK 1030333333 -10,000,000 VND lúc 05-01-2025 10:35:29. Số dư 20,677,474 VND. Ref MBVCB.8226195013.TRAN VAN MINH chuyen tien.CT tu 1030333333 TRAN VAN MINH toi 2000112223 LY VAN QUANG",
+
+  "VCB thông báo: Số dư TK 1030333333 +500,000 VND lúc 23-01-2025 14:45:18. Số dư 6,977,474 VND. Ref 948202.231225.144518.TRAN VAN MINH CHUYEN KHOAN CHO CHAU-230125-14:45:17 943102",
+
+  "ACB - Tai khoan 1234567890 - GD thanh cong. So tien: -1,500,000 VND. TG: 15/09/2025 16:30:15. So du: 8,250,000 VND. ND: Chuyen tien den 9876543210 - NGUYEN THI HƯƠNG - MB BANK",
+
+  "ACB - Tai khoan 1234567890 - GD thanh cong. So tien: +2,750,000 VND. TG: 16/09/2025 09:20:45. So du: 11,000,000 VND. ND: Nhan tien tu 5555666677 - LE HONG PHONG - TECHCOMBANK",
+
+  "MB Bank: TK 0123456789. GD +3,200,000 VND. TG: 10:15 17/09/2025. SD: 15,800,000 VND. CT: Chuyen tien tu PHAM VAN DAT - TK 9988776655 - VIETINBANK",
+
+  "MB Bank: TK 0123456789. GD -850,000 VND. TG: 14:22 17/09/2025. SD: 14,950,000 VND. CT: Thanh toan SHOPEE don hang #SP123456789",
+
+  "VIETINBANK thong bao GD thanh cong. TK: 1122334455. So tien: -675,000 VND. TG: 18/09/2025 11:40:20. So du: 4,325,000 VND. Noi dung: Mua sam LAZADA",
+
+  "VIETINBANK thong bao GD thanh cong. TK: 1122334455. So tien: +1,800,000 VND. TG: 18/09/2025 19:15:30. So du: 6,125,000 VND. Noi dung: Chuyen tien tu HOANG VAN KHAI",
+
+  "TPBank thong bao: TK 2468135790 giao dich -320,000 VND luc 19/09/2025 08:45:12. So du: 2,180,000 VND. Chi tiet: Thanh toan GRAB RIDE",
+
+  "TPBank thong bao: TK 2468135790 giao dich +950,000 VND luc 19/09/2025 15:30:25. So du: 3,130,000 VND. Chi tiet: Nhan tien chuyen khoan",
+
+  "TECHCOMBANK: Giao dich TK 3691472580 thanh cong. -1,200,000 VND. 20/09/2025 13:25:40. So du: 7,800,000 VND. Noi dung: Thanh toan hoa don internet VNPT",
+
+  "TECHCOMBANK: Giao dich TK 3691472580 thanh cong. +4,500,000 VND. 20/09/2025 16:50:15. So du: 12,300,000 VND. Noi dung: Luong thang 9/2025 - CONG TY TNHH ABC",
+
+  "VPBANK thong bao TK 7410852963 giao dich -450,000 VND vao 21/09/2025 12:10:30. So du con lai: 5,550,000 VND. Ghi chu: Mua hang TIKI - Don hang TK123456",
+
+  "VPBANK thong bao TK 7410852963 giao dich +1,650,000 VND vao 21/09/2025 17:45:20. So du con lai: 7,200,000 VND. Ghi chu: Nhan chuyen tien tu TRAN VAN BINH",
+
+  "SHB - So du TK 8529637410 thay doi -280,000 VND luc 22/09/2025 09:30:45. So du hien tai: 3,720,000 VND. Mo ta: Rut tien ATM tai 123 Nguyen Trai",
+
+  "SHB - So du TK 8529637410 thay doi +2,100,000 VND luc 22/09/2025 14:20:10. So du hien tai: 5,820,000 VND. Mo ta: Chuyen tien den tu NGUYEN THI MAI",
+
+  "AGRIBANK thong bao: TK 9630741852 -1,800,000 VND. TG: 23/09/2025 10:15:25. So du: 8,200,000 VND. ND: Tra no the tin dung",
+
+  "AGRIBANK thong bao: TK 9630741852 +3,750,000 VND. TG: 23/09/2025 16:40:50. So du: 11,950,000 VND. ND: Nhan tien ban hang",
+
+  "BIDV xin thông báo: TK 1470258369 -95,000 VND luc 24/09/2025 11:25:35. So du: 2,905,000 VND. ND: Nap tien game GARENA",
+
+  "BIDV xin thông báo: TK 1470258369 +520,000 VND luc 24/09/2025 18:55:15. So du: 3,425,000 VND. ND: Hoan tien mua sam",
+
+  "VCB - TK 2580369147 -2,500,000 VND. 25/09/2025 07:30:20. So du: 12,500,000 VND. Chi tiet: Chuyen tien cho con - HOC PHI DAI HOC",
+
+  "VCB - TK 2580369147 +1,350,000 VND. 25/09/2025 13:15:40. So du: 13,850,000 VND. Chi tiet: Nhan thuong Tet som tu cong ty",
+
+  "ACB thong bao TK 3692580147 -125,000 VND vao 26/09/2025 09:45:30. So du: 4,875,000 VND. Noi dung: Mua ve may bay VIETNAM AIRLINES",
+
+  "ACB thong bao TK 3692580147 +2,800,000 VND vao 26/09/2025 15:20:45. So du: 7,675,000 VND. Noi dung: Nhan tien ban xe may cu",
+
+  "MB Bank: TK 4581472630 -750,000 VND. 27/09/2025 12:40:15. So du: 6,250,000 VND. ND: Dong tien bao hiem xe o to",
+
+  "MB Bank: TK 4581472630 +1,900,000 VND. 27/09/2025 19:10:25. So du: 8,150,000 VND. ND: Chuyen tien tu khach hang mua hang",
+
+  "VIETINBANK - TK 5693814720 giao dich -350,000 VND luc 28/09/2025 08:20:50. So du: 3,650,000 VND. Chi tiet: Thanh toan hoa don dien nuoc",
+
+  "VIETINBANK - TK 5693814720 giao dich +4,200,000 VND luc 28/09/2025 14:35:10. So du: 7,850,000 VND. Chi tiet: Nhan tien thuong cuoi nam"
+]

@@ -1,0 +1,212 @@
+[
+  {
+    "model": "Gemma2 2B",
+    "model_id": "gemma2:2b",
+    "model_type": "local",
+    "tests": [
+      {
+        "transaction_id": 1,
+        "success": false,
+        "response_time": 2984,
+        "error": "Request failed with status code 500",
+        "extracted_fields": 0
+      },
+      {
+        "transaction_id": 2,
+        "success": false,
+        "response_time": 1137,
+        "error": "Request failed with status code 500",
+        "extracted_fields": 0
+      },
+      {
+        "transaction_id": 3,
+        "success": false,
+        "response_time": 371,
+        "error": "Request failed with status code 500",
+        "extracted_fields": 0
+      }
+    ],
+    "summary": {
+      "total_tests": 3,
+      "successful": 0,
+      "success_rate": "0.0",
+      "avg_response_time": 1497,
+      "avg_extracted_fields": 0
+    }
+  },
+  {
+    "model": "Llama3.2 1B",
+    "model_id": "llama3.2:1b",
+    "model_type": "local",
+    "tests": [
+      {
+        "transaction_id": 1,
+        "success": "2150012345",
+        "response_time": 9925,
+        "error": null,
+        "extracted_fields": 8
+      },
+      {
+        "transaction_id": 2,
+        "success": "1500205053589",
+        "response_time": 4472,
+        "error": null,
+        "extracted_fields": 8
+      },
+      {
+        "transaction_id": 3,
+        "success": "2150012345",
+        "response_time": 4698,
+        "error": null,
+        "extracted_fields": 9
+      }
+    ],
+    "summary": {
+      "total_tests": 3,
+      "successful": 3,
+      "success_rate": "100.0",
+      "avg_response_time": 6365,
+      "avg_extracted_fields": 8
+    }
+  },
+  {
+    "model": "Qwen2.5 3B",
+    "model_id": "qwen2.5:3b",
+    "model_type": "local",
+    "tests": [
+      {
+        "transaction_id": 1,
+        "success": "2150012345",
+        "response_time": 14636,
+        "error": null,
+        "extracted_fields": 9
+      },
+      {
+        "transaction_id": 2,
+        "success": "2150012345",
+        "response_time": 8355,
+        "error": null,
+        "extracted_fields": 7
+      },
+      {
+        "transaction_id": 3,
+        "success": "1030333333",
+        "response_time": 5730,
+        "error": null,
+        "extracted_fields": 9
+      }
+    ],
+    "summary": {
+      "total_tests": 3,
+      "successful": 3,
+      "success_rate": "100.0",
+      "avg_response_time": 9574,
+      "avg_extracted_fields": 8
+    }
+  },
+  {
+    "model": "Gemini 2.5 Flash",
+    "model_id": "gemini-2.5-flash",
+    "model_type": "online",
+    "tests": [
+      {
+        "transaction_id": 1,
+        "success": "2150012345",
+        "response_time": 8208,
+        "error": null,
+        "extracted_fields": 9
+      },
+      {
+        "transaction_id": 2,
+        "success": "2150012345",
+        "response_time": 8621,
+        "error": null,
+        "extracted_fields": 7
+      },
+      {
+        "transaction_id": 3,
+        "success": "1030333333",
+        "response_time": 12139,
+        "error": null,
+        "extracted_fields": 9
+      }
+    ],
+    "summary": {
+      "total_tests": 3,
+      "successful": 3,
+      "success_rate": "100.0",
+      "avg_response_time": 9656,
+      "avg_extracted_fields": 8
+    }
+  },
+  {
+    "model": "Llama3.2 3B",
+    "model_id": "llama3.2:3b",
+    "model_type": "local",
+    "tests": [
+      {
+        "transaction_id": 1,
+        "success": "2150012345",
+        "response_time": 20879,
+        "error": null,
+        "extracted_fields": 9
+      },
+      {
+        "transaction_id": 2,
+        "success": "2150012345",
+        "response_time": 11171,
+        "error": null,
+        "extracted_fields": 9
+      },
+      {
+        "transaction_id": 3,
+        "success": "1122334455",
+        "response_time": 15197,
+        "error": null,
+        "extracted_fields": 8
+      }
+    ],
+    "summary": {
+      "total_tests": 3,
+      "successful": 3,
+      "success_rate": "100.0",
+      "avg_response_time": 15749,
+      "avg_extracted_fields": 9
+    }
+  },
+  {
+    "model": "Phi3 3.8B",
+    "model_id": "phi3:3.8b",
+    "model_type": "local",
+    "tests": [
+      {
+        "transaction_id": 1,
+        "success": "2150012345",
+        "response_time": 13579,
+        "error": null,
+        "extracted_fields": 7
+      },
+      {
+        "transaction_id": 2,
+        "success": "2150012345",
+        "response_time": 9617,
+        "error": null,
+        "extracted_fields": 8
+      },
+      {
+        "transaction_id": 3,
+        "success": false,
+        "response_time": 51777,
+        "error": "Request failed with status code 500",
+        "extracted_fields": 0
+      }
+    ],
+    "summary": {
+      "total_tests": 3,
+      "successful": 2,
+      "success_rate": "66.7",
+      "avg_response_time": 24991,
+      "avg_extracted_fields": 5
+    }
+  }
+]
