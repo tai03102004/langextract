@@ -80,12 +80,12 @@ class LangExtractBenchmarkService {
             };
 
             const testTransactions = this.testTransactions.slice(0, 3);
+            console.log("Text", testTransactions);
             for (let i = 0; i < testTransactions.length; i++) {
                 const transaction = testTransactions[i];
                 console.log(`  📝 Testing transaction ${i + 1}/${testTransactions.length}`);
 
                 try {
-                    // ✅ Sửa: dùng model.model_id
                     const result = await langExtractService.extractTransactionInfo(transaction, model.model_id);
                     const success = !result.error && result.data && result.data.account_number;
 

@@ -1,0 +1,7 @@
+﻿"Description dataset","No.isolates","BenA·lengthalignment","BenA·ionmodel","CaM·lengthalignment","CaM·substitutionmodel","RPB2·lengthalignment","RPB2·substitutionmodel","Combined"
+"Overview","38","574","K2+G","617","TN93 +G","880","TN93+G+I","2071"
+"A. alliaceus-clade","41","431","","485","TN93 +G","760","K2+G","1676"
+"A. flavus-clade","133-138","481","","529","TN93 +G","843","+G","1853"
+"A. leporis-clade","16","510","K2+G","","TN93 +G","968","T™N93 +G","2033"
+"A. nomius-clade","25","504","K2+G","528","TN93 +G","923","TN93","1955"
+"A. tamarii-clade","23","502","K2+G","539","HKY","920","K2+G","1961"

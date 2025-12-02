@@ -2,3 +2,14 @@ fastapi
 pydantic
 langextract
 uvicorn
+
+pdf2image
+img2table
+pandas
+numpy
+
+langextract
+opencv-python
+docling
+paddlepaddle
+paddleocr

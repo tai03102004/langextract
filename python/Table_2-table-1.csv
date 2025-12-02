@@ -1,0 +1,7 @@
+,Description data set,No. isolates,"BenA, length alignme nt","BenA, substitut ion model","CaM, length alignme nt","CaM, substitut ion model","RPB2, length alignment","RPB2, substitution model",Combined
+0,Overview,38,574,K2 + G,617,TN93 + G,880,TN93 + G + I,2071
+1,A. alliaceus-clade,41,431,K2,485,TN93 + G,760,K2 + G,1676
+2,A. flavus-clade,133-138,481,K2,529,TN93 + G,843,TN93 + G,1853
+3,A. leporis-clade,16,510,K2 + G,555,TN93 + G,968,TN93 + G,2033
+4,A. nomius-clade,25,504,K2 + G,528,TN93 + G,923,TN93,1955
+5,A. tamarii-clade,23,502,K2 + G,539,HKY,920,K2 + G,1961
