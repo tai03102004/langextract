@@ -1,0 +1,25 @@
+﻿test_case_id,method,processing_time,tables_found,status,cell_accuracy,structure_accuracy,shape_match,total_cells,correct_cells,avg_similarity
+TC01,langextract,20.9617919921875,1,success,0.0,0.0,False,0,0.0,0.0
+TC01,ocr,3.4014699459075928,2,success,99.65277777777779,100.0,True,144,143.5,99.93055555555556
+TC01,docling,6.919327020645142,2,success,100.0,100.0,True,144,144.0,100.0
+TC01,transformer,7.474748134613037,2,success,99.30555555555556,100.0,True,144,143.0,99.79166666666666
+TC02,langextract,9.523123264312744,1,success,0.0,0.0,False,0,0.0,0.0
+TC02,ocr,3.0767219066619873,1,success,79.62962962962963,80.0,True,54,43.0,93.33112874779542
+TC02,docling,3.92067813873291,1,success,99.07407407407408,80.0,True,54,53.5,99.73544973544975
+TC02,transformer,4.929795026779175,1,success,67.5925925925926,80.0,True,54,36.5,87.88359788359789
+TC03,langextract,38.77718496322632,1,success,0.0,0.0,False,0,0.0,0.0
+TC03,ocr,94.28137493133545,26,success,0.0,0.0,False,0,0.0,0.0
+TC03,docling,36.35604691505432,26,success,0.0,0.0,False,0,0.0,0.0
+TC03,transformer,147.0570421218872,25,success,0.0,0.0,False,0,0.0,0.0
+TC04,langextract,60.103153228759766,0,"error: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60)",,,False,0,0.0,0.0
+TC04,ocr,6.34513783454895,1,success,0.0,0.0,False,0,0.0,0.0
+TC04,docling,3.1667799949645996,0,success,,,False,0,0.0,0.0
+TC04,transformer,13.849533796310425,1,success,0.0,0.0,False,0,0.0,0.0
+TC05,langextract,31.571686029434204,1,success,0.0,0.0,False,0,0.0,0.0
+TC05,ocr,14.931491136550903,4,success,0.0,0.0,False,0,0.0,0.0
+TC05,docling,9.020851850509644,3,success,0.0,0.0,False,0,0.0,0.0
+TC05,transformer,21.952688932418823,4,success,0.0,0.0,False,0,0.0,0.0
+TC06,langextract,0.0019559860229492188,0,error: No text found in PDF,,,False,0,0.0,0.0
+TC06,ocr,5.408343076705933,1,success,0.0,0.0,False,0,0.0,0.0
+TC06,docling,7.06141209602356,1,success,0.0,0.0,False,0,0.0,0.0
+TC06,transformer,10.28129506111145,1,success,0.0,0.0,False,0,0.0,0.0

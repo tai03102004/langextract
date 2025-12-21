@@ -1,0 +1,7 @@
+﻿id,name,pdf_file,description,complexity,expected_tables,table_features
+TC01,Simple Table,TC01_sample1.pdf,Bảng đơn giản; có border rõ ràng; không merge cell,Low,2,clear_borders | single_header | no_merge
+TC02,Simple Table with Line Breaks,TC02_Simple_Table_LineBreaks.pdf,Bảng đơn giản; có border rõ ràng; không merge cell; các ô có xuống dòng,Low,1,clear_borders | single_header | no_merge | line_breaks
+TC03,Complex Table with Merge Cells and long,TC03_Complex_Table_MergeCells_Long.pdf,Bảng phức tạp; có merge cells; multi-level headers; bảng dài,High,1,merged_cells | multi_level_headers | long_table
+TC04,Borderless Table,TC04_Table_No_Borders.pdf,Bảng không có đường kẻ; chỉ dựa vào khoảng trắng,Medium,1,no_borders | whitespace_separation
+TC05,Table with Special Characters and Empty Cells,TC05_Table_SpecialChars_EmptyCells.pdf,Bảng có các ký tự đặc biệt; có nhiều ô rỗng,Medium,1,special_characters | empty_cells
+TC06,Scanned PDF,TC06_scanned_table.pdf,PDF scan từ ảnh; chất lượng trung bình,High,1,scanned_image | low_quality

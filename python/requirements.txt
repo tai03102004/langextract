@@ -13,7 +13,7 @@ opencv-python
 docling
 paddlepaddle
 paddleocr
-
+Levenshtein
 
 ollama==0.4.4
 streamlit==1.40.0

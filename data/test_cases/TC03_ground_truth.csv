@@ -1,0 +1,281 @@
+Species,Isolate number,Provenance,GenBank accession no.,,,
+,,,ITS,BenA,CaM,RPB2
+Aspergillus aflatoxiformans,CBS 143679 = DTO 228-G2T = IBT 32085,"Agricultural soil, Minna, Niger State, Nigeria, ex type of Aspergillus aflatoxiformans",MG662388,MG517706,MG518076,MG517897
+,CBS 121.62 = IMI 093070 = NRRL A-11612 = IBT 3651 = IBT 3850 = DTO 010-H7 = DTO 223-C2 = DTO 228-H6,"Arachis hypogea, Nigeria, PKC Austwick, 1962 (former suggested neotype of Aspergillus parvisclerotigenus)",EF409240,MG517719,MG518089,MG517910
+,CBS 133264 = DTO 215-F3,"Edible mushroom, Lagos State, Nigeria",–,JX627690,JX627694,MG517871
+,CBS 133265 = DTO 215-F4,"Edible mushroom, Lagos State, Nigeria",–,JX627691,JX627695,MG517872
+,CBS 133923 = DTO 215-F1,"Peanut cake, Niger State, Minna, Nigeria",–,MG517680,MG518051,MG517869
+,CBS 133924 = DTO 215-F2,"Peanut cake, Niger State, Minna, Nigeria",–,MG517681,MG518052,MG517870
+,CBS 133925 = DTO 215-F5,"Peanut cake, Kaduna, Nigeria",–,MG517682,MG518053,MG517873
+,DTO 087-A2,"Soil near road, Ifaty, Madagascar",MG662405,MG517652,MG517990,MG517840
+,DTO 228-G1 = IBT 32079,"Stored rice grains from market, Abeokuta, Ogun State, Nigeria",MG662389,MG517705,MG518075,MG517896
+,DTO 228-G3 = IBT 32086 = CBS 135587,"Sesame kernels from market, Plateau State, Vwrang, Nigeria",MG662387,MG517707,MG518077,MG517898
+,DTO 228-G4 = IBT 32087 = CBS 135588,"Sesame kernels from market, Plateau State, Vwrang, Nigeria",–,MG517708,MG518078,MG517899
+,DTO 228-G5 = IBT 32088 = CBS 135589,"Sesame kernels from market, Plateau State, B/Ladi, Nigeria",–,MG517709,MG518079,MG517900
+,DTO 228-G6 = IBT 32089 = CBS 135404,"Sesame kernels from market, Plateau State, B/Ladi, Nigeria",–,MG517710,MG518080,MG517901
+,DTO 228-G7 = IBT 32090 = CBS 135405,"Sesame kernels from market, Plateau State, B/Ladi, Nigeria",–,MG517711,MG518081,MG517902
+,DTO 228-H2 = IBT 16807,"Mexican sesame seed imported to Denmark and sold in Lyngby, JC Frisvad, 1995",–,MG517715,MG518085,MG517906
+,DTO 228-H3 = IBT 16808,"Mexican sesame seed imported to Denmark and sold in Lyngby, JC Frisvad, 1995",–,MG517716,MG518086,MG517907
+,DTO 228-H7 = IBT 32083,"Agricultural soil, Minna State, Nigeria",–,MG517720,MG518090,MG517911
+Aspergillus alliaceus,CBS 536.65NT = DTO 046-B1 = NRRL 315 = IMI 051982 = QM 1885 = ATCC 10760 = WB 315 = Thom 4656 = IBT 13377 = CCF 5607,"Dead blister beetle (Microbasis albida), Washington D.C., USA, M.M. High, neotype of Aspergillus alliaceus",EF661551,EF661465,EF661534,MG517825
+,CBS 110.26 = DTO 034-B2 = DTO 046-A7 = IBT 14351 = NRRL 316 = WB 316 = IMI 016125 = Thom 4660 = CCF 5603,Allium cepa,MH279383,MG517632,MG518004,MG517815
+,CBS 143682 = DTO 326-D5 = S757 = CCF 5416 = IBT 33356,"Intestine of Allolobophora hrabei, National Reservation Pouzdřanská step - Kolby, Czech Republic, A. Nováková, 2013",MH279421,MG517764,MG518134,MG517955
+,CBS 511.69 = DTO 368-C3 = IBT 13379 = CCF 5682,"Soil, Turkey",MH279439,MG517786,MG518156,MG517976
+,CBS 542.65 = DTO 034-A9 = DTO 203-B1 = NRRL 4181 = ATCC 16891 = IBT 13378 = IMI 116711 = QM 1892 = WB 4181 = JH Warcup SA 117,"Soil, Australia, ex type of Petromyces alliaceus",EF661556,EF661466,EF661536,EU021644
+,DTO 363-E8 = NRRL 318 = IBT 21073 = CCF 5601,Unknown source,MH279430,MG517776,MG518146,MG517967
+,DTO 363-E9 = IBT 23440 = EXF-670 = CCF 5605,"Saltern, Secovlje, Slovenia, P. Zalar",MH279431,MG517777,MG518147,MG517968
+,DTO 363-F1 = IBT 21992 = A196 = CCF 5604,"Mixed feed, Spain",MH279432,MG517778,MG518148,MG517969
+,DTO 363-F2 = IBT 21754 = IMI 017295 = CCF 5606,Contaminant in ex type culture of Aspergillus wentii,MH279433,MG517779,MG518149,–
+,DTO 368-C4 = IMI 226007 = IBT 14130 = CCF 5680,"Soil, Calicut University, India",MH279440,MG517787,MG518157,MG517977
+,IBT 21770,"Prairie soil, Nebraska, USA",MH279446,MG517790,MG518161,MG517980
+,Mo2,"Soil above the Movile cave, Romania, 2011, A. Nováková",MH279443,MG517791,LT558734,MG517981
+,NRRL 1206 = Thom 5741,Unknown source,EF661543,EF661463,EF661535,EU021622
+,NRRL 20602 = ATCC 58745 = IBT 14317 = UAMH 2476,"Clinical isolate from human ear, Alberta, Canada, ex type of Aspergillus albertensis",EF661548,EF661464,EF661537,EU021628
+,S862 = CCF 4954,"Soil above the Movile cave, Romania, A. Nováková, 2013",MH279444,MG517615,MG518160,MG517795
+,S916 = CCF 5434,"Allolobophora hrabei casts, National Monument Ječmeniště, Czech Republic, A. Nováková, 2013",MH279442,MG517616,MG518159,MG517796
+,S98 = CCF 4953,"Soil above Movile cave, Romania, A. Nováková, 2012",MH279445,MG517614,LT558735,MG517794
+Aspergillus arachidicola,CBS 117610T = DTO 009-G3 = IBT 25020,"Arachis glabrata leaf, Mercedes, Corrientes province, Argentina, ex type of Aspergillus arachidicola",MF668184,EF203158,EF202049,MG517802
+,CBS 117611 = DTO 009-G4 = IBT 27185,"Arachis glabrata leaf, Mercedes, Corrientes province, Argentina",-,MG517620,MG518006,MG517803
+,CBS 117615 = DTO 010-H5 = IBT 28178,"Arachis glabrata leaf, Ituzaingó, Corrientes province, Argentina",–,MG517627,MG517999,MG517810
+,DTO 228-H9,"Leaf of Protea roupelliae var. roupelliae, Buffelskloof, South Africa",MG662384,MG517721,MG518091,MG517912
+Aspergillus aspearensis,CBS 143672T = DTO 203-D9 = CCTU758 = IBT 32590 = IBT 34544,"Soil, Aspear Island, Urmia Lake, Iran, soil, ex type of Aspergillus aspearensis",MG662398,MG517669,MG518040,MG517857
+,DTO 203-D4 = CBS 143671 = CCTU753 = IBT 34543,"Soil, Aspear Island, Urmia Lake, Iran",MG662399,MG517667,MG518038,MG517855
+,DTO 203-E1 = CBS 143673 = CCTU759 = IBT 32591,"Soil, Aspear Island, Urmia Lake Iran",MH279394,MG517670,MG518041,MG517858
+Aspergillus austwickii,CBS 143677T = DTO 228-F7 = IBT 32590 = IBT 32076,"Stored rice grains from market, Abeokuta, Ogun State, Nigeria, ex type of Aspergillus austwickii",MG662391,MG517702,MG518072,MG517893
+,CBS 135406 = DTO 228-G8 = IBT 32091,"Sesame kernels from market, Plateau State, B/Ladi, Nigeria",MG662386,MG517712,MG518082,MG517903
+,CBS 143678 = DTO 228-F8 = IBT 32077,"Stored rice grains from market, Abeokuta, Ogun State, Nigeria",–,MG517703,MG518073,MG517894
+,DTO 228-F9 = IBT 32078,"Stored rice grains from market, Abeokuta, Ogun State, Nigeria",MG662390,MG517704,MG518074,MG517895
+Aspergillus avenaceus,CBS 109.46T = DTO 009-H6 = DTO 006-A2 = NRRL 517 = ATCC 16861 = IMI 016140 = LCP 89.2592 = LSHB BB 155 = QM 6741 = WB 317 = IBT 4376 = IBT 4555,"Green pea (Pisum sativum), United Kingdom, G.E. Turfitt, 1938, ex type of Aspergillus avenaceus",AF104446,FJ491481,FJ491496,JN121424
+,CBS 102.45 = NCTC 6548,"Unknown source, United Kingdom",–,FJ491480,FJ491495,–
+Aspergillus bertholletius,CBS 143687 = DTO 223-D3 = IBT 29228 = CCT 7615T = ITAL 270/06,"Soil close to Bertholletia excelsa trees, Amazonian rainforest, Brazil, ex type of Aspergillus betholletius",JX198673,MG517689,JX198674,MG517880
+,IBT 29227 = ITAL 275/06 = CCT 7618,"Soil close to Bertholletia excelsa trees, Amazonian rainforest",–,–,–,–
+,IBT 30617 = ITAL 272/06 = CCT 7617,"Soil close to Bertholletia excelsa trees, Amazonian rainforest",–,–,–,–
+,DTO 223-D4 = IBT 30618 = ITAL 271/06 = CCT 7616,"Soil close to Bertholletia excelsa trees, Amazonian rainforest",–,–,–,–
+,IBT 31739 = ITAL 262 = CCT 7614,"Bertholletia excelsa nut shell, Market, Amazon",–,–,–,–
+Aspergillus caelatus,CBS 763.97T = DTO 046-A8 = NRRL 25528 = IBT 21091,"Soil, USA, ex type of Aspergillus caelatus",AF004930,MG517640,MG518018,MG517823
+,CBS 764.97 = NRRL 25404,"Soil, USA",–,EF203129,EF202036,-
+,DTO 276-I2,"Corn silage, Cordoba, Argentina",–,MG517738,MG518108,MG517929
+,DTO 285-H9,"Soil from corn field, Thailand",–,MG517751,MG518121,MG517942
+,DTO 285-I1,"Soil from corn field, Thailand",–,MG517752,MG518122,MG517943
+,NRRL 25566 = IBT 29770 = DTO 073-B7,"Soil, Japan",–,MG517651,MG518025,MG517839
+,NRRL 25567 = IBT 29773 = DTO 073-B8,"Soil, Japan",–,–,–,–
+,NRRL 25568 = IBT 29772 = DTO 073-B9,"Soil, Japan",–,–,–,–
+,NRRL 25569 = IBT 29771 = DTO 073-C1,"Soil, Japan",–,–,–,–
+,NRRL 26100,"Soil of peanut field, 2.5 km east of Herod, Georgia, USA",EF661550,EF661471,EF661523,EF661437
+Aspergillus cerealis,CBS 143674T = DTO 228-E7 = IBT 32067,"Stored rice grains from market, Shagamu, Ogun State, Nigeria, ex type of Aspergillus cerealis",MG662394,MG517693,MG518063,MG517884
+,CBS 143675 = DTO 228-E8 = IBT 32068,"Stored rice grains from market, Shagamu, Ogun State, Nigeria",–,MG517694,MG518064,MG517885
+,CBS 143676 = DTO 228-E9 = IBT 32069,"Stored maize grains from market, Shagamu, Ogun State, Nigeria",MG662393,MG517695,MG518065,MG517886
+,DTO 228-E6 = IBT 32076,"Stored rice grains from market, Shagamu, Ogun State, Nigeria",MG662395,MG517692,MG518062,MG517883
+,DTO 228-F1 = IBT 32070,"Stored maize grains from market, Shagamu, Ogun State, Nigeria",MG662392,MG517696,MG518066,MG517887
+,DTO 228-F2 = IBT 32071,"Stored maize grains from market, Shagamu, Ogun State, Nigeria",–,MG517697,MG518067,MG517888
+,DTO 228-F3 = IBT 32072,"Stored maize grains from market, Shagamu, Ogun State, Nigeria",–,MG517698,MG518068,MG517889
+,DTO 228-F4 = IBT 32073,"Stored maize grains from market, Shagamu, Ogun State, Nigeria",–,MG517699,MG518069,MG517890
+,DTO 228-F5 = IBT 32074,"Stored maize grains from market, Shagamu, Ogun State, Nigeria",–,MG517700,MG518070,MG517891
+,DTO 228-F6 = IBT 32075,"Stored maize grains from market, Shagamu, Ogun State, Nigeria",–,MG517701,MG518071,MG517892
+,MACI219 = NRRL 66709,"Peanut pods, Pokaha, Karhogo region, North part of Côte d’Ivoire (Ivory Coast)",KY689208,KY628791,KY661266,–
+,MACI254 = NRRL 66710,"Peanut pods, Gbandokaha, Karhogo region, North part of Côte d’Ivoire, 2014, probably ex type of Aspergillus korhogoensis",KY689209,KY628792,KY661267,–
+,MACI264 = NRRL 66711,"Peanut pods, Gbandokaha, Karhogo region, North part of Côte d’Ivoire, 2014",KY689210,KY628793,KY661268,–
+,MACI46 = NRRL 66708,"Peanut pods, Karhogo region, North part of Côte d’Ivoire, 2014",KY689207,KY628790,KY661265,–
+Aspergillus coremiiformis,CBS 553.77T = DTO 046-A3 = ATCC 38576 = IHEM 4503 = IMI 223069 = NRRL 13603 = NRRL 13756 = IBT 3822 = IBT 13506 = IBT 21944,"Soil, Tai National Forest, Ivory Coast, ex type of Aspergillus coremiiformis",AJ874114,FJ491482,FJ491488,JN121533
+Aspergillus flavus,CBS 100927T = NRRL 1957 = ATCC 16883 = CBS 569.65 = IMI 124930 = IBT 3605 = IBT 3610,"Cellophane diaphragm of an optical mask, South Pacific Islands, ex type of Aspergillus flavus",AF027863,EF661485,EF661508,EF661440
+,AF70,"Seed of upland cotton (Gossypium hirsutum), Arizona, USA, genome sequenced",–,genome*,genome*,genome*
+,CBS 110.55 = DTO 046-A1 = ATCC 12073 = NRRL 4743 = IMUR 236 = QM 6951 = WB 4743 = IBT 3819,"Air contaminant, Brazil, ex type of Aspergillus fasciculatus",FJ491463,EF203135,MG518005,MG517821
+,CBS 117637 = DTO 009-F9 = IBT 27177,"Arachis hypogea seed, Provincia de Formosa, Las Lomitas, Argentina",–,MG517618,MG518010,MG517800
+,CBS 117638 = DTO 009-G1,"Arachis hypogea seed, Provincia de Corrientes, Empedrado, Argentina",–,MG517619,MG518011,MG517801
+,CBS 117732 = NRRL 3251 = IBT 3597 = IBT 3618,"Walnut, USA (small sclerotia)",–,–,–,–
+,CBS 118.62 = DTO 010-H6 = IFO 7600 = IMI 091548 = NRRL A-11608 = RIB 1406,"Arachis hypogea, Brazil",–,MG517628,MG517996,MG517811
+,CBS 119368 = DTO 011-I2 = KACC 41730,"Wheat, Boun-up, Boukun, Chungbuk Prov., South Korea",–,MG517630,MG518002,MG517813
+,CBS 120.51 = DTO 046-A4 = ATCC 16859 = IFO 8135 = IMI 045644 = LCP 56.1517 = LSHB BB213 = NRRL 2097 = NRRL A-2022 = QM 6871 = WB 2097 = IBT 3636,"Culture contaminant, London, England, ex type of Aspergillus thomii",EF661549,MG517639,MG518012,MG517822
+,CBS 128202 = NRRL 3357 = ATCC 200026 = IBT 3696 = IBT 28518 = IBT 29624,"Peanut cotyledons, USA, genome sequenced",JX535495,genome*,genome*,genome*
+,CBS 133263 = DTO 215-E9,"Edible mushroom from market, Lagos State, Nigeria",–,JX627689,JX627693,MG517868
+,CBS 143688 = DTO 359-D8 = KACC 46894 = IBT 34547,"Air, South Korea",–,MG517774,MG518144,MG517965
+,CBS 143689 = DTO 359-D9 = KACC 46895 = IBT 34548,"Air, South Korea",–,MG517775,MG518145,MG517966
+,CBS 485.65 = DTO 046-B7 = ATCC 16870 = IFO 5324 = IMI 124932 = LCP 89.3556 = NRRL 4818 = WB 4818 = IBT 3641 = IBT 3657,"Butter, Japan, ex type of Aspergillus flavus var. columnaris and A. flavus var. asper",EF661563,MG517643,MG518014,MG517828
+,CBS 501.65 = DTO 046-B5 = ATCC 16862 = IMI 044882 = NRRL 4998 = WB 4998 = IBT 4378 = IBT 4402,"Cotton lintafelt, England, ex neotype of Aspergillus subolivaceus",EF661563,MG517642,MG518015,MG517827
+,CBS 542.69 = DTO 046-B4 = IMI 141553 = NRRL 3751 = GKC 1421(1) = IBT 3649,"Stratigraphic core sample, soil, Niigata Pref., Kambara, Japan, ex type of Aspergillus kambarensis",EF661554,MG517641,MG518016,MG517826
+,CBS 574.65 = DTO 303-C3 = ATCC 1010 = IMI 016142 = IMI 124935 = NRRL 506 = NRRL 1653,"Corn (Zea mays), Vermont, USA, representative of A. effusus fideThom & Church (1926) and Thom & Raper (1945) (Raper & Fennell 1965:377)",JN185448,JN185446,JN185447,JN185449
+,DTO 016-I5 = dH 16719,"Infection of leg (after liver transplantation), male 43 year old, China",–,MG517631,MG518003,MG517814
+,DTO 062-C7,"Peanut, Indonesia",–,MG517645,MG517985,MG517832
+,DTO 062-C8,"Peanut, Indonesia",–,MG517646,MG517986,MG517833
+,DTO 062-H7,"Peanut, Indonesia",–,MG517647,MG517987,MG517834
+,DTO 066-C3,"Corn kernels, Indonesia",–,MG517650,MG517989,MG517837
+,DTO 087-A3,"Forest soil, Ifaty, Madagascar",–,MG517653,MG517991,MG517841
+,DTO 087-A4,"Forest soil, Ifaty, Madagascar",–,MG517654,MG517992,MG517842
+,DTO 215-E5,"Laboratory contaminant, Nigeria",–,MG517679,MG518050,MG517867
+,DTO 258-C9,"Corn kernels, from East.Europe, imported to the Netherlands",–,MG517725,MG518095,MG517916
+,DTO 258-D6,"Corn kernels, from East.Europe, imported to the Netherlands",–,MG517728,MG518098,MG517919
+,DTO 276-H7,"Poultry feedstuff, Cordoba, Argentina",–,MG517734,MG518104,MG517925
+,DTO 276-H8,"Poultry feedstuff, Cordoba, Argentina",–,MG517735,MG518105,MG517926
+,DTO 276-H9,"Poultry feedstuff, Cordoba, Argentina",–,MG517736,MG518106,MG517927
+,DTO 276-I1,"Poultry feedstuff, Cordoba, Argentina",–,MG517737,MG518107,MG517928
+,DTO 276-I3,"Corn silage, Cordoba, Argentina",–,MG517739,MG518109,MG517930
+,DTO 276-I4,"Chinchilla feedstuffs, Cordoba, Argentina",–,MG517740,MG518110,MG517931
+,DTO 276-I5,"Chinchilla feedstuffs, Cordoba, Argentina",–,MG517741,MG518111,MG517932
+,DTO 276-I6,"Chinchilla feedstuffs, Cordoba, Argentina",–,MG517742,MG518112,MG517933
+,DTO 276-I7,"Chinchilla feedstuffs, Cordoba, Argentina",–,MG517743,MG518113,MG517934
+,DTO 276-I8,"Chinchilla feedstuffs, Cordoba, Argentina",–,MG517744,MG518114,MG517935
+,DTO 281-E2,"Rice, Thailand",–,MG517745,MG518115,MG517936
+,DTO 281-H8,"Rice, Thailand",–,MG517746,MG518116,MG517937
+,DTO 285-F6,"Soil from corn-field, Thailand",–,MG517748,MG518118,MG517939
+,DTO 285-G3,"Soil from corn-field, Thailand",–,MG517749,MG518119,MG517940
+,DTO 285-I4,"Soil from corn-field, Thailand",–,MG517753,MG518123,MG517944
+,DTO 300-C7,"Corn kernels, imported into the Netherlands",–,MG517754,MG518124,MG517945
+,DTO 300-D7,"Corn kernels, imported into the Netherlands",–,MG517755,MG518125,MG517946
+,DTO 359-D7 = IBT 34546 = KACC 46893,"Air, South Korea",–,–,–,–
+,DTO 359-E1 = IBT 34551 = KACC 46897,"Corn, South Korea",–,–,–,–
+,DTO 359-E2 = IBT 34550 = KACC 46913,"Soil, South Korea",–,–,–,–
+,DTO 359-E3 = KACC 46917,"Soil, Gyoenggi, Suwon, Korea",,,,
+,NRRL 20521,"Corn, Mississippi, USA",EF661547,EF661492,EF661514,EF661447
+,NRRL 3518 = NRRL A-14304,"Wheat flour, Peoria, Illinois, USA",EF661552,EF661487,EF661510,EF661442
+,NRRL 4822,Unknown source,EF661564,EF661490,EF661513,EF661445
+Aspergillus hancockii,FRR 3425T = CBS 142004 = DTO 360-G7,"Cultivated soil, Queensland, Australia, ex type of Aspergillus hancockii",KX858342,MBFL01001228.1:26000-28000,MBFL01000377.1:5000-7000,MBFL01000137:9000-11000
+,CBS 142001 = FRR 5050 = DTO 360-G4 = IBT 35030,"Soil, Lockhart, New South Wales, Australia, J.I. Pitt, 2003",–,–,–,–
+,CBS 142002 = FRR 6103 = DTO 360-G5 = IBT 35031,"Dried peas, Victoria, Australia, M. Bull, 1997",–,–,–,–
+Aspergillus lanosus,CBS 650.74T = IMI 130727 = QM 9183 = IBT 33634,"Soil under Tectona grandis, Uttar Pradesh, India",FJ491471,MG517633,MG518017,EU021642
+Aspergillus leporis,CBS 151.66T = IBT 3609 = DTO 199-B2 = CBS 129302 = RMF 99 = WB 5188 = ATCC 16490 = LCP 89.2583 = NRRL 3216,"Dung of Lepus townsensii, near Saratoga, Wyoming, USA, ex type of Aspergillus leporis",MH279391,MG517662,MG518033,MG517850
+,CBS 125914 = DTO 195-C3 = R1251,"A1 horizon soil, open area in sagebrush grassland, Rock Springs, Wyoming, USA (DOE site, 11 km west of Rock Springs)",MH279389,MG517660,MG518031,MG517848
+,CBS 129235 = DTO 303-C5,"Plant root tissue at non-seleniferous soil, Nunn, Colorado, USA",–,MG517760,MG518130,MG517951
+,CBS 129310 = RMF 9587 = DTO 201-H1,"A1 horizon soil, Canyonlands National Park, Utah, USA",MH279392,MG517663,MG518034,MG517851
+,CBS 129330 = RMF 7757 = DTO 202-A2,"Soil beneath Atriplex confertifolia, near Jim Bridger Power Plant, Sweetwater County, Wyoming, USA",MH279393,MG517664,MG518035,MG517852
+,CBS 129596 = DTO 206-A8 = RMF G74,"A1 horizon soil from bunchgrass rhizosphere, sagebrush grassland, Rock Springs, Wyoming, USA",MH279395,MG517673,MG518044,MG517861
+,CBS 132153 = DTO 210-E1,"Surface soil, near Dubois, Wyoming, USA",MH279396,MG517674,MG518045,MG517862
+,CBS 132177 = RMF 2050 = DTO 210-G5,"A1 Horizon soil, Grand Teton National Park, Wyoming, USA",MH279397,MG517676,MG518047,MG517864
+,CBS 349.81 = IBT 3600 = NRRL 6599 = DTO 303-C4 = ATCC 44565 = Strain O168,"Soil, Wyoming, USA",EF661569,EF661500,EF661542,EF661460
+,IBT 12296 = IBT 13578 = ATCC 76617,"Soil undre grass, Canyon de Chelly, Arizona, USA",–,–,–,–
+,IBT 16309 = RMF A39,"Soil under Atriplex gardneri, cool desert, 10 km north of Rock Springs, Great Divide Basin, Wyoming, USA",–,–,–,–
+,IBT 16585,"Soil under Atriplex confertifolia, cool desert, 10 km north of Rock Springs, Great Divide Basin, Wyoming, USA",–,–,–,–
+,CBS 132178 = RMF 2110 = DTO 210-G6,"A1 Horizon soil, Grand Teton National Park, Wyoming, USA",MH279398,MG517677,MG518048,MG517865
+Aspergillus luteovirescens,CBS 620.95T = DTO 010-H1,"Unknown source, ex type of Aspergillus luteovirescens",MG662406,MG517625,MG517998,MG517808
+,CBS 117187 = NRRL 25010 = IBT 23536,"Frass in a sílkworm rearing house, Japan, 1987, ex type of Aspergillus bombycis",AF104444,EF661498,EF661533,EF661458
+,DTO 073-C3 = NRRL 29236 = IBT 29777,"Frass in a silkworm rearing house, 1983, Ibaraki Prefecture, Japan",–,–,–,–
+,DTO 073-C4 = NRRL 29237 = IBT 29780,"Frass in a silkworm rearing house, 1983, Ibaraki Prefecture, Japan",–,–,–,–
+,DTO 073-C5 = NRRL 29241 = IBT 29779,"Frass in a silkworm rearing house, 1983, Oita Prefecture, Japan",–,–,–,–
+,ITAL 246 = IBT 31534,"Brazil nut, Amazon, Brazil",–,–,–,–
+,NRRL 25593 = IBT 23535,"Frass in a sílkworm rearing house, Japan, 1987",AF104445,EF661497,EF661532,EF661457
+,NRRL 29235 = DTO 073-C2 = IBT 23537 = IBT 29778,"Frass in a silkworn rearing house, Indonesia, 1999",AF338641,AY017575,AY017622,–
+Aspergillus minisclerotigenes,CBS 117635T = DTO 009-F7 = IBT 25032,"Arachis hypogea, Manfredi, Córdoba province, Argentina, ex type of Aspergillus minisclerotigenes",EF409239,EF203148,MG518009,MG517799
+,CBS 117633 = DTO 009-F5,"Arachis hypogea seed, Provincia de Formosa, Las Lomitas, Argentina",MG662408,EF203153,MG518007,MG517797
+,CBS 117634 = DTO 009-F6 = IBT 27197,"Arachis hypogea seed, Provincia de Cordoba, Alejandro, Argentina",MG662402,MG517617,MG518008,MG517798
+,DTO 045-F4 = FRR 4086,"Freshly pulled peanuts, Interlaw Road, Kingaropy, Queensland, Australia",–,MG517635,MG518021,MG517817
+,DTO 045-F5 = FRR 4937,"Soil, Australia",–,MG517636,MG518022,MG517818
+,DTO 045-F6 = FRR 5309,"Soil, Coalston Lakes, Queensland, Australia",–,MG517637,MG518023,MG517819
+,DTO 045-I9 = NRRL A-11611 = NRRL 6444 = IBT 3840,"Soil of peanut field, Nigeria",MH279386,MG517638,MG518024,MG517820
+,DTO 228-G9 = IBT 32094,"Agricultural soil, Jos, Plateau State, Nigeria",–,MG517713,MG518083,MG517904
+,DTO 228-H1 = IBT 32111,"Agricultural soil, Minna, Niger State, Nigeria",–,MG517714,MG518084,MG517905
+,DTO 228-H5 = IBT 24629,Curry powder from Kenya imported to Denmark,–,MG517718,MG518088,MG517909
+Aspergillus mottae,CBS 130016T = DTO 223-C8 = IBT 32309 = MUM 10.231,"Maize kernel, Braga, Portugal, ex type of Aspergillus mottae",JF412767,MG517687,MG518058,MG517878
+,MUM 10.233,"Maize, Portugal",–,HM803090,HM803013,HM802982
+Aspergillus neoalliaceus,CBS 143681T = DTO 326-D3 = S765 = CCF 5433 = IBT 33110 = IBT 33353,"Soil, Czech Republic, National Reservation Pouzdřanská step - Kolby, A. Nováková, 2013, ex type of Aspergillus neoalliaceus",MH279420,MG517763,MG518133,MG517954
+,CBS 134375 = S77 = CCF 4424,"Soil, National Monument Ječmeniště, Czech Republic, A. Nováková, 2012",MH279441,MG517613,MG518158,MG517793
+,DTO 326-D6 = S768 = CCF 5414 = IBT 33111 = IBT 33357,"Drilosphere soil, National Reservation Pouzdřanská step – Kolby, Czech Republic, A. Nováková, 2013",MH279422,MG517765,MG518135,MG517956
+,DTO 326-D7 = B6 = CCF 5408 = IBT 32726,"Soil, National Reservation Pouzdřanská step – Kolby, Czech Republic, A. Nováková, 2010",MH279423,MG517766,MG518136,MG517957
+,DTO 326-E1 = S756 = CCF 5410 = IBT 33359,"Soil, National monument Ječmeniště, Czech Republic, A. Nováková, 2013",MH279424,MG517768,MG518138,MG517959
+,DTO 326-E2 = S766 = CCF 5412 = IBT 33355,"Allolobophora hrabei cast, National Reservation Pouzdřanská step – Kolby, Czech Republic, A. Nováková, 2013",MH279425,MG517769,MG518139,MG517960
+,DTO 326-E4 = S764 = CCF 5411 = IBT 33358,"Soil, National monument Ječmeniště, Czech Republic, A. Nováková, 2013",MH279426,MG517770,MG518140,MG517961
+,DTO 326-E5 = S913 = CCF 5415 = IBT 33351,"Soil, National monument Ječmeniště, Czech Republic, A. Nováková, 2013",MH279427,MG517771,MG518141,MG517962
+,DTO 326-E7 = S767 = CCF 5413 = IBT 33109 = IBT 33352,"Soil, National Reservation Pouzdřanská step – Kolby, Czech Republic, A. Nováková, 2013",MH279428,MG517772,MG518142,MG517963
+,CCF 5815 = S1429,"Soil, above the Liliecilor de la Gura Dobrogei cave, Dobrogea, Romania, A. Nováková, 2016",–,–,–,–
+,CCF 5840 = S988,"Soil, above the Limanu cave, Dobrogea, Romania, A. Nováková, 2014",–,–,–,–
+Aspergillus nomius,CBS 260.88T = NRRL 13137 = IBT 3656 = IBT4966 = FDA M93,"Wheat, USA, A.F. Schindler, 1965, ex type of Aspergillus nomius",AF027860,EF661494,EF661531,EF661456
+,CBS 117629 = NRRL 25585 = IBT 23530,"Silk worm frass, Japan, 1987",–,–,–,–
+,CBS 399.93 = DTO 301-I8 = AS 3.4626 = IBT 14647,"Soil, Guandong, Zhaoqing, China, ex type of Aspergillus zhaoqingensis",FJ491472,MG517757,MG518127,MG517948
+,DTO 161-F1,"Bamboo sample, Walailak, Thailand",MH279387,MG517656,MG518026,MG517844
+,DTO 161-F2,"Bamboo sample, Addis Abeba, Ethiopia",MH279388,MG517657,MG518027,MG517845
+,DTO 226-I5,"Storage room of cassava, Yogyakarta, Indonesia",–,MG517690,MG518060,MG517881
+,DTO 227-B8,"Storage room of cassava, Yogyakarta, Indonesia",–,MG517691,MG518061,MG517882
+,DTO 243-E8,"HIV-Care room, Indonesia",–,MG517722,MG518092,MG517913
+,DTO 247-F9,"House dust, Mexico",–,MG517723,MG518093,MG517914
+,DTO 247-G8,"House dust, Mexico",–,MG517724,MG518094,MG517915
+,DTO 318-F4,"Heat treated pectin, Germany",–,MG517761,MG518131,MG517952
+,DTO 321-F2,"Cystic fibrosis patient material, the Netherlands",MH279419,MG517762,MG518132,MG517953
+,IMI 190557 = NRRL 20745 = IBT 19368,"Dried Curcuma longa, Central Crops Reseaerch Institute, India",AF338612,AY017543,AY017590,–
+,NRRL 13138 = IBT 4493 = IBT 4495 = IBT 5054,"Sub-isolate from a mixed culture, U.L. Diener, 1967",–,–,–,–
+,NRRL 3161 = IBT 3661 = IBT 4975,"Cycas circinalis, Guam, USA, A.C. Keyl, 1965",AF338642,EF661493,EF661530,EF661453
+Aspergillus novoparasiticus,CBS 126849T = DTO 223-C3 = DTO 223-C4 = FMR 10121 = LEMI 250 = IBT 32311,"Sputum of leukemic patient, Sao Paolo, Brazil, ex type of Aspergillus novoparasiticus",MG662397,MG517684,MG518055,MG517875
+,CBS 126850 = DTO 223-C5 = FMR 10158 = LEMI 149 IOP = IBT 32312,"Air sample, Sao Paulo, Brazil",MH279415,MG517686,MG518057,MG517877
+Aspergillus oryzae,CBS 102.07T = CBS 110.47 = CBS 100925 = ATCC 1011 = ATCC 12891 = ATCC 4814 = ATCC 7651 = ATCC 9102 = CECT 2094 = IFO 4075 = IFO 5375 = IMI 016266ii = IMI 016266 = IMI 044242 = LSHBA c.19 = NCTC 598 = NRRL 447 = NRRL 692 = QM 6735 = Thom 113 = WB 447 = IBT 21451,"Unknown source, ex type of Aspergillus oryzae",EF661560,EF661483,EF661506,EF661438
+,NRRL 458 = ATCC 10063 = ATCC 9376 = IMI 051983,Unknown source,EF661562,EF661484,EF661507,EF661439
+,RIB40 = ATCC 42149 = JCM 13832 = NRRL 5590 = IBT 28103,"Horsebean, Muruka soy saúce factory, Mimaki-mura, Kuse-gun, Kyoto, Japan, genome sequenced",–,genome*,genome*,genome*
+,Strain 100-8,"Mutant of A. oryzae 3.042, which is used in soy sauce fermentation, China, genome sequenced",–,genome*,genome*,genome*
+Aspergillus parasiticus,CBS 100926T = NRRL 502 = ATCC 1018 = ATCC 6474 = ATCC 7865 = IMI 015957 = IMI 015957ii = IMI 015597iv = IMI 015957vi = IMI 015957vii = IMI 015957ix = NRRL 1731 = IBT 3607,"Sugar cane mealy bug (Pseudococcus calceolariae), Hawaii, USA, ex neotype of Aspergillus parasiticus",AF027862,EF661481,EF661516,EF661449
+,CBS 104.22 = DTO 009-H2 = IFO 5867,Unknown source,–,MG517621,MG517994,MG517804
+,CBS 119.51 = DTO 009-H3 = IFO 5337,"Unknown substrate, Japan",–,MG517622,MG518000,MG517805
+,CBS 138.52 = DTO 009-H4,"Unknown substrate, Japan",–,MG517623,MG517997,MG517806
+,CBS 260.67 = DTO 046-C2 = ATCC 15517 = CCM F-550 = CECT 2680 = DSM 2038 = IFO 30179 = IHEM 4387 = IMI 120920 = IMI 229041 = MUCL 31311,"Unknown source, Japan, ex type of Aspergillus parasiticus var. globosus",MG662400,EF203156,MG518013,MG517830
+,CBS 580.65 = DTO 046-B9 = ATCC 1014 = ATCC 16863 = IMI 016127ii = LSHB Ac22 = NCTC 974 = NRRL 424 = QM 7475 = VKM F-2041 = WB 424 = IBT 3664 = IBT 3670 = IBT 10828,"Soil, Georgia, USA, ex type of Aspergillus terricola var. americana",MG662404,MG517644,MG518030,MG517829
+,CBS 822.72 = DTO 046-A9 = ATCC 22789 = IFO 30109 = IMI 089717 = RIB 4002 = TRI M 39 = IBT 4377 = IBT 4408,"Arachis hypogea, Uganda, ex type of Aspergillus toxicarius",MG662401,EF203163,MG518019,MG517824
+,CBS 921.70 = ATCC 26691 = CECT 2681 = IHEM 4383 = NRRL 2999 = IBT 3634 = IBT 15675,"Unknown source, Uganda",AB008418,–,–,–
+,DTO 203-C4,"Soil, Aspear Island, Iran",–,MG517666,MG518037,MG517854
+,DTO 203-H7,"Soil, Kabodan Island, Iran",–,MG517672,MG518043,MG517860
+,DTO 258-D1,Corn kernels from East-Europe imported to the Netherlands,–,MG517726,MG518096,MG517917
+,DTO 258-D4,Corn kernels from East-Europe imported to the Netherlands,–,MG517727,MG518097,MG517918
+,DTO 283-C6,"Soil from corn.field, Thailand",–,MG517747,MG518117,MG517938
+,DTO 285-G9,"Soil from corn.field, Thailand",–,MG517750,MG518120,MG517941
+,DTO 301-E6,"Corn kernels, imported to the Netherlands",–,MG517756,MG518126,MG517947
+,DTO 303-C2,Unknown source,–,MG517759,MG518129,MG517950
+,NRRL 13005 = IBT 4564,"Microarthropod in beech forest litter, Michigan, USA (produces sclerotia)",–,–,–,–
+,NRRL 4123,Toxic grain,EF661555,EF661479,EF661518,EF661451
+,NRRL 6433 = IBT 4375,"Corn, North Carolina, USA",EF661568,EF661480,EF661519,EF661452
+Aspergillus pipericola,CBS 143680T = DTO 228-H4 = IBT 24628,"Black pepper, unknown origin, imported to Denmark, ex type of Aspergillus pipericola",MG662385,MG517717,MG518087,MG517908
+Aspergillus pseudocaelatus,CBS 117616T = DTO 010-H4 = IBT 27191,"Arachis burkartii leaf, Mercedes, Corrientes province, Ituzaingó, Argentina",EF409242,MG517626,MG517995,MG517809
+,ITAL 103CC = IBT 29230,"Peanuts, Brazil",–,–,–,–
+,ITAL 1300F/09 = IBT 30532,"Brazil nuts, Amazon, Brazil",–,–,–,–
+Aspergillus pseudonomius,CBS 119388T = DTO 009-F1 = NRRL 3353 = IBT 27864 = IBT 14897,"Diseased alkali bee (Nomius sp.), Wyoming, USA",AF338643,EF661495,EF661529,EF661454
+,DTO 177-G7,"Soil of corn-field, Phayao, Thailand",–,MG517659,MG518029,MG517847
+,DTO 262-F3,"Indoor environment of child hospital, Izmir, Turkey",–,MG517729,MG518099,MG517920
+,DTO 267-D6,"House dust, Micronesia",MH279416,MG517731,MG518101,MG517922
+,DTO 267-H7,"House dust, Thailand",MH279417,MG517732,MG518102,MG517923
+,DTO 267-I4,"House dust, Thailand",–,MG517733,MG518103,MG517924
+,IBT 12657 = DTO 303-A4,"Seed, unknown location",MH279418,MG517758,MG518128,MG517949
+,ITAL 823/07,"Brazil nut, Amazon, Brazil",–,–,–,–
+,ITAL 849F = IBT 32759,"Brazil nut, Amazonas, Brazil",–,–,–,–
+,NRRL 6552,"Diseased pine sawfly, Wisconsin, USA, C.R. Benjamin, 1967",–,EF661496,EF661528,EF661455
+Aspergillus pseudotamarii,CBS 766.97T = NRRL 25517 = DTO 046-C1 = IBT 21092,"Soil, teafield, Japan",AF272574,EF661477,EF661521,EU021631
+,CBS 117625 = NRRL 25518 = IBT 21090,"Soil, teafield, Japan",–,–,–,–
+,CBS 117628 = NRRL 25519 = IBT 21093,"Soil, teafield, Japan",–,–,–,–
+,CBS 765.97 = NRRL 443,Unknown source,AF004931,EF661476,EF661520,EU021650
+,ITAL 791F/09 = IBT 30530,"Brazil nut, Amazonas, Brazil",–,–,–,–
+,ITAL 792F/09 = IBT 30531,"Brazil nut, Amazonas, Brazil",–,–,–,–
+Aspergillus sergii,CBS 130017T = DTO 223-C9 = IBT 32292 = IBT 32293,"Fruits of Prunus dulcis, Trans-Os-Montes processing plant, Faro, Portugal, ex type of Aspergillus sergii",JF412769,MG517688,MG518059,MG517879
+Aspergillus sojae,CBS 100928T = DTO 046-C3 = ATCC 42251 = IAM 2669 = IFO 4244 = IFO 30112 = IMI 191300 = RIB 1045 = SRRC 1126 = K. Sakaguchi SH-10-6 = IBT 21642 = IBT 32109,"Koji of soy sauce, shoyu brewing, 1942, ex neotype of Aspergillus sojae",KJ175434,EF203168,EF202041,MG517831
+,CBS 100929 = NISL 1909 = IBT 21643,"Soy sauce, Japan",–,–,–,–
+,CBS 100930 = NISL 1939 = IBT 21644,"Soy sauce, Japan",–,–,–,–
+,CBS 100931 = NISL 1905 = IBT 21645,"Soy sauce, Japan",–,–,–,–
+,CBS 100932 = IAM 2665 = IFO 4239 = NISL 1777 = IBT 21646,"Soy sauce, Japan",–,–,–,–
+,CBS 100933 = NISL 1939 = IBT 21647,"Soy sauce, Japan",–,–,–,–
+,CBS 100934 = IAM 2718 = IFO 4274 = RIB 1050 = NISL 1849 = IBT 21648,"Soy sauce, Japan",–,–,–,–
+,CBS 100935 = NISL 1920 = IBT 21649,"Soy sauce, Japan",–,–,–,–
+,CBS 100936 = IAM 2678 = RIB 1024 = IBT 21650,"Soy sauce, Japan (produces versicolorins)",–,–,–,–
+,CBS 126.59 = IFO 5241 = IMI 191304 = Ohashi 1124 = IBT 3669 = IBT 3682,"Miso brewing, Okayama Agricultural Experiment Station, Japan",–,–,–,–
+,CBS 133.52 = ATCC 9362 = CECT 2095 = IMI 087159 = NRRL 1947 = NRRL 1988 = NRRL 4841 = WB 4841 = IBT 3595,"Soy sauce, unknown origin",EF661546,EF661482,EF661517,EF661450
+,DTO 173-C3 = IFM 46699,Unknown source,–,MG517658,MG518028,MG517846
+,NRRL 5594 = IBT 4600,Unknown source,–,–,–,–
+Aspergillus subflavus,CBS 143683T = DTO 326-E8 = S778 = CCF 4957 = NRRL 66254 = IBT 34939,"Soil, near Movile Cave, Romania, A. Nováková, 2013, ex type of Aspergillus subflavus",MH279429,MG517773,MG518143,MG517964
+,S843b,"Moonmilk, Na Špičáku cave, Czech Republic, A. Nováková, 2013",MH279449,MG517792,MG518164,MG517983
+Aspergillus tamarii,CBS 104.13T = NRRL 20818 = QM 9374 = IBT 3648,"Activated carbon, unknown origin, ex neotype of Aspergillus tamarii",AF004929,EF661474,EF661526,EU021629
+,CBS 133097 = DTO 213-H5 = NRRL 4959,"Unknown source, representative of Aspergillus tamarii var. crassus",MG662403,MG517678,MG518049,MG517866
+,CBS 133393 = NRRL 4966 = IMI 016124 = IBT 3628,"Seed, cacao, unknown origin",EU021614,EU021673,EU021686,EU021652
+,DTO 010-G9 = CBS 167.63 = NRRL 4680 = ATCC 15054 = IMI 172295 = QM 8903 = WB 4680 = IBT 22566,"Mouldy bread, India (ex type of Aspergillus indicus and A. terrricola var. indicus). Isolation of dihydrocanadensolide, fumaric acid, fumaryl-D,L-alanine, indazonic acid = cyclopiazonic acid, kojic acid, succinic acid and 3-nitropropionic acid show that these metabolites can be produced by A. tamarii (Birch et al., 1968)",MG662407,MG517624,MG518001,MG517807
+,DTO 065-A4,"Indoor environment, Germany",MH279381,MG517648,MG517984,MG517835
+,DTO 066-A1,"Corn kernels, Indonesia",-,MG517649,MG517988,MG517836
+,DTO 145-C3,"Indoor environment, Germany",MH279382,MG517655,MG517993,MG517843
+,DTO 266-D7,"House dust, Mexico",-,MG517730,MG518100,MG517921
+,DTO 364-E3,"Air in chocolate factory, the Netherlands",MH279435,MG517781,MG518151,MG517971
+,NRRL 425,"Unknown source, representative of Aspergillus lutescens nomen nudum",EF661558,EF661475,EF661524,EU021648
+,NRRL 426 = DTO 010-H3 = CBS 579.65 = IBT 3681 = IBT 3826 = IBT 10827,"Unknown substrate, USA, ex neotype of Aspergillus terricola",EF661559,EF661472,EF661525,EU021649
+,NRRL 4911 = CBS 484.65 = IBT 3659,"Air contaminant, Brazil, ex neotype of Aspergillus flavofurcatus",EF661565,EF661473,EF661527,EU021651
+Aspergillus togoensis,CBS 205.75T = LCP 67.3456 = NRRL 13551 = IBT 14899 = IBT 21943,"Decaying fruit of Landolphia sp., Central African Republic, ex type of Aspergillus togoensis",–,–,–,–
+,CBS 272.89 = DTO 034-C1 = NRRL 13550 = IBT 14989 = IBT 21943,"Seed, La Maboké, Central African Republic",AJ874113,FJ491477,FJ491489,JN121479
+Aspergillus transmontanensis,CBS 130015T = MUM 10.214 = IBT 32313,"Almond, Portugal, ex type of Aspergillus transmontanensis",JF412774,HM803101,HM803020,HM802980
+,MUM 10.205,"Almond, Portugal",JF412771,HM803087,HM803021,HM802979
+,MUM 10.211,"Almond, Portugal",JF412772,HM803102,HM803023,HM802968
+,MUM 10.221,"Almond, Portugal",JF446612,HM803093,HM803028,HM802972
+Aspergillus vandermerwei,CBS 612.78T = DTO 069-D2 = DTO 034-B5 = NRRL 5108 = IBT 13876 = CCF 5683,"Unknown source, Buenos Aires, Argentina, ex type of Aspergillus vandermerwei",EF661567,EF661469,EF661540,MG517838
+,DTO 199-A9 = CBS 129201 = DMSA 706 = IBT 16758 = CCF 5679,"Unknown source, USA, California",MH279390,MG517661,MG518032,MG517849
+,DTO 210-F8 = CBS 132171 = IBT 16423 = RMF 7709,"Native shortgrass prairie, soil (1 m deep), Pawnee National Grassland, Colorado, USA",–,MG517675,MG518046,MG517863
+,DTO 363-F3 = NRRL 1237 = IBT 21072 = CCF 5602,Unknown source,MH279434,MG517780,MG518150,MG517970
+,DTO 368-B9 = IBT 16661 = CCF 5684,"Soil under crested wheat grass, 2 km south of Pryor, Colorado, USA",MH279436,MG517783,MG518153,MG517973
+,DTO 368-C1 = NRRL 1236 = IBT 13865 = CCF 5685,Unknown source,MH279437,MG517784,MG518154,MG517974
+,DTO 368-C2 = CBS 126709 = RMF 9585 = IBT 20468 = CCF 5681,"Grassland, A1 soil horizon soil, Canyonlands National park, Utah, USA",MH279438,MG517785,MG518155,MG517975
+,IBT 16662,"Soil under Senecio sp. (Asteraceae), Pablo Alto, Chaco Canyon, New Mexico, USA",MH279447,MG517788,MG518162,MG517978
+,IBT 20491,"A1 soil horizon, Canyonlands National park, Utah, USA",MH279448,MG517789,MG518163,MG517979

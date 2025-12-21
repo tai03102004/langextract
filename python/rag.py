@@ -87,85 +87,6 @@ def extract_model_names(models_info: Any) -> Tuple[str, ...]:
         logger.error(f"Error extracting model names: {e}")
         return tuple()
 
-def create_vector_db(file_upload) -> Chroma:
-    """
-    Create a vector database from an uploaded PDF file using Docling.
-    Better table extraction with TableFormer.
-
-    Args:
-        file_upload (st.UploadedFile): Streamlit file upload object containing the PDF.
-
-    Returns:
-        Chroma: A vector store containing the processed document chunks.
-    """
-    logger.info(f"Creating vector DB with Docling from file upload: {file_upload.name}")
-    temp_dir = tempfile.mkdtemp()
-
-    path = os.path.join(temp_dir, file_upload.name)
-    with open(path, "wb") as f:
-        f.write(file_upload.getvalue())
-        logger.info(f"File saved to temporary path: {path}")
-    
-    try:
-        # Configure Docling pipeline
-        pipeline_options = PdfPipelineOptions(do_table_structure=True)
-        pipeline_options.do_table_structure = True
-        pipeline_options.table_structure_options.do_cell_matching = True
-        pipeline_options.table_structure_options.mode = TableFormerMode.ACCURATE
-        converter = DocumentConverter(
-            format_options={
-                InputFormat.PDF: PdfFormatOption(
-                    pipeline_options=pipeline_options,
-                    backend=PyPdfiumDocumentBackend
-                )
-            }
-        )
-        
-        result = converter.convert(path)
-        logger.info("PDF converted with Docling")
-        
-        # Convert to LangChain documents
-        full_markdown = result.document.export_to_markdown()
-
-        doc = Document(
-            page_content=full_markdown,
-            metadata={
-                "source": file_upload.name,
-                "extraction_method": "docling_tableformer",
-                "total_pages": len(result.document.pages) if hasattr(result.document, 'pages') else 1
-            }
-        )
-        documents = [doc]
-        
-        logger.info(f"Converted {len(documents)} pages to LangChain documents")
-        
-        # Split documents into chunks
-        text_splitter = RecursiveCharacterTextSplitter(
-            chunk_size=7500, 
-            chunk_overlap=100
-        )
-        chunks = text_splitter.split_documents(documents)
-        logger.info(f"Document split into {len(chunks)} chunks")
-
-        # Create vector database
-        embeddings = OllamaEmbeddings(model="nomic-embed-text")
-        vector_db = Chroma.from_documents(
-            documents=chunks,
-            embedding=embeddings,
-            persist_directory=PERSIST_DIRECTORY,
-            collection_name=f"docling_pdf_{hash(file_upload.name)}"
-        )
-        logger.info("Vector DB created with Docling extraction")
-
-    except Exception as e:
-        logger.error(f"Error during Docling processing: {e}")
-        raise
-    finally:
-        shutil.rmtree(temp_dir)
-        logger.info(f"Temporary directory {temp_dir} removed")
-    
-    return vector_db
-
 def process_question(question: str, vector_db: Chroma, selected_model: str) -> str:
     """
     Process a user question using the vector database and selected language model.
@@ -220,7 +141,6 @@ def process_question(question: str, vector_db: Chroma, selected_model: str) -> s
     response = chain.invoke(question)
     logger.info("Question processed and response generated")
     return response
-
 
 @st.cache_data
 def extract_all_pages_as_images(file_upload) -> List[Any]:
@@ -437,6 +357,8 @@ def main() -> None:
                                         "total_pages": len(result.document.pages) if hasattr(result.document, 'pages') else 1
                                     }
                                 )
+
+                                print(f"Document metadata: {doc.metadata}")
                                 
                                 # Split document
                                 text_splitter = RecursiveCharacterTextSplitter(
