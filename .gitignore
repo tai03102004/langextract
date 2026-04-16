@@ -1,3 +1,8 @@
 .venv
 node_modules
 data/table_2.xlsx
+.agent
+.gitignore
+CONTINUITY.md
+data/pubtabnet-1M
+data/table-seg-checkpoints-v2

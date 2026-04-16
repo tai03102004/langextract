@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -c \"import sys; sys.path.insert\\(0, ''''/Users/macbookpro14m1pro/Desktop/RagTable/python/.venv/lib/python3.12/site-packages''''\\); import cv2; print\\(dir\\(cv2\\)[:10]\\)\")",
+      "Bash(find /Users/macbookpro14m1pro/Desktop/RagTable/python/.venv -name cv2.cpython* -o -name __init__.py -path */cv2/*)",
+      "Bash(uv --version)",
+      "Bash(uv pip:*)",
+      "Bash(uv run:*)",
+      "Bash(.venv/bin/python -c \"import cv2; print\\(cv2.__version__\\); print\\('imread:', hasattr\\(cv2, 'imread'\\)\\)\")",
+      "Bash(.venv/bin/python -c \"import cv2; print\\([a for a in dir\\(cv2\\) if not a.startswith\\('_'\\)][:15]\\)\")",
+      "Bash(find /Users/macbookpro14m1pro/Desktop/RagTable/python/.venv -name *.so -path */cv2*)",
+      "Bash(find /Users/macbookpro14m1pro/Desktop/RagTable/python/.venv -name cv2*.so)",
+      "Bash(.venv/bin/python -m pip install --force-reinstall opencv-contrib-python==4.10.0.84)",
+      "Bash(.venv/bin/python -c \"import cv2; print\\('imread:', hasattr\\(cv2,'imread'\\)\\); print\\('rectangle:', hasattr\\(cv2,'rectangle'\\)\\); print\\('putText:', hasattr\\(cv2,'putText'\\)\\); print\\('threshold:', hasattr\\(cv2,'threshold'\\)\\); print\\('findContours:', hasattr\\(cv2,'findContours'\\)\\)\")",
+      "Bash(.venv/bin/python -c \"\nimport cv2, numpy as np, pytesseract, torch, functools\nfrom pathlib import Path\nfrom PIL import Image\nimport matplotlib.pyplot as plt\nfrom transformers import AutoImageProcessor, AutoModelForObjectDetection\nimport torch.nn as nn, torch.nn.functional as F, torchvision.transforms.functional as TF\nimport pytesseract as pyt\nfrom img2table.document import Image as Img2Img\nfrom img2table.ocr import EasyOCR\nprint\\('ALL IMPORTS OK'\\)\n\" 2>&1)",
+      "Bash(.venv/bin/python -c \"\nimport cv2, numpy as np, functools\nfrom pathlib import Path\nfrom PIL import Image\nimport pytesseract\nfrom img2table.document import Image as Img2Img\nfrom img2table.ocr import EasyOCR\nprint\\('ALL IMPORTS OK'\\)\nprint\\('cv2 version:', cv2.__version__\\)\nprint\\('cv2.imread:', hasattr\\(cv2,'imread'\\)\\)\n\")",
+      "Bash(.venv/bin/python -c \"\nimport cv2, numpy as np, functools\nfrom pathlib import Path\nfrom PIL import Image\nimport pytesseract\nfrom img2table.document import Image as Img2Img\nprint\\('cv2.imread:', hasattr\\(cv2,'imread'\\)\\)\nfrom img2table.ocr import EasyOCR\nprint\\('After EasyOCR - cv2.imread:', hasattr\\(cv2,'imread'\\)\\)\n\")",
+      "Bash(.venv/bin/python -c \"\nimport cv2\nprint\\('before imread:', hasattr\\(cv2,'imread'\\)\\)\nimport img2table.ocr.easyocr\nprint\\('after img2table.ocr.easyocr imread:', hasattr\\(cv2,'imread'\\)\\)\n\")",
+      "Bash(.venv/bin/python -c \"\nimport cv2\nprint\\('cv2 dir:', [a for a in dir\\(cv2\\) if not a.startswith\\('_'\\)][:5]\\)\nimport sys\nprint\\('cv2 path:', cv2.__file__\\)\n\")",
+      "Bash(find /Users/macbookpro14m1pro/Desktop/RagTable/python/.venv -name cv2*.so -o -name *cv2*.dist-info)",
+      "Bash(find /Users/macbookpro14m1pro/Desktop/RagTable/python/.venv -name cv2* -type f)",
+      "Bash(.venv/bin/python -c \"import cv2; print\\('cv2 dir:', [a for a in dir\\(cv2\\) if not a.startswith\\('_'\\)][:5]\\); print\\('cv2.__file__:', cv2.__file__\\)\")",
+      "Bash(.venv/bin/python -c \"\nimport cv2, numpy as np, functools\nfrom pathlib import Path\nfrom PIL import Image\nimport pytesseract\nprint\\('cv2.imread:', hasattr\\(cv2,'imread'\\)\\)\nfrom img2table.document import Image as Img2Img\nprint\\('After img2table.document - cv2.imread:', hasattr\\(cv2,'imread'\\)\\)\nfrom img2table.ocr import EasyOCR\nprint\\('After img2table.ocr.EasyOCR - cv2.imread:', hasattr\\(cv2,'imread'\\)\\)\nprint\\('ALL OK'\\)\n\")",
+      "Bash(.venv/bin/python -c \"import cv2; print\\('cv2 OK, imread:', hasattr\\(cv2,'imread'\\)\\)\")",
+      "Bash(.venv/bin/python -c \"import cv2; print\\('cv2 OK, imread:', hasattr\\(cv2,'imread'\\)\\); print\\('cv2.__file__:', cv2.__file__\\)\")"
+    ]
+  }
+}

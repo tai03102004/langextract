@@ -1,150 +1,157 @@
-# AppBank - Phân tích giao dịch ngân hàng bằng AI
+# RagTable — Table Extraction for RAG Pipeline
 
-Ứng dụng phân tích và quản lý giao dịch ngân hàng từ văn bản được chia sẻ, sử dụng Google Gemini AI và Supabase.
+Extract structured tables from PDFs/images using the best method for your RAG workflow.
 
-## Tính năng
+## Architecture Overview
 
-- 🤖 Phân tích văn bản giao dịch bằng Google Gemini AI
-- 💾 Lưu trữ dữ liệu trên Supabase
-- 📊 Thống kê giao dịch theo thời gian thực
-- 🔍 Trích xuất thông tin: số tài khoản, số tiền, nội dung, loại giao dịch
-- 📱 Giao diện web responsive đơn giản
+```
+Input PDF/Image
+      │
+      ▼
+┌─────────────────────────────────────────────┐
+│  Step 1: Compare 6 Baseline Methods         │
+│  (Docling / img2table / Tesseract /         │
+│   Rule-based / Table Transformer / UNet)    │
+└──────────────────┬──────────────────────────┘
+                   │ best method selected
+                   ▼
+┌─────────────────────────────────────────────┐
+│  Step 2: U-Net Structure Segmentation       │
+│  5-channel mask: row / col / col_header /   │
+│  row_header / span                          │
+└──────────────────┬──────────────────────────┘
+                   ▼
+┌─────────────────────────────────────────────┐
+│  Step 3: Grid Reconstruction                │
+│  Row/col masks → cell bounding boxes        │
+└──────────────────┬──────────────────────────┘
+                   ▼
+┌─────────────────────────────────────────────┐
+│  Step 4: OCR per Cell                       │
+│  EasyOCR / Tesseract — isolate text         │
+└──────────────────┬──────────────────────────┘
+                   ▼
+            JSON / Markdown
+```
 
-## Cài đặt
+## Pipeline Steps
 
-1. **Clone dự án:**
+| Step | Description |
+|------|-------------|
+| **Step 1** | Compare 6 table extraction methods on PubTabNet samples → F1 / speed / accuracy |
+| **Step 2** | U-Net (EfficientNet-B4) predicts 5 semantic masks |
+| **Step 3** | Post-process masks → extract grid cell bounding boxes |
+| **Step 4** | OCR text per cell → avoid cross-cell noise |
+| **Step 5** | Reconstruct structured JSON or Markdown table |
+
+## Quick Start
 
 ```bash
-git clone <repo-url>
-cd AppBank
+cd /Users/macbookpro14m1pro/Desktop/RagTable/python
+source .venv/bin/activate
+
+# Step 1: Compare all baseline methods
+jupyter notebook notebooks/01_explore_and_compare.ipynb
+
+# Step 2-5: U-Net training + inference pipeline
+jupyter notebook notebooks/02_table-recognition.ipynb
 ```
 
-2. **Cài đặt dependencies:**
+## Datasets
+
+| Dataset | Source | Size | Content |
+|---------|--------|------|---------|
+| `pubtabnet/` | Local project | 200 samples | PNG + JSON (bbox + HTML tokens) |
+| `tiinh123/table-segmentation-data` | Kaggle | 30,000 | Images + 5-channel masks |
+
+## Model
+
+- **Architecture:** EfficientUNet (EfficientNet-B4 encoder + U-Net decoder)
+- **Input:** 384×384 RGB
+- **Output:** 5 binary masks — `row`, `col`, `col_header`, `row_header`, `span`
+- **Parameters:** 19.2M
+- **Best mIoU:** 0.7674 (epoch 45, Kaggle T4)
+
+## Package Dependencies
+
+| Package | Version | Purpose |
+|---------|---------|---------|
+| `docling` | 2.84.0 | Table extraction from PDF |
+| `img2table` | 1.4.2 | Image-based table extraction |
+| `easyocr` | 1.7.2 | Text recognition |
+| `pytesseract` | 0.3.13 | OCR (requires Tesseract 5.x) |
+| `torch` | 2.11.0 | Training & inference |
+| `transformers` | 5.4.0 | Table Transformer model |
+| `opencv-python` | 4.13.0 | Image processing |
+| `timm` | latest | EfficientNet encoder |
+| `easyocr` | latest | Per-cell OCR |
+| `scipy` | latest | Morphological ops (mask dilation) |
+
+## Project Structure
+
+```
+RagTable/
+├── README.md
+├── CONTINUITY.md
+├── python/
+│   ├── notebooks/
+│   │   ├── 01_explore_and_compare.ipynb   # Step 1: 6-method comparison
+│   │   └── 02_table-recognition.ipynb     # Steps 2-5: U-Net pipeline
+│   ├── data/pubtabnet/                     # Local test set
+│   ├── checkpoints/                        # Saved model weights
+│   ├── .venv/                              # Python virtual env
+│   └── rag/                                # RAG integration code
+└── server.js                               # API server (Node.js)
+```
+
+## Comparison Metrics (Step 1)
+
+Each method is evaluated on:
+- **Precision / Recall / F1** — cell-level IoU ≥ 0.5 vs ground truth
+- **Speed** — seconds per image
+- **Qualitative** — side-by-side visual overlay
+
+## Inference (Steps 2-5)
+
+```python
+from pathlib import Path
+from inference_pipeline import TablePipeline
+
+pipeline = TablePipeline(
+    model_path="checkpoints/best_model.pt",
+    ocr_engine="easyocr"   # or "tesseract"
+)
+
+result = pipeline.process("path/to/table_image.png")
+# result = {"cells": [...], "html": "...", "markdown": "..."}
+```
+
+## Environment Setup (macOS)
 
 ```bash
-npm install
+cd python
+uv venv .venv
+source .venv/bin/activate
+uv pip install docling img2table easyocr pytesseract \
+  torch torchvision timm opencv-python scipy transformers
+
+# Install Tesseract OCR (macOS)
+brew install tesseract
 ```
 
-3. **Cấu hình environment variables:**
-   Tạo file `.env` và điền thông tin:
+## Environment Setup (Kaggle)
 
-```env
-SUPABASE_URL=your_supabase_url
-SUPABASE_ANON_KEY=your_supabase_anon_key
-GEMINI_API_KEY=your_gemini_api_key
-PORT=3000
-```
+Kernel: **GPU P100** | Runtime: ~40 epochs in ~2h (T4, batch=16)
 
-4. **Setup Supabase Database:**
+Dataset inputs required:
+- `tiinh123/table-segmentation-data` — images + masks
+- `tiinh123/table-seg-masks-dilated` — dilated col masks
+- `tiinh123/table-seg-checkpoints-v2` — saved checkpoints
 
-- Tạo project mới trên [Supabase](https://supabase.com)
-- Chạy script SQL trong file `database/schema.sql`
+## Next Steps
 
-5. **Lấy Google Gemini API Key:**
-
-- Truy cập [Google AI Studio](https://makersuite.google.com/app/apikey)
-- Tạo API key mới
-
-6. **Chạy ứng dụng:**
-
-```bash
-npm run dev
-```
-
-## Sử dụng
-
-1. Mở trình duyệt và truy cập `http://localhost:3000`
-2. Copy/paste nội dung giao dịch từ app ngân hàng
-3. Click "Phân tích giao dịch"
-4. Xem kết quả phân tích và thống kê
-
-## API Endpoints
-
-### POST /api/transactions/process
-
-Xử lý và phân tích văn bản giao dịch
-
-**Request:**
-
-```json
-{
-  "transactionText": "Nội dung giao dịch từ app ngân hàng..."
-}
-```
-
-**Response:**
-
-```json
-{
-  "success": true,
-  "message": "Giao dịch đã được xử lý thành công",
-  "data": {
-    "transaction": { ... },
-    "extracted_info": { ... }
-  }
-}
-```
-
-### GET /api/transactions
-
-Lấy danh sách giao dịch
-
-**Query Parameters:**
-
-- `account_number`: Lọc theo số tài khoản
-- `limit`: Giới hạn số bản ghi (mặc định: 100)
-
-### GET /api/transactions/stats
-
-Lấy thống kê giao dịch
-
-## Cấu trúc Database
-
-### bank_accounts
-
-- `id`: UUID (Primary key)
-- `account_number`: VARCHAR(50) (Unique)
-- `account_name`: VARCHAR(255)
-- `bank_name`: VARCHAR(100)
-- `created_at`: TIMESTAMP
-
-### transactions
-
-- `id`: UUID (Primary key)
-- `account_id`: UUID (Foreign key)
-- `transaction_type`: VARCHAR(20) ('SEND'|'RECEIVE')
-- `from_account`: VARCHAR(50)
-- `to_account`: VARCHAR(50)
-- `amount`: DECIMAL(15,2)
-- `content`: TEXT
-- `transaction_date`: TIMESTAMP
-- `raw_text`: TEXT
-- `created_at`: TIMESTAMP
-
-### ai_extractions
-
-- `id`: UUID (Primary key)
-- `transaction_id`: UUID (Foreign key)
-- `raw_input`: TEXT
-- `extracted_data`: JSONB
-- `confidence_score`: DECIMAL(3,2)
-- `created_at`: TIMESTAMP
-
-## Mở rộng
-
-- Thêm hỗ trợ nhiều ngân hàng khác nhau
-- Phân loại giao dịch tự động
-- Xuất báo cáo Excel/PDF
-- Tích hợp webhook cho real-time updates
-- Mobile app với React Native
-
-## Lưu ý bảo mật
-
-- Không lưu trữ thông tin nhạy cảm như PIN, password
-- Mã hóa dữ liệu nhạy cảm trước khi lưu
-- Sử dụng HTTPS trong production
-- Giới hạn rate limiting cho API
-
-## Support
-
-Nếu gặp vấn đề, vui lòng tạo issue trên GitHub hoặc liên hệ qua email.
+- [ ] Complete Bước 3: Grid reconstruction algorithm (row/col intersection)
+- [ ] Complete Bước 4: Per-cell OCR pipeline
+- [ ] Complete Bước 5: JSON / Markdown output
+- [ ] Benchmark mIoU on local 200-sample dataset
+- [ ] Integrate into RAG pipeline via `server.js`

@@ -1,0 +1,5 @@
+| Expression of APC7a | Tissue type |  |
+| --- | --- | --- |
+|   | Normal tissue | Tumor tissue |
+| Negative | Adipocytes, brain, hepatocytes, skeletal muscle cells, spinal cord | Lipoma, pleomorphic adenoma of salivary gland, low grade urothelial carcinoma, chondrosarcoma, adenoid cystic carcinoma, renal cell carcinoma, high grade ductal carcinoma of breast |
+| Positive | Basal cells of epidermis, bronchial epithelium, ductal cells of breast, ductal cells of pancreas, ductal cells of salivary glands, endometrial glands, kidney epithelium, gastric mucosa, prostate glands and ducts, urothelial epithelium, fibroblasts, germinal center cells | Adenocarcinoma of colon, adenocarcinoma of endometrium, adenocarcinoma of pancreas, adenocarcinoma of prostate, adenocarcinoma of stomach, ductal carcinoma of pancreas, hepatocellular carcinoma, high grade urothelial carcinoma, papillary serous carcinoma of ovary, squamous cell carcinoma of esophagus, squamous carcinoma of cervix, leiomyosarcoma of uterus, malignant lymphoma, melanoma, seminoma of testis |

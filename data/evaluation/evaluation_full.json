@@ -1,0 +1,3680 @@
+[
+  {
+    "paper_id": "2303.08774",
+    "pdf_type": "text-based",
+    "gt_tables": 15,
+    "pred_tables": 18,
+    "matched": 7,
+    "missed": 8,
+    "extra": 11,
+    "detection_rate": 46.7,
+    "row_accuracy": 93.2,
+    "cell_accuracy": 88.8,
+    "text_accuracy": 97.5,
+    "exact_match": 81.6,
+    "fuzzy_match": 16.0,
+    "pair_details": [
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 100.0,
+        "text_accuracy": 98.9,
+        "exact_match": 96.6,
+        "fuzzy_match": 2.3,
+        "gt_shape": [
+          30,
+          3
+        ],
+        "pred_shape": [
+          30,
+          3
+        ],
+        "match_score": 0.97,
+        "match_method": "content+shape",
+        "gt_caption": "",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 98.0,
+        "cell_accuracy": 98.0,
+        "text_accuracy": 94.8,
+        "exact_match": 72.7,
+        "fuzzy_match": 22.1,
+        "gt_shape": [
+          50,
+          7
+        ],
+        "pred_shape": [
+          49,
+          7
+        ],
+        "match_score": 0.896,
+        "match_method": "content+shape",
+        "gt_caption": "",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 80.0,
+        "text_accuracy": 98.6,
+        "exact_match": 96.4,
+        "fuzzy_match": 2.2,
+        "gt_shape": [
+          35,
+          5
+        ],
+        "pred_shape": [
+          35,
+          4
+        ],
+        "match_score": 0.876,
+        "match_method": "content+shape",
+        "gt_caption": "",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 88.9,
+        "cell_accuracy": 88.9,
+        "text_accuracy": 97.7,
+        "exact_match": 97.7,
+        "fuzzy_match": 0.0,
+        "gt_shape": [
+          9,
+          6
+        ],
+        "pred_shape": [
+          8,
+          6
+        ],
+        "match_score": 0.867,
+        "match_method": "content+shape",
+        "gt_caption": "",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 93.8,
+        "cell_accuracy": 93.8,
+        "text_accuracy": 98.7,
+        "exact_match": 64.0,
+        "fuzzy_match": 34.7,
+        "gt_shape": [
+          16,
+          5
+        ],
+        "pred_shape": [
+          15,
+          5
+        ],
+        "match_score": 0.68,
+        "match_method": "content+shape",
+        "gt_caption": "",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 100.0,
+        "text_accuracy": 100.0,
+        "exact_match": 77.8,
+        "fuzzy_match": 22.2,
+        "gt_shape": [
+          8,
+          2
+        ],
+        "pred_shape": [
+          8,
+          2
+        ],
+        "match_score": 0.545,
+        "match_method": "content+shape",
+        "gt_caption": "",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 71.4,
+        "cell_accuracy": 61.2,
+        "text_accuracy": 94.0,
+        "exact_match": 65.7,
+        "fuzzy_match": 28.4,
+        "gt_shape": [
+          49,
+          7
+        ],
+        "pred_shape": [
+          35,
+          6
+        ],
+        "match_score": 0.318,
+        "match_method": "content+shape",
+        "gt_caption": "",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      }
+    ],
+    "missed_tables": [
+      "Example prompt and completions for improved refusa",
+      "MMLU Example prompt, presented in two different la",
+      "An example MMLU question translated into Marathi, ",
+      "Example prompt demonstrating GPT-4's visual input ",
+      "Example prompt demonstrating GPT-4's visual input ",
+      "Example prompt demonstrating GPT-4's visual input ",
+      "Example prompt demonstrating GPT-4's visual input ",
+      "Example prompt demonstrating GPT-4's visual input "
+    ],
+    "extra_tables": [
+      "<bound method FloatingItem.caption_text of TableIt",
+      "<bound method FloatingItem.caption_text of TableIt",
+      "<bound method FloatingItem.caption_text of TableIt",
+      "<bound method FloatingItem.caption_text of TableIt",
+      "<bound method FloatingItem.caption_text of TableIt",
+      "<bound method FloatingItem.caption_text of TableIt",
+      "<bound method FloatingItem.caption_text of TableIt",
+      "<bound method FloatingItem.caption_text of TableIt",
+      "<bound method FloatingItem.caption_text of TableIt",
+      "<bound method FloatingItem.caption_text of TableIt",
+      "<bound method FloatingItem.caption_text of TableIt"
+    ]
+  },
+  {
+    "paper_id": "2303.09040",
+    "pdf_type": "text-based",
+    "gt_tables": 19,
+    "pred_tables": 14,
+    "matched": 14,
+    "missed": 5,
+    "extra": 0,
+    "detection_rate": 73.7,
+    "row_accuracy": 97.2,
+    "cell_accuracy": 94.7,
+    "text_accuracy": 94.9,
+    "exact_match": 76.7,
+    "fuzzy_match": 18.2,
+    "pair_details": [
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 100.0,
+        "text_accuracy": 100.0,
+        "exact_match": 100.0,
+        "fuzzy_match": 0.0,
+        "gt_shape": [
+          3,
+          3
+        ],
+        "pred_shape": [
+          3,
+          3
+        ],
+        "match_score": 1.0,
+        "match_method": "content+shape",
+        "gt_caption": "",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 100.0,
+        "text_accuracy": 100.0,
+        "exact_match": 78.6,
+        "fuzzy_match": 21.4,
+        "gt_shape": [
+          7,
+          2
+        ],
+        "pred_shape": [
+          7,
+          2
+        ],
+        "match_score": 0.998,
+        "match_method": "content+shape",
+        "gt_caption": "",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 100.0,
+        "text_accuracy": 100.0,
+        "exact_match": 73.3,
+        "fuzzy_match": 26.7,
+        "gt_shape": [
+          5,
+          3
+        ],
+        "pred_shape": [
+          5,
+          3
+        ],
+        "match_score": 0.981,
+        "match_method": "content+shape",
+        "gt_caption": "",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 100.0,
+        "text_accuracy": 96.3,
+        "exact_match": 96.3,
+        "fuzzy_match": 0.0,
+        "gt_shape": [
+          6,
+          7
+        ],
+        "pred_shape": [
+          6,
+          7
+        ],
+        "match_score": 0.98,
+        "match_method": "content+shape",
+        "gt_caption": "",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 100.0,
+        "text_accuracy": 100.0,
+        "exact_match": 86.7,
+        "fuzzy_match": 13.3,
+        "gt_shape": [
+          6,
+          5
+        ],
+        "pred_shape": [
+          6,
+          5
+        ],
+        "match_score": 0.975,
+        "match_method": "content+shape",
+        "gt_caption": "",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 100.0,
+        "text_accuracy": 100.0,
+        "exact_match": 81.0,
+        "fuzzy_match": 19.0,
+        "gt_shape": [
+          7,
+          3
+        ],
+        "pred_shape": [
+          7,
+          3
+        ],
+        "match_score": 0.961,
+        "match_method": "content+shape",
+        "gt_caption": "",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 100.0,
+        "text_accuracy": 100.0,
+        "exact_match": 85.0,
+        "fuzzy_match": 15.0,
+        "gt_shape": [
+          5,
+          4
+        ],
+        "pred_shape": [
+          5,
+          4
+        ],
+        "match_score": 0.956,
+        "match_method": "content+shape",
+        "gt_caption": "",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 100.0,
+        "text_accuracy": 98.2,
+        "exact_match": 80.7,
+        "fuzzy_match": 17.5,
+        "gt_shape": [
+          10,
+          6
+        ],
+        "pred_shape": [
+          10,
+          6
+        ],
+        "match_score": 0.89,
+        "match_method": "content+shape",
+        "gt_caption": "",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 80.0,
+        "text_accuracy": 96.0,
+        "exact_match": 76.0,
+        "fuzzy_match": 20.0,
+        "gt_shape": [
+          6,
+          5
+        ],
+        "pred_shape": [
+          6,
+          4
+        ],
+        "match_score": 0.859,
+        "match_method": "content+shape",
+        "gt_caption": "",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 100.0,
+        "text_accuracy": 98.8,
+        "exact_match": 90.0,
+        "fuzzy_match": 8.8,
+        "gt_shape": [
+          18,
+          15
+        ],
+        "pred_shape": [
+          18,
+          15
+        ],
+        "match_score": 0.782,
+        "match_method": "content+shape",
+        "gt_caption": "",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 100.0,
+        "text_accuracy": 99.6,
+        "exact_match": 93.1,
+        "fuzzy_match": 6.5,
+        "gt_shape": [
+          17,
+          16
+        ],
+        "pred_shape": [
+          17,
+          16
+        ],
+        "match_score": 0.742,
+        "match_method": "content+shape",
+        "gt_caption": "",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 88.9,
+        "cell_accuracy": 88.9,
+        "text_accuracy": 89.5,
+        "exact_match": 34.2,
+        "fuzzy_match": 55.3,
+        "gt_shape": [
+          9,
+          7
+        ],
+        "pred_shape": [
+          8,
+          7
+        ],
+        "match_score": 0.532,
+        "match_method": "content+shape",
+        "gt_caption": "",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 71.4,
+        "cell_accuracy": 57.1,
+        "text_accuracy": 50.0,
+        "exact_match": 5.0,
+        "fuzzy_match": 45.0,
+        "gt_shape": [
+          5,
+          4
+        ],
+        "pred_shape": [
+          7,
+          5
+        ],
+        "match_score": 0.432,
+        "match_method": "content+shape",
+        "gt_caption": "",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 100.0,
+        "text_accuracy": 100.0,
+        "exact_match": 94.1,
+        "fuzzy_match": 5.9,
+        "gt_shape": [
+          9,
+          2
+        ],
+        "pred_shape": [
+          9,
+          2
+        ],
+        "match_score": 0.397,
+        "match_method": "caption+content",
+        "gt_caption": "Our multi-step learning rate scheduler.",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      }
+    ],
+    "missed_tables": [
+      "Different variants of our S3Conv in comparison wit",
+      "Results of our GSSA and GSSA in comparison with ot",
+      "Results on the task of compressive sensing.",
+      "",
+      ""
+    ],
+    "extra_tables": []
+  },
+  {
+    "paper_id": "2304.02643",
+    "pdf_type": "text-based",
+    "gt_tables": 19,
+    "pred_tables": 8,
+    "matched": 8,
+    "missed": 11,
+    "extra": 0,
+    "detection_rate": 42.1,
+    "row_accuracy": 93.5,
+    "cell_accuracy": 81.7,
+    "text_accuracy": 96.0,
+    "exact_match": 67.7,
+    "fuzzy_match": 28.3,
+    "pair_details": [
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 87.5,
+        "text_accuracy": 96.9,
+        "exact_match": 90.6,
+        "fuzzy_match": 6.2,
+        "gt_shape": [
+          10,
+          8
+        ],
+        "pred_shape": [
+          10,
+          7
+        ],
+        "match_score": 0.808,
+        "match_method": "content+shape",
+        "gt_caption": "",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 100.0,
+        "text_accuracy": 97.0,
+        "exact_match": 87.9,
+        "fuzzy_match": 9.1,
+        "gt_shape": [
+          6,
+          8
+        ],
+        "pred_shape": [
+          6,
+          8
+        ],
+        "match_score": 0.778,
+        "match_method": "content+shape",
+        "gt_caption": "",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 100.0,
+        "text_accuracy": 96.4,
+        "exact_match": 67.9,
+        "fuzzy_match": 28.6,
+        "gt_shape": [
+          5,
+          9
+        ],
+        "pred_shape": [
+          5,
+          9
+        ],
+        "match_score": 0.713,
+        "match_method": "content+shape",
+        "gt_caption": "",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 91.7,
+        "cell_accuracy": 91.7,
+        "text_accuracy": 93.8,
+        "exact_match": 68.8,
+        "fuzzy_match": 25.0,
+        "gt_shape": [
+          12,
+          5
+        ],
+        "pred_shape": [
+          11,
+          5
+        ],
+        "match_score": 0.471,
+        "match_method": "content+shape",
+        "gt_caption": "",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 72.7,
+        "cell_accuracy": 72.7,
+        "text_accuracy": 86.2,
+        "exact_match": 67.2,
+        "fuzzy_match": 19.0,
+        "gt_shape": [
+          33,
+          8
+        ],
+        "pred_shape": [
+          24,
+          8
+        ],
+        "match_score": 0.369,
+        "match_method": "content+shape",
+        "gt_caption": "",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 83.3,
+        "cell_accuracy": 41.7,
+        "text_accuracy": 100.0,
+        "exact_match": 40.0,
+        "fuzzy_match": 60.0,
+        "gt_shape": [
+          5,
+          3
+        ],
+        "pred_shape": [
+          6,
+          6
+        ],
+        "match_score": 0.347,
+        "match_method": "content+shape",
+        "gt_caption": "",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 100.0,
+        "text_accuracy": 97.3,
+        "exact_match": 83.8,
+        "fuzzy_match": 13.5,
+        "gt_shape": [
+          8,
+          6
+        ],
+        "pred_shape": [
+          8,
+          6
+        ],
+        "match_score": 0.338,
+        "match_method": "caption+content",
+        "gt_caption": "Zero-shot edge prediction on BSDS500. was not trai",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 60.0,
+        "text_accuracy": 100.0,
+        "exact_match": 35.0,
+        "fuzzy_match": 65.0,
+        "gt_shape": [
+          9,
+          3
+        ],
+        "pred_shape": [
+          9,
+          5
+        ],
+        "match_score": 0.316,
+        "match_method": "content+shape",
+        "gt_caption": "",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      }
+    ],
+    "missed_tables": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "Zero-shot text-to-mask. can work with simple and n",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "extra_tables": []
+  },
+  {
+    "paper_id": "2305.09617",
+    "pdf_type": "text-based",
+    "gt_tables": 15,
+    "pred_tables": 15,
+    "matched": 5,
+    "missed": 10,
+    "extra": 10,
+    "detection_rate": 33.3,
+    "row_accuracy": 81.3,
+    "cell_accuracy": 81.3,
+    "text_accuracy": 100.0,
+    "exact_match": 81.9,
+    "fuzzy_match": 18.1,
+    "pair_details": [
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 100.0,
+        "text_accuracy": 100.0,
+        "exact_match": 100.0,
+        "fuzzy_match": 0.0,
+        "gt_shape": [
+          6,
+          3
+        ],
+        "pred_shape": [
+          6,
+          3
+        ],
+        "match_score": 0.4,
+        "match_method": "caption+content",
+        "gt_caption": "Instruction finetuning data mixture.",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 100.0,
+        "text_accuracy": 100.0,
+        "exact_match": 96.7,
+        "fuzzy_match": 3.3,
+        "gt_shape": [
+          10,
+          3
+        ],
+        "pred_shape": [
+          10,
+          3
+        ],
+        "match_score": 0.399,
+        "match_method": "caption+content",
+        "gt_caption": "Multiple-choice question evaluation datasets.",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 100.0,
+        "text_accuracy": 100.0,
+        "exact_match": 96.1,
+        "fuzzy_match": 3.9,
+        "gt_shape": [
+          6,
+          9
+        ],
+        "pred_shape": [
+          6,
+          9
+        ],
+        "match_score": 0.374,
+        "match_method": "caption+content",
+        "gt_caption": "Summary statistics of answer lengths, in character",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 66.7,
+        "cell_accuracy": 66.7,
+        "text_accuracy": 100.0,
+        "exact_match": 66.7,
+        "fuzzy_match": 33.3,
+        "gt_shape": [
+          2,
+          4
+        ],
+        "pred_shape": [
+          3,
+          4
+        ],
+        "match_score": 0.266,
+        "match_method": "caption+content",
+        "gt_caption": "Statistical analysis for independent evaluation of",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 40.0,
+        "cell_accuracy": 40.0,
+        "text_accuracy": 100.0,
+        "exact_match": 50.0,
+        "fuzzy_match": 50.0,
+        "gt_shape": [
+          2,
+          3
+        ],
+        "pred_shape": [
+          5,
+          3
+        ],
+        "match_score": 0.175,
+        "match_method": "caption+content",
+        "gt_caption": "Long-form question evaluation datasets.",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      }
+    ],
+    "missed_tables": [
+      "Comparison of Med-PaLM 2 results to reported resul",
+      "Med-PaLM 2 performance with different prompting st",
+      "Med-PaLM 2 performance on multiple-choice question",
+      "Overlap sensitivity analysis",
+      "Statistical analysis for independent evaluation of",
+      "Statistical analysis for independent evaluation of",
+      "Statistical analysis of pairwise ranking evaluatio",
+      "Statistical analysis of pairwise ranking evaluatio",
+      "Examples of Med-PaLM 2 comparison to MedPaLM on lo",
+      "Pairwise rankings between Med-PaLM and Med-PaLM 2 "
+    ],
+    "extra_tables": [
+      "<bound method FloatingItem.caption_text of TableIt",
+      "<bound method FloatingItem.caption_text of TableIt",
+      "<bound method FloatingItem.caption_text of TableIt",
+      "<bound method FloatingItem.caption_text of TableIt",
+      "<bound method FloatingItem.caption_text of TableIt",
+      "<bound method FloatingItem.caption_text of TableIt",
+      "<bound method FloatingItem.caption_text of TableIt",
+      "<bound method FloatingItem.caption_text of TableIt",
+      "<bound method FloatingItem.caption_text of TableIt",
+      "<bound method FloatingItem.caption_text of TableIt"
+    ]
+  },
+  {
+    "paper_id": "2305.10403",
+    "pdf_type": "text-based",
+    "gt_tables": 34,
+    "pred_tables": 36,
+    "matched": 28,
+    "missed": 6,
+    "extra": 8,
+    "detection_rate": 82.4,
+    "row_accuracy": 89.0,
+    "cell_accuracy": 88.4,
+    "text_accuracy": 86.7,
+    "exact_match": 70.4,
+    "fuzzy_match": 16.3,
+    "pair_details": [
+      {
+        "row_accuracy": 80.0,
+        "cell_accuracy": 80.0,
+        "text_accuracy": 88.9,
+        "exact_match": 74.1,
+        "fuzzy_match": 14.8,
+        "gt_shape": [
+          5,
+          6
+        ],
+        "pred_shape": [
+          4,
+          6
+        ],
+        "match_score": 0.808,
+        "match_method": "content+shape",
+        "gt_caption": "",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 72.7,
+        "cell_accuracy": 72.7,
+        "text_accuracy": 75.0,
+        "exact_match": 30.8,
+        "fuzzy_match": 44.2,
+        "gt_shape": [
+          11,
+          5
+        ],
+        "pred_shape": [
+          8,
+          5
+        ],
+        "match_score": 0.64,
+        "match_method": "content+shape",
+        "gt_caption": "",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 96.2,
+        "cell_accuracy": 96.2,
+        "text_accuracy": 71.2,
+        "exact_match": 14.7,
+        "fuzzy_match": 56.4,
+        "gt_shape": [
+          26,
+          6
+        ],
+        "pred_shape": [
+          25,
+          6
+        ],
+        "match_score": 0.602,
+        "match_method": "content+shape",
+        "gt_caption": "",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 92.3,
+        "cell_accuracy": 92.3,
+        "text_accuracy": 38.1,
+        "exact_match": 0.0,
+        "fuzzy_match": 38.1,
+        "gt_shape": [
+          13,
+          9
+        ],
+        "pred_shape": [
+          12,
+          9
+        ],
+        "match_score": 0.599,
+        "match_method": "content+shape",
+        "gt_caption": "",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 71.4,
+        "cell_accuracy": 71.4,
+        "text_accuracy": 35.3,
+        "exact_match": 0.0,
+        "fuzzy_match": 35.3,
+        "gt_shape": [
+          5,
+          4
+        ],
+        "pred_shape": [
+          7,
+          4
+        ],
+        "match_score": 0.507,
+        "match_method": "content+shape",
+        "gt_caption": "",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 100.0,
+        "text_accuracy": 100.0,
+        "exact_match": 100.0,
+        "fuzzy_match": 0.0,
+        "gt_shape": [
+          13,
+          4
+        ],
+        "pred_shape": [
+          13,
+          4
+        ],
+        "match_score": 0.4,
+        "match_method": "caption+content",
+        "gt_caption": "BIG-Bench Lite results.",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 100.0,
+        "text_accuracy": 100.0,
+        "exact_match": 100.0,
+        "fuzzy_match": 0.0,
+        "gt_shape": [
+          5,
+          3
+        ],
+        "pred_shape": [
+          5,
+          3
+        ],
+        "match_score": 0.4,
+        "match_method": "caption+content",
+        "gt_caption": "Probability of toxic continuation from a non-toxic",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 100.0,
+        "text_accuracy": 100.0,
+        "exact_match": 100.0,
+        "fuzzy_match": 0.0,
+        "gt_shape": [
+          11,
+          4
+        ],
+        "pred_shape": [
+          11,
+          4
+        ],
+        "match_score": 0.4,
+        "match_method": "caption+content",
+        "gt_caption": "Translation misgendering languages (26) by resourc",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 100.0,
+        "text_accuracy": 100.0,
+        "exact_match": 100.0,
+        "fuzzy_match": 0.0,
+        "gt_shape": [
+          26,
+          6
+        ],
+        "pred_shape": [
+          26,
+          6
+        ],
+        "match_score": 0.4,
+        "match_method": "caption+content",
+        "gt_caption": "Language distribution of the multilingual web docu",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 100.0,
+        "text_accuracy": 100.0,
+        "exact_match": 100.0,
+        "fuzzy_match": 0.0,
+        "gt_shape": [
+          3,
+          4
+        ],
+        "pred_shape": [
+          3,
+          4
+        ],
+        "match_score": 0.4,
+        "match_method": "caption+content",
+        "gt_caption": "Comparison of PaLM 2 and PaLM toxicity probability",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 100.0,
+        "text_accuracy": 100.0,
+        "exact_match": 100.0,
+        "fuzzy_match": 0.0,
+        "gt_shape": [
+          26,
+          3
+        ],
+        "pred_shape": [
+          26,
+          3
+        ],
+        "match_score": 0.4,
+        "match_method": "caption+content",
+        "gt_caption": "Subsets of English training data with toxicity pro",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 100.0,
+        "text_accuracy": 100.0,
+        "exact_match": 89.3,
+        "fuzzy_match": 10.7,
+        "gt_shape": [
+          4,
+          7
+        ],
+        "pred_shape": [
+          4,
+          7
+        ],
+        "match_score": 0.398,
+        "match_method": "caption+content",
+        "gt_caption": "Evaluation results on MATH, GSM8K, and MGSM %Resul",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 94.3,
+        "cell_accuracy": 94.3,
+        "text_accuracy": 91.4,
+        "exact_match": 81.4,
+        "fuzzy_match": 10.0,
+        "gt_shape": [
+          35,
+          2
+        ],
+        "pred_shape": [
+          33,
+          2
+        ],
+        "match_score": 0.394,
+        "match_method": "caption+content",
+        "gt_caption": "Relative frequency of signals within pre-training ",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 93.5,
+        "cell_accuracy": 93.5,
+        "text_accuracy": 93.5,
+        "exact_match": 92.9,
+        "fuzzy_match": 0.6,
+        "gt_shape": [
+          31,
+          5
+        ],
+        "pred_shape": [
+          29,
+          5
+        ],
+        "match_score": 0.394,
+        "match_method": "caption+content",
+        "gt_caption": "Results for several models trained on 1E+22",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 100.0,
+        "text_accuracy": 100.0,
+        "exact_match": 94.3,
+        "fuzzy_match": 5.7,
+        "gt_shape": [
+          8,
+          7
+        ],
+        "pred_shape": [
+          8,
+          7
+        ],
+        "match_score": 0.38,
+        "match_method": "caption+content",
+        "gt_caption": "Instruction tuning with Flan results.",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 100.0,
+        "text_accuracy": 97.6,
+        "exact_match": 92.9,
+        "fuzzy_match": 4.8,
+        "gt_shape": [
+          9,
+          5
+        ],
+        "pred_shape": [
+          9,
+          5
+        ],
+        "match_score": 0.369,
+        "match_method": "caption+content",
+        "gt_caption": "Toxicity classification AUC-ROC on Multilingual Ji",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 100.0,
+        "text_accuracy": 99.0,
+        "exact_match": 97.0,
+        "fuzzy_match": 2.0,
+        "gt_shape": [
+          20,
+          6
+        ],
+        "pred_shape": [
+          20,
+          6
+        ],
+        "match_score": 0.352,
+        "match_method": "caption+content",
+        "gt_caption": "Per-language one-shot results on Wikilingua, XL-Su",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 80.0,
+        "cell_accuracy": 80.0,
+        "text_accuracy": 90.5,
+        "exact_match": 71.4,
+        "fuzzy_match": 19.0,
+        "gt_shape": [
+          5,
+          5
+        ],
+        "pred_shape": [
+          4,
+          5
+        ],
+        "match_score": 0.349,
+        "match_method": "caption+content",
+        "gt_caption": "One-shot results of PaLM 2-L on original and filte",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 96.6,
+        "cell_accuracy": 96.6,
+        "text_accuracy": 97.2,
+        "exact_match": 94.4,
+        "fuzzy_match": 2.8,
+        "gt_shape": [
+          29,
+          5
+        ],
+        "pred_shape": [
+          28,
+          5
+        ],
+        "match_score": 0.337,
+        "match_method": "caption+content",
+        "gt_caption": "Evaluation on English QA and classification tasks ",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 75.0,
+        "cell_accuracy": 75.0,
+        "text_accuracy": 78.9,
+        "exact_match": 42.1,
+        "fuzzy_match": 36.8,
+        "gt_shape": [
+          4,
+          5
+        ],
+        "pred_shape": [
+          3,
+          5
+        ],
+        "match_score": 0.335,
+        "match_method": "caption+content",
+        "gt_caption": "Biased QA evaluation results.",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 75.0,
+        "cell_accuracy": 75.0,
+        "text_accuracy": 75.0,
+        "exact_match": 37.5,
+        "fuzzy_match": 37.5,
+        "gt_shape": [
+          4,
+          4
+        ],
+        "pred_shape": [
+          3,
+          4
+        ],
+        "match_score": 0.334,
+        "match_method": "caption+content",
+        "gt_caption": "Analysis of model responses within disambiguated c",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 100.0,
+        "text_accuracy": 100.0,
+        "exact_match": 81.0,
+        "fuzzy_match": 19.0,
+        "gt_shape": [
+          5,
+          5
+        ],
+        "pred_shape": [
+          5,
+          5
+        ],
+        "match_score": 0.332,
+        "match_method": "caption+content",
+        "gt_caption": "Results on WMT21 translation sets. We observe impr",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 93.3,
+        "cell_accuracy": 93.3,
+        "text_accuracy": 94.4,
+        "exact_match": 85.9,
+        "fuzzy_match": 8.5,
+        "gt_shape": [
+          15,
+          5
+        ],
+        "pred_shape": [
+          14,
+          5
+        ],
+        "match_score": 0.32,
+        "match_method": "caption+content",
+        "gt_caption": "4-shot evaluation on XCOPA.",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 95.2,
+        "cell_accuracy": 79.4,
+        "text_accuracy": 96.1,
+        "exact_match": 90.3,
+        "fuzzy_match": 5.8,
+        "gt_shape": [
+          21,
+          6
+        ],
+        "pred_shape": [
+          20,
+          5
+        ],
+        "match_score": 0.313,
+        "match_method": "caption+content",
+        "gt_caption": "Per-language one-shot results of PaLM 2-L on origi",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 80.0,
+        "cell_accuracy": 80.0,
+        "text_accuracy": 82.6,
+        "exact_match": 56.5,
+        "fuzzy_match": 26.1,
+        "gt_shape": [
+          5,
+          5
+        ],
+        "pred_shape": [
+          4,
+          5
+        ],
+        "match_score": 0.309,
+        "match_method": "caption+content",
+        "gt_caption": "Results on the FRMT (Few-shot Regional Machine Tra",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 57.1,
+        "cell_accuracy": 57.1,
+        "text_accuracy": 88.9,
+        "exact_match": 44.4,
+        "fuzzy_match": 44.4,
+        "gt_shape": [
+          7,
+          6
+        ],
+        "pred_shape": [
+          4,
+          6
+        ],
+        "match_score": 0.306,
+        "match_method": "caption+content",
+        "gt_caption": "One-shot NLG evaluation results. We report ROUGE-2",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 93.8,
+        "cell_accuracy": 93.8,
+        "text_accuracy": 94.4,
+        "exact_match": 86.0,
+        "fuzzy_match": 8.4,
+        "gt_shape": [
+          16,
+          7
+        ],
+        "pred_shape": [
+          15,
+          7
+        ],
+        "match_score": 0.283,
+        "match_method": "caption+content",
+        "gt_caption": "Average gender agreement scores and translation qu",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 44.4,
+        "cell_accuracy": 44.4,
+        "text_accuracy": 39.7,
+        "exact_match": 13.8,
+        "fuzzy_match": 25.9,
+        "gt_shape": [
+          9,
+          7
+        ],
+        "pred_shape": [
+          4,
+          7
+        ],
+        "match_score": 0.237,
+        "match_method": "caption+content",
+        "gt_caption": "Results on coding evaluations from the PaLM and Pa",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      }
+    ],
+    "missed_tables": [
+      "Estimated optimal parameter size at a given number",
+      "Estimated optimal parameter size at a given number",
+      "F1 scores on the multilingual TyDi QA datasets in ",
+      "BIG-Bench Hard 3-shot results. PaLM and PaLM-2 use",
+      "Distribution of canaries across languages. % * See",
+      "Translation misgendering into English, disaggregat"
+    ],
+    "extra_tables": [
+      "<bound method FloatingItem.caption_text of TableIt",
+      "<bound method FloatingItem.caption_text of TableIt",
+      "<bound method FloatingItem.caption_text of TableIt",
+      "<bound method FloatingItem.caption_text of TableIt",
+      "<bound method FloatingItem.caption_text of TableIt",
+      "<bound method FloatingItem.caption_text of TableIt",
+      "<bound method FloatingItem.caption_text of TableIt",
+      "<bound method FloatingItem.caption_text of TableIt"
+    ]
+  },
+  {
+    "paper_id": "2305.18290",
+    "pdf_type": "text-based",
+    "gt_tables": 10,
+    "pred_tables": 14,
+    "matched": 10,
+    "missed": 0,
+    "extra": 4,
+    "detection_rate": 100.0,
+    "row_accuracy": 88.8,
+    "cell_accuracy": 91.6,
+    "text_accuracy": 76.6,
+    "exact_match": 58.5,
+    "fuzzy_match": 18.1,
+    "pair_details": [
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 100.0,
+        "text_accuracy": 100.0,
+        "exact_match": 96.8,
+        "fuzzy_match": 3.2,
+        "gt_shape": [
+          8,
+          4
+        ],
+        "pred_shape": [
+          8,
+          4
+        ],
+        "match_score": 0.986,
+        "match_method": "content+shape",
+        "gt_caption": "",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 75.0,
+        "cell_accuracy": 75.0,
+        "text_accuracy": 80.0,
+        "exact_match": 60.0,
+        "fuzzy_match": 20.0,
+        "gt_shape": [
+          4,
+          3
+        ],
+        "pred_shape": [
+          3,
+          3
+        ],
+        "match_score": 0.731,
+        "match_method": "content+shape",
+        "gt_caption": "",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 100.0,
+        "text_accuracy": 100.0,
+        "exact_match": 85.7,
+        "fuzzy_match": 14.3,
+        "gt_shape": [
+          4,
+          2
+        ],
+        "pred_shape": [
+          4,
+          2
+        ],
+        "match_score": 0.4,
+        "match_method": "caption+content",
+        "gt_caption": "GPT-4 chooses DPO over GT. Sample responses to a p",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 100.0,
+        "text_accuracy": 100.0,
+        "exact_match": 85.7,
+        "fuzzy_match": 14.3,
+        "gt_shape": [
+          4,
+          2
+        ],
+        "pred_shape": [
+          4,
+          2
+        ],
+        "match_score": 0.4,
+        "match_method": "caption+content",
+        "gt_caption": "Best of N baseline for $N=\\1,4,16,64,128\\",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 100.0,
+        "text_accuracy": 85.7,
+        "exact_match": 57.1,
+        "fuzzy_match": 28.6,
+        "gt_shape": [
+          4,
+          2
+        ],
+        "pred_shape": [
+          4,
+          2
+        ],
+        "match_score": 0.4,
+        "match_method": "caption+content",
+        "gt_caption": "GPT-4 chooses DPO over GT. Sample responses to a p",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 80.0,
+        "cell_accuracy": 80.0,
+        "text_accuracy": 100.0,
+        "exact_match": 71.4,
+        "fuzzy_match": 28.6,
+        "gt_shape": [
+          4,
+          2
+        ],
+        "pred_shape": [
+          5,
+          2
+        ],
+        "match_score": 0.36,
+        "match_method": "caption+content",
+        "gt_caption": "Sample summaries to a post from the TL;DR test set",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 100.0,
+        "text_accuracy": 71.4,
+        "exact_match": 42.9,
+        "fuzzy_match": 28.6,
+        "gt_shape": [
+          4,
+          2
+        ],
+        "pred_shape": [
+          4,
+          2
+        ],
+        "match_score": 0.332,
+        "match_method": "caption+content",
+        "gt_caption": "Sample summaries to a post from the TL;DR test set",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 100.0,
+        "text_accuracy": 57.1,
+        "exact_match": 42.9,
+        "fuzzy_match": 14.3,
+        "gt_shape": [
+          4,
+          2
+        ],
+        "pred_shape": [
+          4,
+          2
+        ],
+        "match_score": 0.276,
+        "match_method": "caption+content",
+        "gt_caption": "GPT-4 chooses GT over DPO. DPO's response is verbo",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 75.0,
+        "cell_accuracy": 75.0,
+        "text_accuracy": 71.4,
+        "exact_match": 42.9,
+        "fuzzy_match": 28.6,
+        "gt_shape": [
+          4,
+          2
+        ],
+        "pred_shape": [
+          3,
+          2
+        ],
+        "match_score": 0.276,
+        "match_method": "caption+content",
+        "gt_caption": "Sample summaries to a post from the TL;DR test set",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 58.3,
+        "cell_accuracy": 85.7,
+        "text_accuracy": 0.0,
+        "exact_match": 0.0,
+        "fuzzy_match": 0.0,
+        "gt_shape": [
+          7,
+          4
+        ],
+        "pred_shape": [
+          12,
+          2
+        ],
+        "match_score": 0.157,
+        "match_method": "content+shape",
+        "gt_caption": "",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      }
+    ],
+    "missed_tables": [],
+    "extra_tables": [
+      "<bound method FloatingItem.caption_text of TableIt",
+      "<bound method FloatingItem.caption_text of TableIt",
+      "<bound method FloatingItem.caption_text of TableIt",
+      "<bound method FloatingItem.caption_text of TableIt"
+    ]
+  },
+  {
+    "paper_id": "2306.05685",
+    "pdf_type": "text-based",
+    "gt_tables": 17,
+    "pred_tables": 20,
+    "matched": 16,
+    "missed": 1,
+    "extra": 4,
+    "detection_rate": 94.1,
+    "row_accuracy": 81.4,
+    "cell_accuracy": 81.7,
+    "text_accuracy": 86.1,
+    "exact_match": 79.3,
+    "fuzzy_match": 6.8,
+    "pair_details": [
+      {
+        "row_accuracy": 61.5,
+        "cell_accuracy": 61.5,
+        "text_accuracy": 62.5,
+        "exact_match": 45.8,
+        "fuzzy_match": 16.7,
+        "gt_shape": [
+          13,
+          5
+        ],
+        "pred_shape": [
+          8,
+          5
+        ],
+        "match_score": 0.652,
+        "match_method": "content+shape",
+        "gt_caption": "",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 24.4,
+        "cell_accuracy": 20.0,
+        "text_accuracy": 45.5,
+        "exact_match": 36.4,
+        "fuzzy_match": 9.1,
+        "gt_shape": [
+          41,
+          11
+        ],
+        "pred_shape": [
+          10,
+          9
+        ],
+        "match_score": 0.427,
+        "match_method": "content+shape",
+        "gt_caption": "",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 100.0,
+        "text_accuracy": 100.0,
+        "exact_match": 100.0,
+        "fuzzy_match": 0.0,
+        "gt_shape": [
+          2,
+          4
+        ],
+        "pred_shape": [
+          2,
+          4
+        ],
+        "match_score": 0.4,
+        "match_method": "caption+content",
+        "gt_caption": "Judge failure rate on 10 math questions with diffe",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 100.0,
+        "text_accuracy": 100.0,
+        "exact_match": 100.0,
+        "fuzzy_match": 0.0,
+        "gt_shape": [
+          2,
+          4
+        ],
+        "pred_shape": [
+          2,
+          4
+        ],
+        "match_score": 0.4,
+        "match_method": "caption+content",
+        "gt_caption": "Failure rate under ``repetitive list'' attack for ",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 100.0,
+        "text_accuracy": 100.0,
+        "exact_match": 100.0,
+        "fuzzy_match": 0.0,
+        "gt_shape": [
+          9,
+          4
+        ],
+        "pred_shape": [
+          9,
+          4
+        ],
+        "match_score": 0.4,
+        "match_method": "caption+content",
+        "gt_caption": "Position bias on different categories. The two lar",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 100.0,
+        "text_accuracy": 100.0,
+        "exact_match": 100.0,
+        "fuzzy_match": 0.0,
+        "gt_shape": [
+          4,
+          4
+        ],
+        "pred_shape": [
+          4,
+          4
+        ],
+        "match_score": 0.4,
+        "match_method": "caption+content",
+        "gt_caption": "Position bias on different model pairs.",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 100.0,
+        "text_accuracy": 100.0,
+        "exact_match": 100.0,
+        "fuzzy_match": 0.0,
+        "gt_shape": [
+          5,
+          9
+        ],
+        "pred_shape": [
+          5,
+          9
+        ],
+        "match_score": 0.4,
+        "match_method": "caption+content",
+        "gt_caption": "Category-wise win rate of models.",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 100.0,
+        "text_accuracy": 100.0,
+        "exact_match": 100.0,
+        "fuzzy_match": 0.0,
+        "gt_shape": [
+          5,
+          5
+        ],
+        "pred_shape": [
+          5,
+          5
+        ],
+        "match_score": 0.4,
+        "match_method": "caption+content",
+        "gt_caption": "Dataset statistics",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 100.0,
+        "text_accuracy": 100.0,
+        "exact_match": 98.2,
+        "fuzzy_match": 1.8,
+        "gt_shape": [
+          11,
+          5
+        ],
+        "pred_shape": [
+          11,
+          5
+        ],
+        "match_score": 0.399,
+        "match_method": "caption+content",
+        "gt_caption": "Evaluation results of several model variants.",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 100.0,
+        "text_accuracy": 98.4,
+        "exact_match": 93.8,
+        "fuzzy_match": 4.7,
+        "gt_shape": [
+          13,
+          6
+        ],
+        "pred_shape": [
+          13,
+          6
+        ],
+        "match_score": 0.37,
+        "match_method": "caption+content",
+        "gt_caption": "Position bias on different models and prompts. Con",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 100.0,
+        "text_accuracy": 97.1,
+        "exact_match": 88.2,
+        "fuzzy_match": 8.8,
+        "gt_shape": [
+          7,
+          6
+        ],
+        "pred_shape": [
+          7,
+          6
+        ],
+        "match_score": 0.368,
+        "match_method": "caption+content",
+        "gt_caption": "Improvements of the few-shot judge on consistency ",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 100.0,
+        "text_accuracy": 95.7,
+        "exact_match": 87.0,
+        "fuzzy_match": 8.7,
+        "gt_shape": [
+          5,
+          6
+        ],
+        "pred_shape": [
+          5,
+          6
+        ],
+        "match_score": 0.36,
+        "match_method": "caption+content",
+        "gt_caption": "Position bias of the Vicuna-13B model without and ",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 100.0,
+        "text_accuracy": 97.1,
+        "exact_match": 88.2,
+        "fuzzy_match": 8.8,
+        "gt_shape": [
+          7,
+          6
+        ],
+        "pred_shape": [
+          7,
+          6
+        ],
+        "match_score": 0.35,
+        "match_method": "caption+content",
+        "gt_caption": "Position bias of different LLM judges. Consistency",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 53.8,
+        "cell_accuracy": 53.8,
+        "text_accuracy": 62.5,
+        "exact_match": 45.8,
+        "fuzzy_match": 16.7,
+        "gt_shape": [
+          13,
+          5
+        ],
+        "pred_shape": [
+          7,
+          5
+        ],
+        "match_score": 0.251,
+        "match_method": "caption+content",
+        "gt_caption": "First Turn",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 23.1,
+        "cell_accuracy": 23.1,
+        "text_accuracy": 65.2,
+        "exact_match": 41.3,
+        "fuzzy_match": 23.9,
+        "gt_shape": [
+          26,
+          9
+        ],
+        "pred_shape": [
+          6,
+          9
+        ],
+        "match_score": 0.205,
+        "match_method": "caption+content",
+        "gt_caption": "Agreement between two types of judges on Chatbot A",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 40.0,
+        "cell_accuracy": 48.9,
+        "text_accuracy": 54.2,
+        "exact_match": 43.8,
+        "fuzzy_match": 10.4,
+        "gt_shape": [
+          30,
+          9
+        ],
+        "pred_shape": [
+          12,
+          11
+        ],
+        "match_score": 0.19,
+        "match_method": "caption+content",
+        "gt_caption": "First Turn",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      }
+    ],
+    "missed_tables": [
+      "Sample multi-turn questions in MT-bench."
+    ],
+    "extra_tables": [
+      "<bound method FloatingItem.caption_text of TableIt",
+      "<bound method FloatingItem.caption_text of TableIt",
+      "<bound method FloatingItem.caption_text of TableIt",
+      "<bound method FloatingItem.caption_text of TableIt"
+    ]
+  },
+  {
+    "paper_id": "2307.09288",
+    "pdf_type": "text-based",
+    "gt_tables": 46,
+    "pred_tables": 61,
+    "matched": 41,
+    "missed": 5,
+    "extra": 20,
+    "detection_rate": 89.1,
+    "row_accuracy": 88.0,
+    "cell_accuracy": 86.7,
+    "text_accuracy": 86.4,
+    "exact_match": 62.9,
+    "fuzzy_match": 23.5,
+    "pair_details": [
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 100.0,
+        "text_accuracy": 100.0,
+        "exact_match": 100.0,
+        "fuzzy_match": 0.0,
+        "gt_shape": [
+          7,
+          4
+        ],
+        "pred_shape": [
+          7,
+          4
+        ],
+        "match_score": 1.0,
+        "match_method": "content+shape",
+        "gt_caption": "",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 100.0,
+        "text_accuracy": 90.9,
+        "exact_match": 54.5,
+        "fuzzy_match": 36.4,
+        "gt_shape": [
+          6,
+          2
+        ],
+        "pred_shape": [
+          6,
+          2
+        ],
+        "match_score": 0.998,
+        "match_method": "content+shape",
+        "gt_caption": "",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 100.0,
+        "text_accuracy": 97.5,
+        "exact_match": 93.8,
+        "fuzzy_match": 3.7,
+        "gt_shape": [
+          13,
+          7
+        ],
+        "pred_shape": [
+          13,
+          7
+        ],
+        "match_score": 0.996,
+        "match_method": "content+shape",
+        "gt_caption": "",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 100.0,
+        "text_accuracy": 95.2,
+        "exact_match": 85.7,
+        "fuzzy_match": 9.5,
+        "gt_shape": [
+          13,
+          4
+        ],
+        "pred_shape": [
+          13,
+          4
+        ],
+        "match_score": 0.995,
+        "match_method": "content+shape",
+        "gt_caption": "",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 100.0,
+        "text_accuracy": 100.0,
+        "exact_match": 96.7,
+        "fuzzy_match": 3.3,
+        "gt_shape": [
+          15,
+          4
+        ],
+        "pred_shape": [
+          15,
+          4
+        ],
+        "match_score": 0.991,
+        "match_method": "content+shape",
+        "gt_caption": "",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 100.0,
+        "text_accuracy": 96.3,
+        "exact_match": 92.6,
+        "fuzzy_match": 3.7,
+        "gt_shape": [
+          8,
+          4
+        ],
+        "pred_shape": [
+          8,
+          4
+        ],
+        "match_score": 0.973,
+        "match_method": "content+shape",
+        "gt_caption": "",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 92.9,
+        "cell_accuracy": 92.9,
+        "text_accuracy": 96.2,
+        "exact_match": 88.5,
+        "fuzzy_match": 7.7,
+        "gt_shape": [
+          14,
+          2
+        ],
+        "pred_shape": [
+          13,
+          2
+        ],
+        "match_score": 0.948,
+        "match_method": "content+shape",
+        "gt_caption": "",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 100.0,
+        "text_accuracy": 89.1,
+        "exact_match": 83.7,
+        "fuzzy_match": 5.4,
+        "gt_shape": [
+          22,
+          5
+        ],
+        "pred_shape": [
+          22,
+          5
+        ],
+        "match_score": 0.932,
+        "match_method": "content+shape",
+        "gt_caption": "",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 100.0,
+        "text_accuracy": 88.2,
+        "exact_match": 80.4,
+        "fuzzy_match": 7.8,
+        "gt_shape": [
+          21,
+          8
+        ],
+        "pred_shape": [
+          21,
+          8
+        ],
+        "match_score": 0.921,
+        "match_method": "content+shape",
+        "gt_caption": "",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 100.0,
+        "text_accuracy": 77.8,
+        "exact_match": 33.3,
+        "fuzzy_match": 44.4,
+        "gt_shape": [
+          5,
+          2
+        ],
+        "pred_shape": [
+          5,
+          2
+        ],
+        "match_score": 0.87,
+        "match_method": "content+shape",
+        "gt_caption": "",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 100.0,
+        "text_accuracy": 97.0,
+        "exact_match": 96.0,
+        "fuzzy_match": 1.0,
+        "gt_shape": [
+          14,
+          8
+        ],
+        "pred_shape": [
+          14,
+          8
+        ],
+        "match_score": 0.869,
+        "match_method": "content+shape",
+        "gt_caption": "",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 87.5,
+        "cell_accuracy": 87.5,
+        "text_accuracy": 92.3,
+        "exact_match": 38.5,
+        "fuzzy_match": 53.8,
+        "gt_shape": [
+          24,
+          2
+        ],
+        "pred_shape": [
+          21,
+          2
+        ],
+        "match_score": 0.792,
+        "match_method": "content+shape",
+        "gt_caption": "",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 83.3,
+        "cell_accuracy": 83.3,
+        "text_accuracy": 90.9,
+        "exact_match": 27.3,
+        "fuzzy_match": 63.6,
+        "gt_shape": [
+          6,
+          2
+        ],
+        "pred_shape": [
+          5,
+          2
+        ],
+        "match_score": 0.769,
+        "match_method": "content+shape",
+        "gt_caption": "",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 76.2,
+        "cell_accuracy": 76.2,
+        "text_accuracy": 100.0,
+        "exact_match": 93.8,
+        "fuzzy_match": 6.2,
+        "gt_shape": [
+          21,
+          6
+        ],
+        "pred_shape": [
+          16,
+          6
+        ],
+        "match_score": 0.747,
+        "match_method": "content+shape",
+        "gt_caption": "",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 71.4,
+        "cell_accuracy": 71.4,
+        "text_accuracy": 61.5,
+        "exact_match": 23.1,
+        "fuzzy_match": 38.5,
+        "gt_shape": [
+          7,
+          2
+        ],
+        "pred_shape": [
+          5,
+          2
+        ],
+        "match_score": 0.72,
+        "match_method": "content+shape",
+        "gt_caption": "",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 100.0,
+        "text_accuracy": 100.0,
+        "exact_match": 57.1,
+        "fuzzy_match": 42.9,
+        "gt_shape": [
+          4,
+          2
+        ],
+        "pred_shape": [
+          4,
+          2
+        ],
+        "match_score": 0.709,
+        "match_method": "content+shape",
+        "gt_caption": "",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 75.0,
+        "cell_accuracy": 75.0,
+        "text_accuracy": 75.0,
+        "exact_match": 42.9,
+        "fuzzy_match": 32.1,
+        "gt_shape": [
+          4,
+          7
+        ],
+        "pred_shape": [
+          3,
+          7
+        ],
+        "match_score": 0.693,
+        "match_method": "content+shape",
+        "gt_caption": "",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 50.0,
+        "cell_accuracy": 50.0,
+        "text_accuracy": 92.9,
+        "exact_match": 71.4,
+        "fuzzy_match": 21.4,
+        "gt_shape": [
+          6,
+          5
+        ],
+        "pred_shape": [
+          3,
+          5
+        ],
+        "match_score": 0.69,
+        "match_method": "content+shape",
+        "gt_caption": "",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 66.7,
+        "cell_accuracy": 66.7,
+        "text_accuracy": 87.5,
+        "exact_match": 75.0,
+        "fuzzy_match": 12.5,
+        "gt_shape": [
+          9,
+          5
+        ],
+        "pred_shape": [
+          6,
+          5
+        ],
+        "match_score": 0.661,
+        "match_method": "content+shape",
+        "gt_caption": "",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 85.7,
+        "cell_accuracy": 85.7,
+        "text_accuracy": 100.0,
+        "exact_match": 36.4,
+        "fuzzy_match": 63.6,
+        "gt_shape": [
+          7,
+          2
+        ],
+        "pred_shape": [
+          6,
+          2
+        ],
+        "match_score": 0.643,
+        "match_method": "content+shape",
+        "gt_caption": "",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 100.0,
+        "text_accuracy": 78.7,
+        "exact_match": 72.3,
+        "fuzzy_match": 6.4,
+        "gt_shape": [
+          4,
+          12
+        ],
+        "pred_shape": [
+          4,
+          12
+        ],
+        "match_score": 0.636,
+        "match_method": "content+shape",
+        "gt_caption": "",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 42.9,
+        "cell_accuracy": 42.9,
+        "text_accuracy": 88.9,
+        "exact_match": 61.1,
+        "fuzzy_match": 27.8,
+        "gt_shape": [
+          7,
+          6
+        ],
+        "pred_shape": [
+          3,
+          6
+        ],
+        "match_score": 0.573,
+        "match_method": "content+shape",
+        "gt_caption": "",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 100.0,
+        "text_accuracy": 81.0,
+        "exact_match": 35.7,
+        "fuzzy_match": 45.2,
+        "gt_shape": [
+          9,
+          7
+        ],
+        "pred_shape": [
+          9,
+          7
+        ],
+        "match_score": 0.57,
+        "match_method": "content+shape",
+        "gt_caption": "",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 100.0,
+        "text_accuracy": 83.3,
+        "exact_match": 0.0,
+        "fuzzy_match": 83.3,
+        "gt_shape": [
+          4,
+          2
+        ],
+        "pred_shape": [
+          4,
+          2
+        ],
+        "match_score": 0.555,
+        "match_method": "content+shape",
+        "gt_caption": "",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 50.0,
+        "cell_accuracy": 50.0,
+        "text_accuracy": 95.7,
+        "exact_match": 72.3,
+        "fuzzy_match": 23.4,
+        "gt_shape": [
+          12,
+          8
+        ],
+        "pred_shape": [
+          6,
+          8
+        ],
+        "match_score": 0.528,
+        "match_method": "content+shape",
+        "gt_caption": "",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 83.3,
+        "text_accuracy": 31.2,
+        "exact_match": 0.0,
+        "fuzzy_match": 31.2,
+        "gt_shape": [
+          4,
+          5
+        ],
+        "pred_shape": [
+          4,
+          6
+        ],
+        "match_score": 0.501,
+        "match_method": "content+shape",
+        "gt_caption": "",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 80.0,
+        "cell_accuracy": 80.0,
+        "text_accuracy": 38.7,
+        "exact_match": 0.0,
+        "fuzzy_match": 38.7,
+        "gt_shape": [
+          15,
+          4
+        ],
+        "pred_shape": [
+          12,
+          4
+        ],
+        "match_score": 0.498,
+        "match_method": "content+shape",
+        "gt_caption": "",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 93.3,
+        "cell_accuracy": 75.0,
+        "text_accuracy": 65.6,
+        "exact_match": 0.0,
+        "fuzzy_match": 65.6,
+        "gt_shape": [
+          15,
+          7
+        ],
+        "pred_shape": [
+          14,
+          10
+        ],
+        "match_score": 0.462,
+        "match_method": "content+shape",
+        "gt_caption": "",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 100.0,
+        "text_accuracy": 100.0,
+        "exact_match": 100.0,
+        "fuzzy_match": 0.0,
+        "gt_shape": [
+          6,
+          3
+        ],
+        "pred_shape": [
+          6,
+          3
+        ],
+        "match_score": 0.4,
+        "match_method": "caption+content",
+        "gt_caption": "System prompts for model generations for human eva",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 100.0,
+        "text_accuracy": 100.0,
+        "exact_match": 93.3,
+        "fuzzy_match": 6.7,
+        "gt_shape": [
+          5,
+          3
+        ],
+        "pred_shape": [
+          5,
+          3
+        ],
+        "match_score": 0.398,
+        "match_method": "caption+content",
+        "gt_caption": "Ablation on safety auxiliary loss term for safety ",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 100.0,
+        "text_accuracy": 92.7,
+        "exact_match": 88.1,
+        "fuzzy_match": 4.6,
+        "gt_shape": [
+          22,
+          6
+        ],
+        "pred_shape": [
+          22,
+          6
+        ],
+        "match_score": 0.371,
+        "match_method": "caption+content",
+        "gt_caption": "Percentage of toxic generations split by demograph",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 100.0,
+        "text_accuracy": 98.6,
+        "exact_match": 94.5,
+        "fuzzy_match": 4.1,
+        "gt_shape": [
+          13,
+          12
+        ],
+        "pred_shape": [
+          13,
+          12
+        ],
+        "match_score": 0.365,
+        "match_method": "caption+content",
+        "gt_caption": "Five-shot performance on the Massive Multitask Lan",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 100.0,
+        "text_accuracy": 89.6,
+        "exact_match": 85.8,
+        "fuzzy_match": 3.7,
+        "gt_shape": [
+          22,
+          7
+        ],
+        "pred_shape": [
+          22,
+          7
+        ],
+        "match_score": 0.355,
+        "match_method": "caption+content",
+        "gt_caption": "Distribution of mean sentiment scores across group",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 100.0,
+        "text_accuracy": 90.1,
+        "exact_match": 81.7,
+        "fuzzy_match": 8.5,
+        "gt_shape": [
+          22,
+          4
+        ],
+        "pred_shape": [
+          22,
+          4
+        ],
+        "match_score": 0.355,
+        "match_method": "caption+content",
+        "gt_caption": "Distribution of mean sentiment scores across group",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 100.0,
+        "text_accuracy": 97.6,
+        "exact_match": 95.3,
+        "fuzzy_match": 2.4,
+        "gt_shape": [
+          13,
+          11
+        ],
+        "pred_shape": [
+          13,
+          11
+        ],
+        "match_score": 0.343,
+        "match_method": "caption+content",
+        "gt_caption": "Comparison to open-source models on reading compre",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 100.0,
+        "text_accuracy": 94.1,
+        "exact_match": 91.4,
+        "fuzzy_match": 2.6,
+        "gt_shape": [
+          22,
+          14
+        ],
+        "pred_shape": [
+          22,
+          14
+        ],
+        "match_score": 0.34,
+        "match_method": "caption+content",
+        "gt_caption": "Distribution of mean sentiment scores across group",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 83.3,
+        "text_accuracy": 95.7,
+        "exact_match": 90.0,
+        "fuzzy_match": 5.7,
+        "gt_shape": [
+          14,
+          6
+        ],
+        "pred_shape": [
+          14,
+          5
+        ],
+        "match_score": 0.334,
+        "match_method": "caption+content",
+        "gt_caption": "Performance on standard benchmarks.",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 23.1,
+        "cell_accuracy": 23.1,
+        "text_accuracy": 31.2,
+        "exact_match": 12.5,
+        "fuzzy_match": 18.8,
+        "gt_shape": [
+          13,
+          2
+        ],
+        "pred_shape": [
+          3,
+          2
+        ],
+        "match_score": 0.333,
+        "match_method": "content+shape",
+        "gt_caption": "",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 62.5,
+        "cell_accuracy": 62.5,
+        "text_accuracy": 96.8,
+        "exact_match": 71.0,
+        "fuzzy_match": 25.8,
+        "gt_shape": [
+          8,
+          7
+        ],
+        "pred_shape": [
+          5,
+          7
+        ],
+        "match_score": 0.299,
+        "match_method": "caption+content",
+        "gt_caption": "Reward model results.",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 75.0,
+        "cell_accuracy": 75.0,
+        "text_accuracy": 75.0,
+        "exact_match": 50.0,
+        "fuzzy_match": 25.0,
+        "gt_shape": [
+          4,
+          6
+        ],
+        "pred_shape": [
+          3,
+          6
+        ],
+        "match_score": 0.271,
+        "match_method": "caption+content",
+        "gt_caption": "Context length ablation on long-context tasks.",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 92.9,
+        "cell_accuracy": 92.9,
+        "text_accuracy": 90.1,
+        "exact_match": 14.9,
+        "fuzzy_match": 75.2,
+        "gt_shape": [
+          14,
+          10
+        ],
+        "pred_shape": [
+          13,
+          10
+        ],
+        "match_score": 0.17,
+        "match_method": "caption+content",
+        "gt_caption": "Code generation results on Human-Eval and MBPP",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      }
+    ],
+    "missed_tables": [
+      "Comparison to open source models on AGI Eval (Engl",
+      "Two variants of preference rating based margin wit",
+      "Number of prompts for human evaluations.",
+      "Qualitative example for the impact of safety data ",
+      "Qualitative example for the impact of safety data "
+    ],
+    "extra_tables": [
+      "<bound method FloatingItem.caption_text of TableIt",
+      "<bound method FloatingItem.caption_text of TableIt",
+      "<bound method FloatingItem.caption_text of TableIt",
+      "<bound method FloatingItem.caption_text of TableIt",
+      "<bound method FloatingItem.caption_text of TableIt",
+      "<bound method FloatingItem.caption_text of TableIt",
+      "<bound method FloatingItem.caption_text of TableIt",
+      "<bound method FloatingItem.caption_text of TableIt",
+      "<bound method FloatingItem.caption_text of TableIt",
+      "<bound method FloatingItem.caption_text of TableIt",
+      "<bound method FloatingItem.caption_text of TableIt",
+      "<bound method FloatingItem.caption_text of TableIt",
+      "<bound method FloatingItem.caption_text of TableIt",
+      "<bound method FloatingItem.caption_text of TableIt",
+      "<bound method FloatingItem.caption_text of TableIt",
+      "<bound method FloatingItem.caption_text of TableIt",
+      "<bound method FloatingItem.caption_text of TableIt",
+      "<bound method FloatingItem.caption_text of TableIt",
+      "<bound method FloatingItem.caption_text of TableIt",
+      "<bound method FloatingItem.caption_text of TableIt"
+    ]
+  },
+  {
+    "paper_id": "2307.15189",
+    "pdf_type": "text-based",
+    "gt_tables": 4,
+    "pred_tables": 8,
+    "matched": 3,
+    "missed": 1,
+    "extra": 5,
+    "detection_rate": 75.0,
+    "row_accuracy": 100.0,
+    "cell_accuracy": 100.0,
+    "text_accuracy": 100.0,
+    "exact_match": 95.2,
+    "fuzzy_match": 4.8,
+    "pair_details": [
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 100.0,
+        "text_accuracy": 100.0,
+        "exact_match": 89.3,
+        "fuzzy_match": 10.7,
+        "gt_shape": [
+          7,
+          4
+        ],
+        "pred_shape": [
+          7,
+          4
+        ],
+        "match_score": 0.875,
+        "match_method": "content+shape",
+        "gt_caption": "",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 100.0,
+        "text_accuracy": 100.0,
+        "exact_match": 100.0,
+        "fuzzy_match": 0.0,
+        "gt_shape": [
+          6,
+          3
+        ],
+        "pred_shape": [
+          6,
+          3
+        ],
+        "match_score": 0.4,
+        "match_method": "caption+content",
+        "gt_caption": "Multimodal medical few-shot prompting illustrated ",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 100.0,
+        "text_accuracy": 100.0,
+        "exact_match": 96.4,
+        "fuzzy_match": 3.6,
+        "gt_shape": [
+          7,
+          4
+        ],
+        "pred_shape": [
+          7,
+          4
+        ],
+        "match_score": 0.397,
+        "match_method": "caption+content",
+        "gt_caption": "Performance metrics on the VQA-Rad dataset. Best s",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      }
+    ],
+    "missed_tables": [
+      "Distribution of manually annotated image clusters "
+    ],
+    "extra_tables": [
+      "<bound method FloatingItem.caption_text of TableIt",
+      "<bound method FloatingItem.caption_text of TableIt",
+      "<bound method FloatingItem.caption_text of TableIt",
+      "<bound method FloatingItem.caption_text of TableIt",
+      "<bound method FloatingItem.caption_text of TableIt"
+    ]
+  },
+  {
+    "paper_id": "2308.12950",
+    "pdf_type": "text-based",
+    "gt_tables": 24,
+    "pred_tables": 31,
+    "matched": 23,
+    "missed": 1,
+    "extra": 8,
+    "detection_rate": 95.8,
+    "row_accuracy": 95.8,
+    "cell_accuracy": 94.0,
+    "text_accuracy": 71.5,
+    "exact_match": 46.1,
+    "fuzzy_match": 25.3,
+    "pair_details": [
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 100.0,
+        "text_accuracy": 83.1,
+        "exact_match": 62.0,
+        "fuzzy_match": 21.1,
+        "gt_shape": [
+          20,
+          4
+        ],
+        "pred_shape": [
+          20,
+          4
+        ],
+        "match_score": 0.991,
+        "match_method": "content+shape",
+        "gt_caption": "",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 100.0,
+        "text_accuracy": 96.8,
+        "exact_match": 67.7,
+        "fuzzy_match": 29.0,
+        "gt_shape": [
+          10,
+          4
+        ],
+        "pred_shape": [
+          10,
+          4
+        ],
+        "match_score": 0.972,
+        "match_method": "content+shape",
+        "gt_caption": "",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 100.0,
+        "text_accuracy": 75.3,
+        "exact_match": 66.2,
+        "fuzzy_match": 9.1,
+        "gt_shape": [
+          20,
+          4
+        ],
+        "pred_shape": [
+          20,
+          4
+        ],
+        "match_score": 0.966,
+        "match_method": "content+shape",
+        "gt_caption": "",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 80.0,
+        "text_accuracy": 75.0,
+        "exact_match": 57.1,
+        "fuzzy_match": 17.9,
+        "gt_shape": [
+          9,
+          5
+        ],
+        "pred_shape": [
+          9,
+          4
+        ],
+        "match_score": 0.9,
+        "match_method": "content+shape",
+        "gt_caption": "",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 87.5,
+        "cell_accuracy": 87.5,
+        "text_accuracy": 89.1,
+        "exact_match": 70.9,
+        "fuzzy_match": 18.2,
+        "gt_shape": [
+          8,
+          9
+        ],
+        "pred_shape": [
+          7,
+          9
+        ],
+        "match_score": 0.87,
+        "match_method": "content+shape",
+        "gt_caption": "",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 100.0,
+        "text_accuracy": 32.7,
+        "exact_match": 11.7,
+        "fuzzy_match": 20.9,
+        "gt_shape": [
+          22,
+          10
+        ],
+        "pred_shape": [
+          22,
+          10
+        ],
+        "match_score": 0.831,
+        "match_method": "content+shape",
+        "gt_caption": "",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 97.3,
+        "cell_accuracy": 97.3,
+        "text_accuracy": 55.8,
+        "exact_match": 14.5,
+        "fuzzy_match": 41.3,
+        "gt_shape": [
+          37,
+          6
+        ],
+        "pred_shape": [
+          36,
+          6
+        ],
+        "match_score": 0.826,
+        "match_method": "content+shape",
+        "gt_caption": "",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 100.0,
+        "text_accuracy": 60.0,
+        "exact_match": 30.0,
+        "fuzzy_match": 30.0,
+        "gt_shape": [
+          5,
+          10
+        ],
+        "pred_shape": [
+          5,
+          10
+        ],
+        "match_score": 0.815,
+        "match_method": "content+shape",
+        "gt_caption": "",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 87.1,
+        "cell_accuracy": 87.1,
+        "text_accuracy": 82.9,
+        "exact_match": 30.5,
+        "fuzzy_match": 52.4,
+        "gt_shape": [
+          31,
+          8
+        ],
+        "pred_shape": [
+          27,
+          8
+        ],
+        "match_score": 0.768,
+        "match_method": "content+shape",
+        "gt_caption": "",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 100.0,
+        "text_accuracy": 100.0,
+        "exact_match": 94.0,
+        "fuzzy_match": 6.0,
+        "gt_shape": [
+          10,
+          9
+        ],
+        "pred_shape": [
+          10,
+          9
+        ],
+        "match_score": 0.668,
+        "match_method": "content+shape",
+        "gt_caption": "",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 95.7,
+        "cell_accuracy": 95.7,
+        "text_accuracy": 72.6,
+        "exact_match": 13.4,
+        "fuzzy_match": 59.1,
+        "gt_shape": [
+          23,
+          9
+        ],
+        "pred_shape": [
+          22,
+          9
+        ],
+        "match_score": 0.66,
+        "match_method": "content+shape",
+        "gt_caption": "",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 100.0,
+        "text_accuracy": 62.9,
+        "exact_match": 9.7,
+        "fuzzy_match": 53.2,
+        "gt_shape": [
+          8,
+          10
+        ],
+        "pred_shape": [
+          8,
+          10
+        ],
+        "match_score": 0.615,
+        "match_method": "content+shape",
+        "gt_caption": "",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 100.0,
+        "text_accuracy": 100.0,
+        "exact_match": 87.1,
+        "fuzzy_match": 12.9,
+        "gt_shape": [
+          10,
+          13
+        ],
+        "pred_shape": [
+          10,
+          13
+        ],
+        "match_score": 0.555,
+        "match_method": "content+shape",
+        "gt_caption": "",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 50.0,
+        "cell_accuracy": 40.0,
+        "text_accuracy": 20.8,
+        "exact_match": 4.2,
+        "fuzzy_match": 16.7,
+        "gt_shape": [
+          6,
+          5
+        ],
+        "pred_shape": [
+          3,
+          4
+        ],
+        "match_score": 0.431,
+        "match_method": "content+shape",
+        "gt_caption": "",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 100.0,
+        "text_accuracy": 77.8,
+        "exact_match": 68.5,
+        "fuzzy_match": 9.3,
+        "gt_shape": [
+          20,
+          3
+        ],
+        "pred_shape": [
+          20,
+          3
+        ],
+        "match_score": 0.395,
+        "match_method": "caption+content",
+        "gt_caption": "Distribution of mean sentiment scores across diffe",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 100.0,
+        "text_accuracy": 85.2,
+        "exact_match": 72.7,
+        "fuzzy_match": 12.5,
+        "gt_shape": [
+          20,
+          5
+        ],
+        "pred_shape": [
+          20,
+          5
+        ],
+        "match_score": 0.369,
+        "match_method": "caption+content",
+        "gt_caption": "The distribution of toxic generations across demog",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 100.0,
+        "text_accuracy": 80.0,
+        "exact_match": 66.1,
+        "fuzzy_match": 13.9,
+        "gt_shape": [
+          20,
+          6
+        ],
+        "pred_shape": [
+          20,
+          6
+        ],
+        "match_score": 0.368,
+        "match_method": "caption+content",
+        "gt_caption": "Distribution of mean sentiment scores across diffe",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 100.0,
+        "text_accuracy": 85.1,
+        "exact_match": 69.4,
+        "fuzzy_match": 15.7,
+        "gt_shape": [
+          20,
+          13
+        ],
+        "pred_shape": [
+          20,
+          13
+        ],
+        "match_score": 0.346,
+        "match_method": "caption+content",
+        "gt_caption": "Distribution of mean sentiment scores across diffe",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 100.0,
+        "text_accuracy": 89.7,
+        "exact_match": 24.1,
+        "fuzzy_match": 65.5,
+        "gt_shape": [
+          9,
+          9
+        ],
+        "pred_shape": [
+          9,
+          9
+        ],
+        "match_score": 0.329,
+        "match_method": "caption+content",
+        "gt_caption": "CodeXGLUE docstring generation.",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 88.9,
+        "text_accuracy": 61.9,
+        "exact_match": 35.7,
+        "fuzzy_match": 26.2,
+        "gt_shape": [
+          7,
+          9
+        ],
+        "pred_shape": [
+          7,
+          8
+        ],
+        "match_score": 0.32,
+        "match_method": "caption+content",
+        "gt_caption": "Comparison of models with and without FIM training",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 86.4,
+        "cell_accuracy": 86.4,
+        "text_accuracy": 85.7,
+        "exact_match": 40.0,
+        "fuzzy_match": 45.7,
+        "gt_shape": [
+          22,
+          2
+        ],
+        "pred_shape": [
+          19,
+          2
+        ],
+        "match_score": 0.313,
+        "match_method": "caption+content",
+        "gt_caption": "Examples of Red Teaming for Malicious Use of Code",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 100.0,
+        "text_accuracy": 14.9,
+        "exact_match": 8.9,
+        "fuzzy_match": 6.0,
+        "gt_shape": [
+          21,
+          12
+        ],
+        "pred_shape": [
+          21,
+          12
+        ],
+        "match_score": 0.3,
+        "match_method": "caption+content",
+        "gt_caption": "CodeLlama full pass@k scores.",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 100.0,
+        "text_accuracy": 56.5,
+        "exact_match": 56.5,
+        "fuzzy_match": 0.0,
+        "gt_shape": [
+          11,
+          3
+        ],
+        "pred_shape": [
+          11,
+          3
+        ],
+        "match_score": 0.29,
+        "match_method": "caption+content",
+        "gt_caption": "Multilingual-HE results.",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      }
+    ],
+    "missed_tables": [
+      "LCC dataset statistics for different subsets."
+    ],
+    "extra_tables": [
+      "<bound method FloatingItem.caption_text of TableIt",
+      "<bound method FloatingItem.caption_text of TableIt",
+      "<bound method FloatingItem.caption_text of TableIt",
+      "<bound method FloatingItem.caption_text of TableIt",
+      "<bound method FloatingItem.caption_text of TableIt",
+      "<bound method FloatingItem.caption_text of TableIt",
+      "<bound method FloatingItem.caption_text of TableIt",
+      "<bound method FloatingItem.caption_text of TableIt"
+    ]
+  },
+  {
+    "paper_id": "2309.16609",
+    "pdf_type": "text-based",
+    "gt_tables": 17,
+    "pred_tables": 34,
+    "matched": 15,
+    "missed": 2,
+    "extra": 19,
+    "detection_rate": 88.2,
+    "row_accuracy": 89.9,
+    "cell_accuracy": 90.6,
+    "text_accuracy": 85.8,
+    "exact_match": 64.2,
+    "fuzzy_match": 21.6,
+    "pair_details": [
+      {
+        "row_accuracy": 40.0,
+        "cell_accuracy": 50.0,
+        "text_accuracy": 0.0,
+        "exact_match": 0.0,
+        "fuzzy_match": 0.0,
+        "gt_shape": [
+          6,
+          5
+        ],
+        "pred_shape": [
+          15,
+          1
+        ],
+        "match_score": 0.551,
+        "match_method": "caption+content",
+        "gt_caption": "Performance of",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 100.0,
+        "text_accuracy": 95.5,
+        "exact_match": 81.8,
+        "fuzzy_match": 13.6,
+        "gt_shape": [
+          4,
+          7
+        ],
+        "pred_shape": [
+          4,
+          7
+        ],
+        "match_score": 0.355,
+        "match_method": "caption+content",
+        "gt_caption": "Model sizes, architectures, and optimization hyper",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 95.2,
+        "cell_accuracy": 95.2,
+        "text_accuracy": 95.3,
+        "exact_match": 65.4,
+        "fuzzy_match": 29.9,
+        "gt_shape": [
+          21,
+          6
+        ],
+        "pred_shape": [
+          20,
+          6
+        ],
+        "match_score": 0.321,
+        "match_method": "caption+content",
+        "gt_caption": "Results on the datasets concerning knowledge and u",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 95.0,
+        "cell_accuracy": 95.0,
+        "text_accuracy": 94.1,
+        "exact_match": 60.5,
+        "fuzzy_match": 33.6,
+        "gt_shape": [
+          20,
+          7
+        ],
+        "pred_shape": [
+          19,
+          7
+        ],
+        "match_score": 0.313,
+        "match_method": "caption+content",
+        "gt_caption": "Results on the other datasets of examination",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 95.0,
+        "cell_accuracy": 95.0,
+        "text_accuracy": 90.1,
+        "exact_match": 64.4,
+        "fuzzy_match": 25.7,
+        "gt_shape": [
+          20,
+          6
+        ],
+        "pred_shape": [
+          19,
+          6
+        ],
+        "match_score": 0.31,
+        "match_method": "caption+content",
+        "gt_caption": "Results on the datasets related to natural languag",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 95.7,
+        "cell_accuracy": 95.7,
+        "text_accuracy": 96.4,
+        "exact_match": 65.7,
+        "fuzzy_match": 30.7,
+        "gt_shape": [
+          23,
+          7
+        ],
+        "pred_shape": [
+          22,
+          7
+        ],
+        "match_score": 0.307,
+        "match_method": "caption+content",
+        "gt_caption": "Results on MMLU",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 94.1,
+        "cell_accuracy": 94.1,
+        "text_accuracy": 84.1,
+        "exact_match": 81.7,
+        "fuzzy_match": 2.4,
+        "gt_shape": [
+          17,
+          6
+        ],
+        "pred_shape": [
+          16,
+          6
+        ],
+        "match_score": 0.3,
+        "match_method": "caption+content",
+        "gt_caption": "Results of",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 100.0,
+        "text_accuracy": 94.0,
+        "exact_match": 83.6,
+        "fuzzy_match": 10.4,
+        "gt_shape": [
+          13,
+          6
+        ],
+        "pred_shape": [
+          13,
+          6
+        ],
+        "match_score": 0.299,
+        "match_method": "caption+content",
+        "gt_caption": "Correctness of the final response on the in-house ",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 100.0,
+        "text_accuracy": 94.0,
+        "exact_match": 79.1,
+        "fuzzy_match": 14.9,
+        "gt_shape": [
+          13,
+          6
+        ],
+        "pred_shape": [
+          13,
+          6
+        ],
+        "match_score": 0.297,
+        "match_method": "caption+content",
+        "gt_caption": "The proportion of code generated by",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 91.7,
+        "cell_accuracy": 91.7,
+        "text_accuracy": 94.6,
+        "exact_match": 52.2,
+        "fuzzy_match": 42.5,
+        "gt_shape": [
+          24,
+          9
+        ],
+        "pred_shape": [
+          22,
+          9
+        ],
+        "match_score": 0.29,
+        "match_method": "caption+content",
+        "gt_caption": "Overall performance on widely-used benchmarks comp",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 100.0,
+        "text_accuracy": 97.7,
+        "exact_match": 69.8,
+        "fuzzy_match": 27.9,
+        "gt_shape": [
+          8,
+          6
+        ],
+        "pred_shape": [
+          8,
+          6
+        ],
+        "match_score": 0.279,
+        "match_method": "caption+content",
+        "gt_caption": "Results of",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 95.2,
+        "cell_accuracy": 95.2,
+        "text_accuracy": 91.8,
+        "exact_match": 77.3,
+        "fuzzy_match": 14.4,
+        "gt_shape": [
+          21,
+          6
+        ],
+        "pred_shape": [
+          20,
+          6
+        ],
+        "match_score": 0.257,
+        "match_method": "caption+content",
+        "gt_caption": "Results of models on mathematical reasoning",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 100.0,
+        "text_accuracy": 97.9,
+        "exact_match": 88.5,
+        "fuzzy_match": 9.4,
+        "gt_shape": [
+          15,
+          8
+        ],
+        "pred_shape": [
+          15,
+          8
+        ],
+        "match_score": 0.241,
+        "match_method": "caption+content",
+        "gt_caption": "Leaderboard results of C-Eval",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 75.0,
+        "cell_accuracy": 75.0,
+        "text_accuracy": 91.7,
+        "exact_match": 66.7,
+        "fuzzy_match": 25.0,
+        "gt_shape": [
+          4,
+          8
+        ],
+        "pred_shape": [
+          3,
+          8
+        ],
+        "match_score": 0.191,
+        "match_method": "caption+content",
+        "gt_caption": "Test Accuracy of",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 71.8,
+        "cell_accuracy": 71.8,
+        "text_accuracy": 70.1,
+        "exact_match": 26.1,
+        "fuzzy_match": 44.0,
+        "gt_shape": [
+          39,
+          4
+        ],
+        "pred_shape": [
+          28,
+          4
+        ],
+        "match_score": 0.16,
+        "match_method": "caption+content",
+        "gt_caption": "Results of pass@1 (\\%) on HumanEval and MBPP. Most",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      }
+    ],
+    "missed_tables": [
+      "Performance of aligned models on widely-used bench",
+      "Zero-shot pass@1 (\\%) performance on the HumanEval"
+    ],
+    "extra_tables": [
+      "<bound method FloatingItem.caption_text of TableIt",
+      "<bound method FloatingItem.caption_text of TableIt",
+      "<bound method FloatingItem.caption_text of TableIt",
+      "<bound method FloatingItem.caption_text of TableIt",
+      "<bound method FloatingItem.caption_text of TableIt",
+      "<bound method FloatingItem.caption_text of TableIt",
+      "<bound method FloatingItem.caption_text of TableIt",
+      "<bound method FloatingItem.caption_text of TableIt",
+      "<bound method FloatingItem.caption_text of TableIt",
+      "<bound method FloatingItem.caption_text of TableIt",
+      "<bound method FloatingItem.caption_text of TableIt",
+      "<bound method FloatingItem.caption_text of TableIt",
+      "<bound method FloatingItem.caption_text of TableIt",
+      "<bound method FloatingItem.caption_text of TableIt",
+      "<bound method FloatingItem.caption_text of TableIt",
+      "<bound method FloatingItem.caption_text of TableIt",
+      "<bound method FloatingItem.caption_text of TableIt",
+      "<bound method FloatingItem.caption_text of TableIt",
+      "<bound method FloatingItem.caption_text of TableIt"
+    ]
+  },
+  {
+    "paper_id": "2310.06825",
+    "pdf_type": "text-based",
+    "gt_tables": 3,
+    "pred_tables": 7,
+    "matched": 3,
+    "missed": 0,
+    "extra": 4,
+    "detection_rate": 100.0,
+    "row_accuracy": 83.3,
+    "cell_accuracy": 81.0,
+    "text_accuracy": 70.8,
+    "exact_match": 50.0,
+    "fuzzy_match": 20.8,
+    "pair_details": [
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 100.0,
+        "text_accuracy": 100.0,
+        "exact_match": 100.0,
+        "fuzzy_match": 0.0,
+        "gt_shape": [
+          10,
+          2
+        ],
+        "pred_shape": [
+          10,
+          2
+        ],
+        "match_score": 1.0,
+        "match_method": "content+shape",
+        "gt_caption": "",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 50.0,
+        "cell_accuracy": 50.0,
+        "text_accuracy": 28.6,
+        "exact_match": 0.0,
+        "fuzzy_match": 28.6,
+        "gt_shape": [
+          4,
+          2
+        ],
+        "pred_shape": [
+          2,
+          2
+        ],
+        "match_score": 0.628,
+        "match_method": "content+shape",
+        "gt_caption": "",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      },
+      {
+        "row_accuracy": 100.0,
+        "cell_accuracy": 92.9,
+        "text_accuracy": 83.9,
+        "exact_match": 50.0,
+        "fuzzy_match": 33.9,
+        "gt_shape": [
+          5,
+          14
+        ],
+        "pred_shape": [
+          5,
+          13
+        ],
+        "match_score": 0.339,
+        "match_method": "caption+content",
+        "gt_caption": "Performance of and different models on a wide rang",
+        "pred_caption": "<bound method FloatingItem.caption_text of TableIt"
+      }
+    ],
+    "missed_tables": [],
+    "extra_tables": [
+      "<bound method FloatingItem.caption_text of TableIt",
+      "<bound method FloatingItem.caption_text of TableIt",
+      "<bound method FloatingItem.caption_text of TableIt",
+      "<bound method FloatingItem.caption_text of TableIt"
+    ]
+  }
+]
