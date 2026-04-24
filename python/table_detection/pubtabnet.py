@@ -2,113 +2,81 @@ import json
 import random
 from pathlib import Path
 from tqdm import tqdm
+from datasets import load_dataset
 
 
 class PubTabNetDownloader:
-    """Download PubTabNet dataset từ Hugging Face"""
-    
-    def __init__(self, data_dir: str = "../../data/pubtabnet"):
+    def __init__(self, data_dir: str = "../../data/PaddleOCR"):
         self.data_dir = Path(data_dir)
         self.images_dir = self.data_dir / "images"
         self.annotations_dir = self.data_dir / "annotations"
-        
         self.images_dir.mkdir(parents=True, exist_ok=True)
         self.annotations_dir.mkdir(parents=True, exist_ok=True)
-    
-    def download(self, num_samples: int = 100, split: str = "train", skip: int = 0):
-        """Download samples từ Hugging Face"""
-        try:
-            from datasets import load_dataset
-        except ImportError:
-            print("❌ Cần cài đặt: pip install datasets")
-            return False
-        
-        print(f"📥 Downloading PubTabNet...")
-        print(f"   Split: {split}, Samples: {num_samples}")
-        
-        # ✅ Dùng streaming=True để không download toàn bộ 12GB
+
+    def download_random(self, num_samples: int = 20000, split: str = "train"):
+        """
+        Random chuẩn bằng Reservoir Sampling (uniform over stream)
+        """
+        print(f"📥 Tải RANDOM CHUẨN {num_samples} ảnh từ PubTabNet ({split})...")
+
         dataset = load_dataset(
-            "apoidea/pubtabnet-html", 
+            "apoidea/pubtabnet-html",
             split=split,
-            streaming=True, 
+            streaming=True,
             trust_remote_code=True
         )
-        
-        existing_files = len(list(self.images_dir.glob("*.png")))
-        # Lấy num_samples đầu tiên
-        count = 0
-        skipped = 0
 
-        for sample in tqdm(dataset, desc="Downloading", total=skip + num_samples):
+        reservoir = []
+        iterator = iter(dataset)
 
-            if skipped < skip:
-                skipped += 1
-                continue
+        print("🔄 Đang sampling (có thể hơi lâu vì phải duyệt stream)...")
 
-            if count >= num_samples:
-                break
+        for i, sample in enumerate(tqdm(iterator, desc="Sampling")):
+            if i < num_samples:
+                reservoir.append(sample)
+            else:
+                j = random.randint(0, i)
+                if j < num_samples:
+                    reservoir[j] = sample
 
-            file_index = existing_files + count + 1
-            filename = f"sample_{file_index:05d}"
-                        
-            # Lưu ảnh
-            image = sample.get('image')
+        print(f"✅ Sampling xong {len(reservoir)} samples")
+
+        # Lưu dữ liệu
+        existing = len(list(self.images_dir.glob("*.png")))
+
+        for idx, sample in enumerate(tqdm(reservoir, desc="💾 Đang lưu")):
+            file_id = existing + idx + 1
+            filename = f"sample_{file_id:06d}"
+
+            # Save image
+            image = sample.get("image")
             if image:
                 image.save(self.images_dir / f"{filename}.png")
-            
-            # Lưu annotation
+
+            # Save annotation
             annotation = {
-                'filename': f"{filename}.png",
-                'html': sample.get('html', ''),
+                "filename": f"{filename}.png",
+                "html": sample.get("html", ""),
+                "source": f"pubtabnet_{split}_random"
             }
-            with open(self.annotations_dir / f"{filename}.json", 'w') as f:
+
+            with open(self.annotations_dir / f"{filename}.json", "w", encoding="utf-8") as f:
                 json.dump(annotation, f, indent=2, ensure_ascii=False)
-            
-            count += 1
-        
-        print(f"✅ Saved {count} samples to {self.data_dir}")
-        return True
-    
-    def load_samples(self, max_samples: int = None):
-        """Load samples đã download"""
-        samples = []
-        image_files = sorted(self.images_dir.glob("*.png"))
-        
-        if max_samples:
-            image_files = image_files[:max_samples]
-        
-        for img_path in image_files:
-            anno_path = self.annotations_dir / f"{img_path.stem}.json"
-            annotation = None
-            
-            if anno_path.exists():
-                with open(anno_path) as f:
-                    annotation = json.load(f)
-            
-            samples.append({
-                'image_path': str(img_path),
-                'annotation': annotation
-            })
-        
-        return samples
-    
+
+        print(f"🎉 Done! Đã lưu {len(reservoir)} ảnh vào {self.data_dir}")
+        return len(reservoir)
+
     def get_stats(self):
-        """Thống kê dataset"""
-        images = len(list(self.images_dir.glob("*.png")))
-        annotations = len(list(self.annotations_dir.glob("*.json")))
-        
         return {
-            'images': images,
-            'annotations': annotations,
-            'status': 'ready' if images > 0 else 'empty'
+            "images": len(list(self.images_dir.glob("*.png"))),
+            "annotations": len(list(self.annotations_dir.glob("*.json"))),
         }
 
 
 if __name__ == "__main__":
     downloader = PubTabNetDownloader()
-    
-    # ⚠️ Chỉ download 100 samples để test trước
-    downloader.download(num_samples=100, skip=500677)
-    
+
+    downloader.download_random(num_samples=20000, split="train")
+
     stats = downloader.get_stats()
     print(f"\n📊 Stats: {stats}")

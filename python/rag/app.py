@@ -1,85 +1,94 @@
+import os
 import gradio as gr
 from dotenv import load_dotenv
+from langchain.document_loaders import TextLoader, DirectoryLoader
+from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain.embeddings import OpenAIEmbeddings  
+from langchain.vectorstores import Chroma
+from langchain.chat_models import ChatOpenAI
+from langchain.chains import RetrievalQA
 
-from implementation.answer_v2 import answer_question, batch_answer_questions
+load_dotenv()
 
-load_dotenv(override=True)
+# Lấy API key và base URL
+API_KEY = os.getenv("RAG_QWEN3_NEXT_80B_A3B_THINKING")
+BASE_URL = os.getenv("LLM_BASE_URL")
+# Tên model generation (có thể thay bằng qwen-max, qwen-plus, ...)
+LLM_MODEL = "qwen3-next-80b-a3b-thinking"
+# Tên embedding model của DashScope (hỗ trợ tương thích OpenAI)
+EMBEDDING_MODEL = "text-embedding-v3"  # hoặc "text-embedding-v2"
 
+# 1. Xây dựng retriever từ tài liệu
+def build_retriever(docs_path="documents/"):
+    if os.path.isfile(docs_path):
+        loader = TextLoader(docs_path)
+    else:
+        loader = DirectoryLoader(docs_path, glob="**/*.txt", loader_cls=TextLoader)
+    documents = loader.load()
+    splitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=50)
+    chunks = splitter.split_documents(documents)
+    # Embedding dùng OpenAIEmbeddings nhưng trỏ base URL và model riêng
+    embeddings = OpenAIEmbeddings(
+        openai_api_key=API_KEY,
+        openai_api_base=BASE_URL,
+        model=EMBEDDING_MODEL,
+        chunk_size=1  # tránh lỗi chunk size
+    )
+    vectorstore = Chroma.from_documents(chunks, embeddings)
+    return vectorstore.as_retriever(search_kwargs={"k": 4})
 
-def format_context(context):
-    result = "<h2 style='color: #ff7800;'>Relevant Context</h2>\n\n"
-    for doc in context:
-        result += f"<span style='color: #ff7800;'>Source: {doc.metadata['source']}</span>\n\n"
-        result += doc.page_content + "\n\n"
-    return result
+# 2. LLM và QA chain
+llm = ChatOpenAI(
+    openai_api_key=API_KEY,
+    openai_api_base=BASE_URL,
+    model_name=LLM_MODEL,
+    temperature=0
+)
+retriever = build_retriever("documents/")  # thay bằng thư mục/file của bạn
+qa_chain = RetrievalQA.from_chain_type(
+    llm=llm,
+    chain_type="stuff",
+    retriever=retriever,
+    return_source_documents=True
+)
 
+# 3. Hàm chat
+def format_context(docs):
+    if not docs:
+        return "*Không tìm thấy tài liệu liên quan.*"
+    html = "<div style='background:#f9f9f9; padding:10px; border-radius:8px;'>"
+    for doc in docs:
+        source = doc.metadata.get("source", "unknown")
+        html += f"<p><b>📄 {source}:</b><br>{doc.page_content[:300]}...</p><hr>"
+    html += "</div>"
+    return html
 
-async def chat(history):
-    last_message = str(history[-1]["content"])
-    prior = history[:-1]
-    
-    answer, context = await answer_question(last_message, prior, tenant_id="user_test_001")
-    
-    history.append({"role": "assistant", "content": answer})
-    return history, format_context(context)
+def answer_question(message, history):
+    result = qa_chain.invoke({"query": message})
+    answer = result["result"]
+    sources = result["source_documents"]
+    return answer, format_context(sources)
 
+# 4. Giao diện Gradio
+with gr.Blocks(title="📚 RAG Qwen Assistant") as demo:
+    gr.Markdown("# 🤖 RAG Assistant with Qwen3")
 
-def main():
-    def put_message_in_chatbot(message, history):
-        return "", history + [{"role": "user", "content": message}]
+    with gr.Row():
+        with gr.Column(scale=2):
+            chatbot = gr.Chatbot(label="Chat", height=500)
+            msg = gr.Textbox(label="Câu hỏi", placeholder="Nhập câu hỏi...")
+            clear = gr.Button("Xóa lịch sử")
+        with gr.Column(scale=1):
+            context_box = gr.HTML(label="Ngữ cảnh liên quan")
 
-    theme = gr.themes.Soft(font=["Inter", "system-ui", "sans-serif"])
+    def respond(message, chat_history):
+        if not message:
+            return "", chat_history, ""
+        answer, context_html = answer_question(message, chat_history)
+        chat_history.append((message, answer))
+        return "", chat_history, context_html
 
-    with gr.Blocks(title="Insurellm Expert Assistant") as ui:
-        gr.Markdown("# 🏢 Insurellm Expert Assistant\nAsk me anything about Insurellm!")
+    msg.submit(respond, [msg, chatbot], [msg, chatbot, context_box])
+    clear.click(lambda: ([], ""), None, [chatbot, context_box])
 
-        with gr.Row():
-            with gr.Column(scale=1):
-                chatbot = gr.Chatbot(label="💬 Conversation", height=600)
-                message = gr.Textbox(
-                    label="Your Question",
-                    placeholder="Ask anything about Insurellm...",
-                    show_label=False,
-                )
-
-            with gr.Column(scale=1):
-                context_markdown = gr.Markdown(
-                    label="📚 Retrieved Context",
-                    value="*Retrieved context will appear here*",
-                    container=True,
-                    height=600,
-                )
-
-        message.submit(
-            put_message_in_chatbot, inputs=[message, chatbot], outputs=[message, chatbot]
-        ).then(chat, inputs=chatbot, outputs=[chatbot, context_markdown])
-
-        with gr.Tab("Batch Processing"):
-            gr.Markdown("### Batch Process Multiple Questions")
-            batch_input = gr.Textbox(
-                label="Questions (one per line)",
-                placeholder="Enter questions separated by new lines...",
-                lines=10
-            )
-            batch_output = gr.JSON(label="Results")
-            batch_btn = gr.Button("Process Batch")
-            
-            async def process_batch(questions_str):
-                questions = [q.strip() for q in questions_str.split('\n') if q.strip()]
-                if not questions:
-                    return {"error": "No questions provided"}
-                
-                results = await batch_answer_questions(questions, tenant_id="user_test_001")
-                
-                formatted_results = [
-                    {"question": q, "answer": r[0], "has_context": len(r[1]) > 0}
-                    for q, r in zip(questions, results)
-                ]
-                return formatted_results
-            
-            batch_btn.click(process_batch, inputs=batch_input, outputs=batch_output)
-
-    ui.launch(inbrowser=True, theme=theme)
-
-if __name__ == "__main__":
-    main()
+demo.launch(inbrowser=True)

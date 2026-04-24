@@ -6,3 +6,5 @@ data/table_2.xlsx
 CONTINUITY.md
 data/pubtabnet-1M
 data/table-seg-checkpoints-v2
+data/PaddleOCR
+data/inference_model
