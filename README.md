@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/img/banner.png" alt="RagTable banner" width="600" />
+  <img src="data/banner.png" alt="RagTable banner" width="600" />
 </p>
 
 <h1 align="center">RagTable</h1>

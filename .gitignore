@@ -8,3 +8,6 @@ data/pubtabnet-1M
 data/table-seg-checkpoints-v2
 data/PaddleOCR
 data/inference_model
+data/pdfs
+data/test_cases
+data/papers
