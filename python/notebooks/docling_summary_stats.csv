@@ -1,0 +1,13 @@
+Metric,Value
+Total Samples,200
+Tables Detected,182
+Tables Not Detected,18
+Detection Rate (%),91.0
+Mean Accuracy (%),67.50
+Median Accuracy (%),80.46
+Mean Time (s),8.74
+Max Time (s),25.81
+Min Time (s),2.88
+Samples with 100% Accuracy,11
+Samples with 0% Accuracy (no table),18
+Samples with 0% Accuracy (table detected),2
