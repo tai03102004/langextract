@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "ragtab"
+version = "0.1.0"
+description = "Trích xuất bảng từ ảnh/PDF thành Markdown cho RAG pipeline"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+authors = [
+    {name = "Your Name", email = "you@example.com"}
+]
+keywords = ["table-extraction", "ocr", "unet", "rag"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+]
+
+dependencies = [
+    "torch>=2.0",
+    "torchvision",
+    "numpy",
+    "opencv-python",
+    "Pillow",
+    "paddleocr",          
+    "scipy",
+    "matplotlib",        
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "build", "twine"]
+
+[project.urls]
+Homepage = "https://github.com/yourusername/ragtab"
+Repository = "https://github.com/yourusername/ragtab"
+
+[tool.setuptools.packages.find]
+include = ["ragtab*"]
