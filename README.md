@@ -58,7 +58,7 @@ from ragtab.pipeline import extract_table
 markdown, cells = extract_table(
     "bang_mau.png",
     model_path="checkpoints/unet_best.pt",
-    ocr_engine="paddleocr"  # hoặc "tesseract"
+    ocr_engine="paddleocr"
 )
 
 print(markdown)
@@ -73,7 +73,7 @@ print(markdown)
 | 2   | Samsung S24 | 899     | 8        |
 ```
 
-### Dùng để phát hiện đường kẻ với bảng có đường kẻ rõ ràng
+### Dùng để phát hiện đường kẻ với bảng có đường kẻ rõ ràng (nhưng dự án này tập trung vào bảng borderless)
 
 ```python
 from ragtab.heuristic import bordered_table_extraction
@@ -102,7 +102,7 @@ markdown = bordered_table_extraction("bang_thuong.png")
 [4] Tạo grid → bounding boxes từng cell
        │
        ▼
-[5] Crop từng cell → OCR (PaddleOCR + enhance)
+[5] Cell cropping → OCR (PaddleOCR)
        │
        ▼
 [6] Xuất Markdown / JSON
@@ -165,5 +165,12 @@ MIT – tự do sử dụng, kể cả cho mục đích thương mại.
 
 **Dinh Duc Tai**
 📧 [dinhductai2004@gmail.com](mailto:dinhductai2004@gmail.com)
+
+---
+
+---
+
+## ⭐️ Support
+If you find this project useful, consider giving it a ⭐️ on GitHub!
 
 ---

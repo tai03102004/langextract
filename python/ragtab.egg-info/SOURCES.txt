@@ -1,0 +1,13 @@
+pyproject.toml
+ragtab/__init__.py
+ragtab/detection.py
+ragtab/heuristic.py
+ragtab/model.py
+ragtab/ocr.py
+ragtab/pipeline.py
+ragtab/utils.py
+ragtab.egg-info/PKG-INFO
+ragtab.egg-info/SOURCES.txt
+ragtab.egg-info/dependency_links.txt
+ragtab.egg-info/requires.txt
+ragtab.egg-info/top_level.txt
