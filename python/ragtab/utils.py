@@ -1,6 +1,22 @@
 from PIL import Image
+from paddleocr import PaddleOCR
 import torchvision.transforms.functional as TF
-import torch
+from dataclasses import dataclass
+
+@dataclass
+class Cell:
+    row_idx: int
+    col_idx: int
+    x: int; y: int; w: int; h: int
+    is_span: bool = False
+    text: str = ""
+
+ocr = PaddleOCR(
+    use_textline_orientation=False,
+    use_doc_orientation_classify=False,
+    use_doc_unwarping=False,
+    lang="en"
+)
 
 def prepare_image_tensor(image_path, img_size=384):
     orig_img = Image.open(image_path).convert("RGB")

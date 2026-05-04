@@ -27,14 +27,16 @@ dependencies = [
     "paddleocr",          
     "scipy",
     "matplotlib",        
+    "timm",
 ]
 
 [project.optional-dependencies]
 dev = ["pytest", "build", "twine"]
 
 [project.urls]
-Homepage = "https://github.com/yourusername/ragtab"
-Repository = "https://github.com/yourusername/ragtab"
+Homepage = "https://github.com/tai03102004/rag-table"
+Repository = "https://github.com/tai03102004/rag-table"
 
 [tool.setuptools.packages.find]
+where = ["python"]
 include = ["ragtab*"]

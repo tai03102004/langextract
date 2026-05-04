@@ -73,15 +73,14 @@ print(markdown)
 | 2   | Samsung S24 | 899     | 8        |
 ```
 
-### Chế độ nhẹ (không cần model)
+### Dùng để phát hiện đường kẻ với bảng có đường kẻ rõ ràng
 
 ```python
-from ragtab.heuristic import whitespace_table_extraction
+from ragtab.heuristic import bordered_table_extraction
 
-markdown = whitespace_table_extraction("bang_thuong.png")
+markdown = bordered_table_extraction("bang_thuong.png")
 ```
 
-→ Nhanh, nhẹ, phù hợp khi không có checkpoint.
 
 ---
 
@@ -116,13 +115,19 @@ Tất cả các bước đều có thể dùng độc lập để tuỳ chỉnh 
 ## 🗂️ Cấu trúc dự án
 
 ```
-ragtab/
-├── __init__.py
-├── detection.py      # xử lý row/col từ mask
-├── ocr.py            # crop, OCR, xử lý text
-├── pipeline.py       # extract_table() / TableExtractor
-├── heuristic.py      # phương pháp fallback
-└── utils.py          # resize, padding, helpers
+RagTable/
+├── python/
+│   └── ragtab/          # Package chính
+│       ├── __init__.py
+│       ├── detection.py
+│       ├── heuristic.py
+│       ├── model.py
+│       ├── ocr.py
+│       ├── pipeline.py
+│       └── utils.py
+├── checkpoints/
+├── README.md
+└── ...
 ```
 
 ---

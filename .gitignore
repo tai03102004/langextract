@@ -11,3 +11,16 @@ data/inference_model
 data/pdfs
 data/test_cases
 data/papers
+python/dataset
+python/notebooks
+python/notebooks/comparison_unet_vs_docling.csv
+python/notebooks/docling_eval_results.csv
+python/notebooks/docling_eval_summary.png
+python/notebooks/docling_summary_stats.csv
+python/notebooks/img2table_eval_results.csv
+python/notebooks/img2table_final_eval.csv
+python/notebooks/rule_based_results.csv
+python/notebooks/table_transformer_results.csv
+python/notebooks/tesseract_final_eval.csv
+python/notebooks/unet_pipeline_eval_results_v2.csv
+python/notebooks/unet_pipeline_eval_results_v3.csv
