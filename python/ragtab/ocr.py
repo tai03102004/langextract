@@ -6,9 +6,8 @@ import math
 def clean_text(text, col_idx=None):
     text = text.strip()
 
-    text = text.replace(",", ".")
     text = re.sub(r"\s+", " ", text)
-    text = re.sub(r"[^\w\s\.\,\-\(\)%±/=+:;|&]", "", text)
+    text = re.sub(r"[^\w\s\.\,\-\(\)%±/=+:;|&']", "", text)
     return text
 
 def fix_percent_96(text):
@@ -74,7 +73,7 @@ def crop_and_ocr(image_pil, cells, ocr, upscale=3):
     valid_cells = []
 
     for cell in cells:
-        pad = int(min(cell.w, cell.h) * 0.15)
+        pad = max(int(min(cell.w, cell.h) * 0.15), 3)
         x1 = max(0, cell.x - pad); y1 = max(0, cell.y - pad)
         x2 = min(W, cell.x + cell.w + pad); y2 = min(H, cell.y + cell.h + pad)
 
@@ -84,15 +83,21 @@ def crop_and_ocr(image_pil, cells, ocr, upscale=3):
             continue
 
         gray = cv2.cvtColor(crop, cv2.COLOR_RGB2GRAY)
+        min_scale = 3.0
+        max_scale = 5.0
+        h_ratio = max(0.3, min(1.0, cell.h / 100.0)) 
+        scale = min_scale + (1 - h_ratio) * (max_scale - min_scale)
 
-        scale = 4 if cell.row_idx == 0 else upscale  
-        gray = cv2.resize(gray, None, fx=scale, fy=scale, interpolation=cv2.INTER_CUBIC)
+        new_w = int(gray.shape[1] * scale)
+        new_h = int(gray.shape[0] * scale)
 
-        gray = cv2.normalize(gray, None, 0, 255, cv2.NORM_MINMAX)
+        gray = cv2.resize(gray, (new_w, new_h), interpolation=cv2.INTER_CUBIC)
+        
+        clahe = cv2.createCLAHE(clipLimit=2.0, tileGridSize=(8,8))
+        gray = clahe.apply(gray)
 
         img_input = cv2.cvtColor(gray, cv2.COLOR_GRAY2BGR)
-        TARGET_H, TARGET_W = 64, 256
-        img_input = cv2.resize(img_input, (TARGET_W, TARGET_H))
+        img_input = resize_with_padding(img_input, target_height=64, target_width=256)
 
         batch_imgs.append(img_input)
         valid_cells.append(cell)
@@ -111,3 +116,18 @@ def crop_and_ocr(image_pil, cells, ocr, upscale=3):
 
         cell.text = text
     return cells
+
+def resize_with_padding(img, target_height, target_width):
+    """Resize ảnh giữ nguyên tỉ lệ, thêm viền trắng nếu cần để đạt kích thước mục tiêu."""
+    h, w = img.shape[:2]
+    ratio = min(target_width / w, target_height / h)
+    new_w = int(w * ratio)
+    new_h = int(h * ratio)
+    resized = cv2.resize(img, (new_w, new_h), interpolation=cv2.INTER_CUBIC)
+    # Tạo canvas trắng
+    canvas = np.ones((target_height, target_width, 3), dtype=np.uint8) * 255
+    # Tính offset để căn giữa
+    x_offset = (target_width - new_w) // 2
+    y_offset = (target_height - new_h) // 2
+    canvas[y_offset:y_offset+new_h, x_offset:x_offset+new_w] = resized
+    return canvas

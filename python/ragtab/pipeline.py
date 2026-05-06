@@ -61,7 +61,12 @@ def image_to_markdown_v3(image_path, model, device, img_size=384, upscale=3):
 def extract_table(image_path, model_path, ocr_engine="paddleocr"):
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     model = EfficientUNet(out_ch=5, pretrained=False).to(device)
-    model.load_state_dict(torch.load(model_path, map_location=device))
+    checkpoint = torch.load(model_path, map_location=device, weights_only=False)
+    if isinstance(checkpoint, dict) and 'model' in checkpoint:
+        model.load_state_dict(checkpoint['model'])
+        print(f"✅ Loaded checkpoint")
+    else:
+        model.load_state_dict(checkpoint)
     model.eval()
         
     return image_to_markdown_v3(image_path, model, device, img_size=384, upscale=3)
