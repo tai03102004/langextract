@@ -3,11 +3,16 @@ import cv2
 import re 
 import math
 
+import numpy as np
+import cv2
+import re 
+import math
+
 def clean_text(text, col_idx=None):
     text = text.strip()
 
     text = re.sub(r"\s+", " ", text)
-    text = re.sub(r"[^\w\s\.\,\-\(\)%±/=+:;|&']", "", text)
+    text = re.sub(r"[^\w\s\.\,\-\(\)%±/=+:;|&'<>~]", "", text)
     return text
 
 def fix_percent_96(text):
@@ -73,6 +78,8 @@ def crop_and_ocr(image_pil, cells, ocr, upscale=3):
     valid_cells = []
 
     for cell in cells:
+        if cell.text:          
+            continue
         pad = max(int(min(cell.w, cell.h) * 0.15), 3)
         x1 = max(0, cell.x - pad); y1 = max(0, cell.y - pad)
         x2 = min(W, cell.x + cell.w + pad); y2 = min(H, cell.y + cell.h + pad)

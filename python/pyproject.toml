@@ -4,13 +4,13 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "ragtab"
-version = "0.1.0"
+version = "0.1.1"
 description = "Trích xuất bảng từ ảnh/PDF thành Markdown cho RAG pipeline"
 readme = "README.md"
 license = {text = "MIT"}
 requires-python = ">=3.10"
 authors = [
-    {name = "Your Name", email = "you@example.com"}
+    {name = "Dinh Duc Tai", email = "dinhductai2004@gmail.com"}
 ]
 keywords = ["table-extraction", "ocr", "unet", "rag"]
 classifiers = [

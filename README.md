@@ -4,7 +4,7 @@
 
 <h1 align="center">RagTable</h1>
 <p align="center">
-  <b>Trích xuất bảng từ ảnh/PDF sang Markdown – nhanh, gọn, sẵn sàng cho RAG</b>
+  <b>Extract tables from images into Markdown — fast, accurate, RAG-ready</b>
 </p>
 
 <p align="center">
@@ -15,48 +15,50 @@
 
 ---
 
-## 🚀 Tính năng
-
-* **Phân đoạn cấu trúc bảng** bằng EfficientUNet (~19M params) với 5 loại mask:
-  `row`, `col`, `col_header`, `row_header`, `span`
-* **Hoàn thiện lưới thông minh**: tự động bổ sung hàng/cột bị thiếu bằng phân tích khoảng trắng
-* **OCR theo từng ô** (PaddleOCR) → giảm nhiễu chéo, tăng độ chính xác
-* **Xuất Markdown / JSON** → dễ dàng tích hợp vào vector DB hoặc LLM pipeline
-* **Chạy hoàn toàn offline** → phù hợp với dữ liệu nhạy cảm
-* **Hỗ trợ nhiều định dạng**: PNG, JPG, TIFF, PDF (tự động chuyển sang ảnh)
+RagTable converts table images into structured Markdown using a segmentation model + per-cell OCR. It's designed for **borderless and complex tables** (e.g. academic papers, reports) and produces output that plugs directly into RAG pipelines or LLM contexts.
 
 ---
 
-## 📦 Cài đặt
+## Features
+
+- **5-channel segmentation** via EfficientUNet (~19M params): `row`, `col`, `col_header`, `row_header`, `span`
+- **Span detection** — merged cells are detected and rendered with correct `colspan` in Markdown
+- **Smart header handling** — header rows use a dedicated OCR pass to improve accuracy on dense or styled text
+- **Per-cell OCR** via PaddleOCR — crops each cell individually to minimize cross-cell bleed
+- **Post-processing** — removes phantom edge columns, empty rows, and footer artifacts automatically
+- **Fully offline** — no external API calls, suitable for sensitive or air-gapped environments
+- **Multiple input formats**: PNG, JPG, TIFF
+
+---
+
+## Installation
 
 ```bash
 pip install ragtab
 ```
 
-**Yêu cầu:**
+**Requirements:**
+- Python ≥ 3.10
+- PyTorch (install separately if not already present)
+- PaddleOCR (installed automatically)
 
-* Python ≥ 3.10
-* PyTorch (cài riêng nếu chưa có)
-
-OCR sử dụng **PaddleOCR** và sẽ được cài tự động.
-
-### Cài từ source (tuỳ chọn)
+### Install from source
 
 ```bash
-git clone https://github.com/<your-username>/ragtab.git
+git clone https://github.com/tai03102004/rag-table
 cd ragtab
 pip install -e .
 ```
 
 ---
 
-## ⚡ Quickstart
+## Quickstart
 
 ```python
 from ragtab.pipeline import extract_table
 
 markdown, cells = extract_table(
-    "bang_mau.png",
+    "table.png",
     model_path="checkpoints/unet_best.pt",
     ocr_engine="paddleocr"
 )
@@ -64,113 +66,90 @@ markdown, cells = extract_table(
 print(markdown)
 ```
 
-**Kết quả:**
+Output:
 
 ```
-| STT | Tên sản phẩm | Đơn giá | Số lượng |
-| --- | ----------- | ------- | -------- |
-| 1   | iPhone 15   | 999     | 12       |
-| 2   | Samsung S24 | 899     | 8        |
+| Item        | Price | Qty |
+| ----------- | ----- | --- |
+| iPhone 15   | 999   | 12  |
+| Samsung S24 | 899   | 8   |
 ```
-
-### Dùng để phát hiện đường kẻ với bảng có đường kẻ rõ ràng (nhưng dự án này tập trung vào bảng borderless)
-
-```python
-from ragtab.heuristic import bordered_table_extraction
-
-markdown = bordered_table_extraction("bang_thuong.png")
-```
-
 
 ---
 
-## 🧠 Pipeline hoạt động
+## How it works
 
 ```
-Ảnh đầu vào (384x384)
+Input image (resized to 384×384)
        │
        ▼
-[1] U-Net Segmentation → row + col (+ header/span)
+[1] EfficientUNet → 5 segmentation masks (row, col, col_header, row_header, span)
        │
        ▼
-[2] Projection + filtering → vị trí hàng/cột
+[2] Projection analysis → row/column separator positions
        │
        ▼
-[3] Whitespace refinement (fallback khi mask yếu)
+[3] Span detection → connected components on masked region
        │
        ▼
-[4] Tạo grid → bounding boxes từng cell
+[4] Grid construction → per-cell bounding boxes
        │
        ▼
-[5] Cell cropping → OCR (PaddleOCR)
+[5] Header rows → dedicated OCR pass with spatial mapping
+[5] Body cells  → per-cell crop + OCR
        │
        ▼
-[6] Xuất Markdown / JSON
+[6] Post-processing → drop phantom columns, empty rows, footers
+       │
+       ▼
+[7] Export → Markdown
 ```
 
-Tất cả các bước đều có thể dùng độc lập để tuỳ chỉnh pipeline.
+Each stage is independently accessible so you can swap components or customize the pipeline.
 
 ---
 
-## 🗂️ Cấu trúc dự án
+## Project structure
 
 ```
 RagTable/
 ├── python/
-│   └── ragtab/          # Package chính
+│   └── ragtab/
 │       ├── __init__.py
-│       ├── detection.py
-│       ├── heuristic.py
-│       ├── model.py
-│       ├── ocr.py
-│       ├── pipeline.py
+│       ├── detection.py     # Mask → grid cells
+│       ├── model.py         # EfficientUNet definition
+│       ├── ocr.py           # PaddleOCR wrapper + text cleaning
+│       ├── pipeline.py      # End-to-end extract_table()
 │       └── utils.py
-├── checkpoints/
-├── README.md
-└── ...
+├── checkpoints/             # Model weights (.pt)
+├── notebooks/
+│   └── 02_table-recognition.ipynb
+└── README.md
 ```
 
 ---
 
-## 🔧 Model
+## Model & checkpoints
 
-RagTable sử dụng U-Net checkpoint (`.pt`):
+RagTable uses a U-Net checkpoint (`.pt`). You can:
 
-Bạn có thể:
+- **Train from scratch** using `notebooks/02_table-recognition.ipynb`
+- **Download a pretrained checkpoint** (Google Drive / Hugging Face)
+- **Google Drive: https://drive.google.com/drive/folders/1ILV2zmI6Go-u16bFRbM_Hi1vAyLzc1dQ?usp=drive_link
+- **Hugging Face: https://huggingface.co/henryhs/rag-table/blob/main/unet_best.pt
 
-* Train lại bằng notebook: `notebooks/02_table-recognition.ipynb`
-* Hoặc tải checkpoint có sẵn (Google Drive / Hugging Face)
-
-Sau đó đặt vào thư mục:
-
-```
-checkpoints/
-```
-
-và truyền vào:
-
-```python
-model_path="checkpoints/unet_best.pt"
-```
+Place the checkpoint at `checkpoints/unet_best.pt` and pass it via `model_path`.
 
 ---
 
-## 📝 License
+## License
 
-MIT – tự do sử dụng, kể cả cho mục đích thương mại.
-
----
-
-## 👤 Tác giả
-
-**Dinh Duc Tai**
-📧 [dinhductai2004@gmail.com](mailto:dinhductai2004@gmail.com)
+MIT — free to use, including for commercial purposes.
 
 ---
 
----
+## Author
 
-## ⭐️ Support
+**Dinh Duc Tai** — [dinhductai2004@gmail.com](mailto:dinhductai2004@gmail.com)
+
 If you find this project useful, consider giving it a ⭐️ on GitHub!
-
----

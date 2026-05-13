@@ -1,4 +1,4 @@
-|   | SULT1A1*1/*1 genotype | SULT1A1*2 allele carriera |  |  |  |  |
+|  | SULT1A1*1/*1 genotype |  |  | SULT1A1*2 allele carriera |  |  |
 | --- | --- | --- | --- | --- | --- | --- |
 | Variable | Cases (n = 198) | Controls (n = 374) | ORb (95% CI) | Cases (n = 221) | Controls (n = 510) | ORb (95% CI) |
 | Never active | 86 | 159 | 1 (ref) | 88 | 209 | 1 (ref) |

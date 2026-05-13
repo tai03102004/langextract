@@ -1,30 +1,3 @@
-Metadata-Version: 2.4
-Name: ragtab
-Version: 0.1.1
-Summary: Trích xuất bảng từ ảnh/PDF thành Markdown cho RAG pipeline
-Author-email: Dinh Duc Tai <dinhductai2004@gmail.com>
-License: MIT
-Project-URL: Homepage, https://github.com/tai03102004/rag-table
-Project-URL: Repository, https://github.com/tai03102004/rag-table
-Keywords: table-extraction,ocr,unet,rag
-Classifier: Programming Language :: Python :: 3
-Classifier: License :: OSI Approved :: MIT License
-Requires-Python: >=3.10
-Description-Content-Type: text/markdown
-Requires-Dist: torch>=2.0
-Requires-Dist: torchvision
-Requires-Dist: numpy
-Requires-Dist: opencv-python
-Requires-Dist: Pillow
-Requires-Dist: paddleocr
-Requires-Dist: scipy
-Requires-Dist: matplotlib
-Requires-Dist: timm
-Provides-Extra: dev
-Requires-Dist: pytest; extra == "dev"
-Requires-Dist: build; extra == "dev"
-Requires-Dist: twine; extra == "dev"
-
 # RagTable
 
 **Extract tables from images/PDFs to Markdown — fast, accurate, RAG-ready**
@@ -144,13 +117,12 @@ RagTable/
 │   └── ragtab/
 │       ├── __init__.py
 │       ├── detection.py     # Mask → grid cells
+│       ├── drop.py          # Drop → Remove borders, empty rows, footers
 │       ├── model.py         # EfficientUNet definition
 │       ├── ocr.py           # PaddleOCR wrapper + text cleaning
 │       ├── pipeline.py      # End-to-end extract_table()
 │       └── utils.py
 ├── checkpoints/
-├── notebooks/
-│   └── 02_table-recognition.ipynb
 └── README.md
 ```
 

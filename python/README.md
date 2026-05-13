@@ -1,40 +1,51 @@
-# 🧾 RagTable
+# RagTable
 
-**Extract tables from images/PDFs to Markdown — fast, clean, RAG-ready**
+**Extract tables from images/PDFs to Markdown — fast, accurate, RAG-ready**
 
----
-
-## 🚀 Features
-
-* **🧠 Table structure segmentation** using EfficientUNet (~19M params) with 5 masks: `row`, `col`, `col_header`, `row_header`, `span`
-* **🧩 Smart grid completion** — automatically fills missing rows/columns
-* **🔍 Cell-level OCR (PaddleOCR)** → reduces noise, improves accuracy
-* **📄 Markdown export** → ready for RAG / LLM pipelines
-* **🔒 Fully offline** → suitable for sensitive data
-* **🖼 Multi-format support:** PNG, JPG, TIFF, PDF
+RagTable converts table images into structured Markdown using a segmentation model and per-cell OCR. Built for borderless and complex tables (academic papers, reports, scanned documents), with output that plugs directly into RAG pipelines or LLM contexts.
 
 ---
 
-## 📦 Installation
+## Features
+
+- **Table structure segmentation** via EfficientUNet (~19M params) — detects `row`, `col`, `col_header`, `row_header`, and `span` masks
+- **Span detection** — merged cells are identified and rendered correctly in Markdown
+- **Per-cell OCR** via PaddleOCR — each cell is cropped and read individually to minimize noise
+- **Smart header handling** — header rows get a dedicated OCR pass with spatial mapping for better accuracy
+- **Automatic post-processing** — removes phantom edge columns, empty rows, and footer artifacts
+- **Fully offline** — no external API calls, suitable for sensitive or air-gapped environments
+- **Multi-format input**: PNG, JPG, TIFF
+
+---
+
+## Installation
+
 ```bash
 pip install ragtab
+```
 
-Requirements
-Python ≥ 3.10
+**Requirements:**
+- Python ≥ 3.10
+- PyTorch (install separately if not already present)
+- PaddleOCR (installed automatically)
 
-PyTorch (install separately if needed)
+### Install from source
 
-PaddleOCR (auto-installed)
+```bash
+git clone https://github.com/tai03102004/rag-table
+cd ragtab
+pip install -e .
+```
 
-⚡ Quickstart
+---
 
-Basic usage (recommended: UNet model)
+## Quickstart
 
 ```python
 from ragtab.pipeline import extract_table
 
 markdown, cells = extract_table(
-    "bang_mau.png",
+    "table.png",
     model_path="checkpoints/unet_best.pt",
     ocr_engine="paddleocr"
 )
@@ -42,89 +53,90 @@ markdown, cells = extract_table(
 print(markdown)
 ```
 
-📊 Example Output
-```
-| STT | Tên sản phẩm | Đơn giá | Số lượng |
-| --- | ----------- | ------- | -------- |
-| 1   | iPhone 15   | 999     | 12       |
-| 2   | Samsung S24 | 899     | 8        |
-```
-
----
-
-## 🧠 How It Works
-Input Image (384x384)
-       │
-       ▼
-[1] U-Net Segmentation → row + col masks
-       │
-       ▼
-[2] Projection + filtering → detect rows/columns
-       │
-       ▼
-[3] Grid construction → cell bounding boxes
-       │
-       ▼
-[4] Cell cropping → OCR (PaddleOCR)
-       │
-       ▼
-[5] Markdown output
-
----
-
----
-
-## 🔧 Model
-
-RagTable uses a U-Net checkpoint (`.pt`):
-
-* Download the pretrained checkpoint (Google Drive / Hugging Face — contact author) or retrain using the provided notebooks.
-
-* Place the checkpoint in your project directory:
+Output:
 
 ```
-checkpoints/
-```
-
-Then pass it to the pipeline:
-
-```python
-model_path="checkpoints/unet_best.pt"
+| Item        | Price | Qty |
+| ----------- | ----- | --- |
+| iPhone 15   | 999   | 12  |
+| Samsung S24 | 899   | 8   |
 ```
 
 ---
 
-## 🗂️ Project Structure
+## How It Works
+
+```
+Input image (resized to 384×384)
+       │
+       ▼
+[1] EfficientUNet → 5 segmentation masks
+       │
+       ▼
+[2] Projection analysis → row/column separator positions
+       │
+       ▼
+[3] Span detection → connected components on span mask
+       │
+       ▼
+[4] Grid construction → per-cell bounding boxes
+       │
+       ▼
+[5] OCR — header rows: spatial mapping pass
+        — body cells: per-cell crop + PaddleOCR
+       │
+       ▼
+[6] Post-processing → drop phantom columns, empty rows, footers
+       │
+       ▼
+[7] Markdown export
+```
+
+Each stage is independently accessible so you can customize or swap components.
+
+---
+
+## Model & Checkpoints
+
+RagTable uses a U-Net checkpoint (`.pt`). You can:
+
+- **Train from scratch** using `notebooks/02_table-recognition.ipynb`
+- **Download a pretrained checkpoint** (Google Drive / Hugging Face — contact author)
+- **Google Drive: https://drive.google.com/drive/folders/1ILV2zmI6Go-u16bFRbM_Hi1vAyLzc1dQ?usp=drive_link
+- **Hugging Face: https://huggingface.co/henryhs/rag-table/blob/main/unet_best.pt
+
+Place the checkpoint at `checkpoints/unet_best.pt` and pass it via `model_path`.
+
+---
+
+## Project Structure
 
 ```
 RagTable/
 ├── python/
-│   └── ragtab/          # Package chính
+│   └── ragtab/
 │       ├── __init__.py
-│       ├── detection.py
-│       ├── heuristic.py
-│       ├── model.py
-│       ├── ocr.py
-│       ├── pipeline.py
+│       ├── detection.py     # Mask → grid cells
+│       ├── model.py         # EfficientUNet definition
+│       ├── ocr.py           # PaddleOCR wrapper + text cleaning
+│       ├── pipeline.py      # End-to-end extract_table()
 │       └── utils.py
 ├── checkpoints/
-├── README.md
-└── ...
+├── notebooks/
+│   └── 02_table-recognition.ipynb
+└── README.md
 ```
 
 ---
 
----
+## License
 
-## 📝 License
-
-MIT – free for commercial use.
+MIT — free to use, including for commercial purposes.
 
 ---
 
-## 👤 Author
+## Author
 
-**Dinh Duc Tai**
-📧 [dinhductai2004@gmail.com](mailto:dinhductai2004@gmail.com)
+**Dinh Duc Tai** — [dinhductai2004@gmail.com](mailto:dinhductai2004@gmail.com)
 
----
+If you find this useful, consider giving it a ⭐️ on GitHub!

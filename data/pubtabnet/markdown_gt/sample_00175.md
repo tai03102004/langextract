@@ -1,7 +1,7 @@
-| Amino acid | 13Cβ chemical shift |  |
+|  | 13Cβ chemical shift |
 | --- | --- | --- |
-| Measured | Predicted (α-helix/β-sheet) |  |
-|   | ppm |  |
+| Amino acid | Measured | (a-helix/β-sheet) Predicted |
+|  |  | ppm |
 | Ala | 18.23 | 18.30/21.72 |
 | Asp | 39.72 | 40.50/42.78 |
 | Leu | 41.21 | 41.40/44.02 |

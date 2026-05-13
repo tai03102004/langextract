@@ -2,6 +2,7 @@ README.md
 pyproject.toml
 ragtab/__init__.py
 ragtab/detection.py
+ragtab/drop.py
 ragtab/heuristic.py
 ragtab/model.py
 ragtab/ocr.py
